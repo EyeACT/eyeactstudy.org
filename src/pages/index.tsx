@@ -71,11 +71,11 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   </ButtonLink>
 
                   <ButtonLink
-                    href='/mentorship'
+                    href='/team'
                     variant='dark'
                     className='hidden bg-slate-100'
                   >
-                    Join our mentorship program
+                    Qui accusamus saepe
                   </ButtonLink>
                 </div>
               </div>
@@ -132,7 +132,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 </p>
 
                 <div>
-                  <ButtonLink href='/goals/team-science' variant='outline'>
+                  <ButtonLink href='/team' variant='outline'>
                     Lorem ipsum dolor sit amet
                   </ButtonLink>
                 </div>

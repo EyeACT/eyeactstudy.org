@@ -6,65 +6,10 @@ import { useState } from 'react';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
 
-const goals = [
-  {
-    name: 'Data Collection',
-    description: 'Collecting data from various sources.',
-    icon: 'ic:baseline-chat',
-    href: '/goals/data-collection',
-  },
-  {
-    name: 'Data Sharing',
-    description: 'Sharing data with researchers and the public.',
-    icon: 'ic:baseline-extension',
-    href: '/goals/data-sharing',
-  },
-  {
-    name: 'Community Engagement',
-    description: 'Engaging with the community.',
-    icon: 'ic:round-people-alt',
-    href: '/goals/community-engagement',
-  },
-  {
-    name: 'Capacity Building',
-    description: 'Building capacity for data science research.',
-    icon: 'ic:baseline-lock',
-    href: '/goals/capacity-building',
-  },
-  {
-    name: 'Advancing Team Science',
-    description: 'Promoting team science.',
-    icon: 'ic:baseline-bar-chart',
-    href: '/goals/team-science',
-  },
-  {
-    name: 'American Indian Engagement',
-    description: 'Engaging with American Indian communities.',
-    icon: 'fluent:people-16-filled',
-    href: '/goals/american-indian-engagement',
-  },
-];
-
 const regularLinks = [
   {
     href: '/team',
     title: 'Team',
-  },
-  {
-    href: '/events',
-    title: 'Events',
-  },
-  {
-    href: '/scholars',
-    title: 'Scholars',
-  },
-  {
-    href: '/publications',
-    title: 'Publications',
-  },
-  {
-    href: '/blog',
-    title: 'Blog',
   },
   {
     href: '/contact',

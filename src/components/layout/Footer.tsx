@@ -22,29 +22,13 @@ const footerLinks = [
   {
     title: 'Resources',
     links: [
-      // {
-      //   title: 'Study',
-      //   href: '/study',
-      // },
       {
-        title: 'Publications',
-        href: '/publications',
+        title: 'Team',
+        href: '/team',
       },
       {
         title: 'GitHub',
         href: 'https://github.com/AI-READI',
-      },
-      {
-        href: '/blog',
-        title: 'Blog',
-      },
-      {
-        href: '/scholars',
-        title: 'Scholars',
-      },
-      {
-        href: '/faq',
-        title: 'Frequently Asked Questions',
       },
       // {
       //   title: 'Components',
@@ -53,21 +37,6 @@ const footerLinks = [
       {
         title: 'Contact Us',
         href: '/contact',
-      },
-    ],
-  },
-
-  {
-    title: 'Goals',
-    links: [
-      { href: '/goals/data-collection', title: 'Data Collection' },
-      { href: '/goals/data-sharing', title: 'Data Sharing' },
-      { href: '/goals/community-engagement', title: 'Community Engagement' },
-      { href: '/goals/capacity-building', title: 'Capacity Building' },
-      { href: '/goals/team-science', title: 'Advancing Team Science' },
-      {
-        href: '/goals/american-indian-engagement',
-        title: 'American Indian Engagement',
       },
     ],
   },
@@ -81,17 +50,16 @@ export default function Footer() {
           <div className='mb-6 flex flex-col md:mb-0 md:max-w-md lg:max-w-xl'>
             <a href='https://aireadi.org/' className='flex items-center'>
               <img
-                className='mr-3 h-16'
-                src='https://fairdataihub.org/images/hero/aireadi-logo.png'
-                alt='ai-readi logo'
+                className='mr-3 h-14'
+                src='/images/member-orgs/temp-symbol.png'
+                alt='temp logo'
               />
               <span className='self-center whitespace-nowrap text-5xl font-bold text-sky-900'>
-                AI-READI
+                EyeACT
               </span>
             </a>
             <span className='pb-2 pt-3 text-lg font-semibold text-sky-900'>
-              Artificial Intelligence Ready and Equitable Atlas for Diabetes
-              Insights
+              At fugit recusandae aut aliquam. Quisquam et voluptatem. Quisquam
             </span>
 
             <Divider orientation='horizontal' />
@@ -99,15 +67,16 @@ export default function Footer() {
             <div className='flex flex-col pt-6'>
               <div className='flex flex-col justify-start'>
                 <p className='pt-2 text-sm font-medium text-sky-900'>
-                  This project is funded by the NIH under award number
-                  1OT2OD032644. The content on this website is solely the
-                  responsibility of the authors and does not necessarily
-                  represent the official views of the NIH.
+                  Ea autem excepturi qui atque rerum ut perspiciatis quis aut
+                  velit quasi sed laboriosam sapiente. Et fuga voluptas sed
+                  velit consequuntur non debitis perspiciatis. Et illum officia
+                  non ullam nobis eum saepe temporibus vel beatae tenetur est
+                  laudantium tempora est sint nisi 33 praesentium officia!
                 </p>
                 <img
-                  src='https://github.com/AI-READI/Bridge2AI-logo/blob/main/logo-transparent.png?raw=true'
-                  className='h-auto w-[130px]'
-                  alt='FlowBite Logo'
+                  src='/images/member-orgs/temp-logo.png'
+                  className='mt-4 h-auto w-[130px]'
+                  alt='temp Logo'
                 />
               </div>
             </div>
@@ -115,7 +84,7 @@ export default function Footer() {
             <Divider orientation='horizontal' className='py-4 md:hidden' />
           </div>
 
-          <div className='grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6'>
+          <div className='grid grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-12'>
             {footerLinks.map((footerLink) => (
               <div key={footerLink.title} className='w-auto'>
                 <h3 className='mb-3 text-xl font-semibold text-slate-800'>
@@ -142,15 +111,15 @@ export default function Footer() {
         <div className='flex items-center justify-between'>
           <span className='text-base font-medium text-slate-800 sm:text-center'>
             © {new Date().getFullYear()} {` `}
-            <a href='https://aireadi.org/' className='hover:underline'>
-              AI-READI™
+            <a href='https://github.com/EyeACT/' className='hover:underline'>
+              EyeACT™
             </a>
             . All Rights Reserved.
           </span>
 
           <div className='mt-0 flex justify-center space-x-6'>
             <a
-              href='https://github.com/AI-READI'
+              href='https://github.com/EyeACT'
               className='text-sky-700 hover:text-sky-900'
             >
               <AiFillGithub size={30} />

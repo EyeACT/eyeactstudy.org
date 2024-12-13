@@ -2,7 +2,6 @@ import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav';
 import Head from 'next/head';
 
 import Layout from '@/components/layout/Layout';
-import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
 export default function ContactUs() {
@@ -32,11 +31,6 @@ export default function ContactUs() {
                 Let us know!
               </p>
 
-              <p className='my-2 w-full rounded-lg bg-yellow-50 p-2 text-center text-base font-normal text-slate-600'>
-                Please read our <UnderlineLink href='/faq'>FAQ</UnderlineLink>{' '}
-                first - the answer to your question could be there!
-              </p>
-
               <p className='mb-7 text-center text-sm font-normal text-slate-400'>
                 Note that we are mostly looking for feedback at this moment but
                 will try our best to answer questions. Please use an
@@ -49,7 +43,7 @@ export default function ContactUs() {
                 loading='lazy'
                 width='100%'
                 height='276'
-                title='AI-READI Contact Form'
+                title='EyeACT Contact Form'
               ></iframe>
             </div>
           </section>

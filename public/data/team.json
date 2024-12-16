@@ -1,0 +1,61 @@
+[
+  {
+    "id": "Bhavesh-Patel",
+    "name": "Bhavesh Patel",
+    "pronoun": "he/him",
+    "roles": ["Associate Research Professor"],
+    "department": "FAIR Data Innovations Hub",
+    "organization": "California Medical Innovations Institute",
+    "location": "San Diego, CA",
+    "caption": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo.",
+    "image": "https://ucarecdn.com/b36da179-1c47-4fa9-9e9b-9001ffc9b869/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
+    "moduleImageParams": "-/crop/face/200px180p/",
+    "modules": [
+      "data-sharing",
+      "capacity-building",
+      "american-indian-engagement",
+      "data-collection"
+    ],
+    "social": {
+      "website": ["https://fairdataihub.org"],
+      "linkedin": "https://linkedin.com/in/bvhpatel",
+      "twitter": "https://twitter.com/fairdataihub"
+    }
+  },
+  {
+    "id": "Sanjay-Soundarajan",
+    "name": "Sanjay Soundarajan",
+    "pronoun": "he/him",
+    "roles": ["Front End Developer"],
+    "department": "FAIR Data Innovations Hub",
+    "organization": "California Medical Innovations Institute",
+    "location": "San Diego, CA",
+    "caption": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo. ",
+    "image": "https://ucarecdn.com/dca922ac-d2dc-4fb4-8c37-5bdc2d5aa768/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
+    "moduleImageParams": "-/crop/face/200px150p/",
+    "modules": ["data-sharing", "data-sharing", "data-collection"],
+    "social": {
+      "website": ["https://sanjaysoundarajan.dev"],
+      "github": "https://github.com/megasanjay",
+      "twitter": "https://twitter.com/megasanjay"
+    }
+  },
+  {
+    "id": "Dorian-Portillo",
+    "name": "Dorian Portillo",
+    "pronoun": "they/them",
+    "roles": ["Web Developer"],
+    "department": "FAIR Data Innovations Hub",
+    "organization": "California Medical Innovations Institute",
+    "location": "San Bernardino, CA",
+    "caption": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo. ",
+    "image": "https://ucarecdn.com/a3ed77eb-24bc-4b55-b8f9-118a9d07f760/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
+    "moduleImageParams": "-/crop/face/200px200p/",
+    "modules": ["data-sharing", "data-collection"],
+    "social": {
+      "website": ["https://dorianportillo.dev"],
+      "github": "https://github.com/slugb0t",
+      "linkedin": "https://www.linkedin.com/in/dorian-portillo-4733b61b5/"
+    }
+  }
+]

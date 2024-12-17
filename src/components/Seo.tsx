@@ -9,7 +9,7 @@ const defaultMeta = {
   type: 'website',
   robots: 'follow, index',
   image:
-    'https://kalai.fairdataihub.org/api/generate?title=EyeACTStudy.org&description=&app=EyeACT&org=fairdataihub',
+    'https://kalai.fairdataihub.org/api/generate?title=EyeACTStudy.org&description=&app=eyeact&org=eyeact',
 };
 
 type SeoProps = {
@@ -34,9 +34,9 @@ export default function Seo(props: SeoProps) {
   meta['description'] = props.templateDescription || meta.description;
 
   meta['image'] =
-    `https://kalai.fairdataihub.org/api/generate?app=EyeACT&title=${encodeURIComponent(
+    `https://kalai.fairdataihub.org/api/generate?app=eyeact&title=${encodeURIComponent(
       meta.title,
-    )}&org=fairdataihub&description=${encodeURIComponent(meta.description)}`;
+    )}&org=eyeact&description=${encodeURIComponent(meta.description)}`;
 
   return (
     <Head>

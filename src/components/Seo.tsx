@@ -2,16 +2,14 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 const defaultMeta = {
-  title:
-    'Artificial Intelligence Ready and Equitable Atlas for Diabetes Insights',
-  siteName: 'AI-READI',
-  description:
-    'Generating a flagship AI-ready and ethically-sourced dataset to support future AI-driven discoveries in diabetes',
-  url: 'https://aireadi.org',
+  title: '',
+  siteName: 'EyeACT',
+  description: '',
+  url: 'https://eyeactstudy-org.vercel.app/',
   type: 'website',
   robots: 'follow, index',
   image:
-    'https://kalai.fairdataihub.org/api/generate?app=ai-readi&title=Generating%20a%20flagship%20AI-ready%20and%20ethically-sourced%20dataset%20to%20support%20future%20AI-driven%20discoveries%20in%20diabetes&org=ai-readi&description=',
+    'https://kalai.fairdataihub.org/api/generate?title=EyeACTStudy.org&description=&app=EyeACT&org=fairdataihub',
 };
 
 type SeoProps = {
@@ -36,7 +34,7 @@ export default function Seo(props: SeoProps) {
   meta['description'] = props.templateDescription || meta.description;
 
   meta['image'] =
-    `https://kalai.fairdataihub.org/api/generate?app=ai-readi&title=${encodeURIComponent(
+    `https://kalai.fairdataihub.org/api/generate?app=EyeACT&title=${encodeURIComponent(
       meta.title,
     )}&org=ai-readi&description=${encodeURIComponent(meta.description)}`;
 

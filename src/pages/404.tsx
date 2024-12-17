@@ -1,41 +1,37 @@
-import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
-import LottieAnimation from '@/components/lotties';
-import Seo from '@/components/Seo';
+import Link from 'next/link';
 
-import heroLottie from '~/lotties/404.json';
+import Layout from '@/components/layout/Layout';
+import Seo from '@/components/Seo';
 
 export default function NotFoundPage() {
   return (
     <Layout>
       <Seo templateTitle='404' />
 
-      <main>
-        <section className='layout flex h-[calc(100vh-60px)] flex-col items-center justify-center text-center'>
-          <div className='flex items-center justify-center space-x-4'>
-            <LottieAnimation
-              animationData={heroLottie}
-              width={250}
-              height={250}
-            />
-            <div className='max-w-lg text-left'>
-              <h1 className='mt-8 text-6xl font-black'>404!</h1>
-              <h2 className='my-4 text-2xl'>
-                The page you are looking for might have been removed or had its
-                name changed or is temporarily unavailable.
-              </h2>
-              <ArrowLink
-                className='mt-4 inline-flex items-center md:text-lg'
-                href='/'
-                as={ButtonLink}
-                variant='light'
-              >
-                Back to Home
-              </ArrowLink>
-            </div>
+      <main className='grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8'>
+        <div className='text-center'>
+          <p className='text-base font-semibold text-indigo-600'>404</p>
+          <h1 className='mt-4 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl'>
+            Page not found
+          </h1>
+          <p className='mt-6 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8'>
+            Sorry, we couldn’t find the page you’re looking for.
+          </p>
+          <div className='mt-6 space-x-4'>
+            <Link
+              href='/'
+              className='rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+            >
+              Go back home
+            </Link>
+            <Link
+              href='/contact'
+              className='text-sm font-semibold text-gray-900'
+            >
+              Contact support <span aria-hidden='true'>&rarr;</span>
+            </Link>
           </div>
-        </section>
+        </div>
       </main>
     </Layout>
   );

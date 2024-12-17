@@ -136,7 +136,7 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                       {'mastodon' in member.social && (
                         <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
                           <a
-                            href={member.social.mastodon}
+                            href={member.social.mastodon as string | undefined}
                             rel='noopener noreferrer'
                             target='_blank'
                             className='cursor-newtab'
@@ -192,7 +192,7 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                       {'profiles' in member.social && (
                         <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
                           <a
-                            href={member.social.profiles}
+                            href={member.social.profiles as string | undefined}
                             rel='noopener noreferrer'
                             target='_blank'
                             className='cursor-newtab'
@@ -206,7 +206,9 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                       {'medprofile' in member.social && (
                         <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
                           <a
-                            href={member.social.medprofile}
+                            href={
+                              member.social.medprofile as string | undefined
+                            }
                             rel='noopener noreferrer'
                             target='_blank'
                             className='cursor-newtab'

@@ -24,13 +24,6 @@ class MyDocument extends Document {
             type='font/woff2'
             crossOrigin='anonymous'
           />
-
-          <script
-            async
-            defer
-            data-website-id='b6587885-8dd3-426f-a805-4caa432aaaa2'
-            src='https://umami.fairdataihub.org/mushroom'
-          />
         </Head>
 
         <body

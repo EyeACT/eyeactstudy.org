@@ -31,7 +31,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[Template Code of Conduct](https://github.com/AI-READI/eyeactstudy.org/blob/main/CODE_OF_CONDUCT.md).
+[Template Code of Conduct](https://github.com/EyeACT/eyeactstudy.org/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 to <contact@eyeact.org>.
 

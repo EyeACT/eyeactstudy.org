@@ -2,7 +2,7 @@
 
 **Last updated February 08, 2023**
 
-This privacy notice for AI-READI ("**Company**," "**we**," "**us**," or "**our**"), describes how and why we might collect, store, use, and/or share ("**process**") your information when you use our services ("**Services**"), such as when you:
+This privacy notice for EyeACT ("**Company**," "**we**," "**us**," or "**our**"), describes how and why we might collect, store, use, and/or share ("**process**") your information when you use our services ("**Services**"), such as when you:
 
 - Visit our website at [aireadi.org](https://aireadi.org), or any website of ours that links to this privacy notice
 - Engage with us in other related ways, including any sales, marketing, or events
@@ -15,7 +15,7 @@ This privacy notice for AI-READI ("**Company**," "**we**," "**us**," or "**our**
 
 ### What personal information do we process?
 
-When you visit, use, or navigate our Services, we may process personal information depending on how you interact with AI-READI and the Services, the choices you make, and the products and features you use. Click [here](#personalinfo) to learn more.
+When you visit, use, or navigate our Services, we may process personal information depending on how you interact with EyeACT and the Services, the choices you make, and the products and features you use. Click [here](#personalinfo) to learn more.
 
 ### Do we process any sensitive personal information?
 
@@ -45,7 +45,7 @@ Depending on where you are located geographically, the applicable privacy law ma
 
 The easiest way to exercise your rights is by filling out our data subject request form available [here](https://app.termly.io/notify/bc201a66-26e4-4089-805b-25d11c63a07c), or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
 
-Want to learn more about what AI-READI does with any information we collect? Click [here](#toc) to review the notice in full.
+Want to learn more about what EyeACT does with any information we collect? Click [here](#toc) to review the notice in full.
 
 ## Table of Contents
 
@@ -244,7 +244,7 @@ We may disclose your personal information with our service providers pursuant to
 
 We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be "selling" of your personal information.
 
-AI-READI has not disclosed, sold, or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. AI-READI will not sell or share personal information in the future belonging to website visitors, users, and other consumers.
+EyeACT has not disclosed, sold, or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. EyeACT will not sell or share personal information in the future belonging to website visitors, users, and other consumers.
 
 ### Your rights with respect to your personal data
 

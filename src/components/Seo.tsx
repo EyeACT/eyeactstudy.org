@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 const defaultMeta = {
-  title: '',
+  title: 'EyeACTStudy.org',
   siteName: 'EyeACT',
   description: '',
   url: 'https://eyeactstudy-org.vercel.app/',
@@ -36,7 +36,7 @@ export default function Seo(props: SeoProps) {
   meta['image'] =
     `https://kalai.fairdataihub.org/api/generate?app=EyeACT&title=${encodeURIComponent(
       meta.title,
-    )}&org=ai-readi&description=${encodeURIComponent(meta.description)}`;
+    )}&org=fairdataihub&description=${encodeURIComponent(meta.description)}`;
 
   return (
     <Head>

@@ -12,6 +12,18 @@ const regularLinks = [
     title: 'Team',
   },
   {
+    href: '/publications',
+    title: 'Publications',
+  },
+  {
+    href: '/dataset',
+    title: 'Dataset',
+  },
+  {
+    href: '/events',
+    title: 'Events',
+  },
+  {
     href: '/contact',
     title: 'Contact Us',
   },

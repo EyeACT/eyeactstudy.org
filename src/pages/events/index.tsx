@@ -24,7 +24,7 @@ const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
 
             <h2 className='text-left text-xl'>
               A record of all past, present and future events and workshops from
-              the AI-READI team are listed here.
+              the EyeACT team are listed here.
             </h2>
           </div>
 

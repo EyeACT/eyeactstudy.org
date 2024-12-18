@@ -3,6 +3,7 @@ import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav';
 import dayjs from 'dayjs';
 import fs from 'fs';
 import matter from 'gray-matter';
+import Link from 'next/link';
 
 import ImageWithCredit from '@/components/images/ImageWithCredit';
 import Layout from '@/components/layout/Layout';
@@ -39,44 +40,31 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
         <main>
           <SkipNavContent />
 
-          <section className="relative flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:brightness-[0.3] before:content-[''] md:h-[40vh]">
-            <div className='mx-auto grid max-w-screen-xl flex-col px-6 py-16 md:grid-cols-12 md:gap-8 lg:py-16 xl:gap-0'>
-              <div className='col-span-12 mr-auto place-self-center md:col-span-8'>
-                <h1 className='relative pb-5 text-4xl font-black text-white sm:text-5xl'>
-                  Sed quidem sapiente cum sint saepe non doloremque velit qui
-                  veniam praesentium aut repudiandae laboriosam id autem
-                  facilis.
+          <section className="before:animate-breathe-brightness relative flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[150px] after:w-full after:bg-gradient-to-t after:from-gray-200 after:to-transparent md:h-[94vh]">
+            <div className='relative grid w-full grid-cols-12 items-center gap-8 px-6 py-16 lg:ml-16 lg:py-16 xl:gap-0'>
+              {/* Left Text Section */}
+              <div className='col-span-12 pr-0 md:col-span-6 md:pr-16'>
+                <h1 className='text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </h1>
-
-                <p className='relative pb-5 text-xl font-medium text-white sm:text-2xl'>
-                  Non sunt consequuntur non autem numquam qui accusamus saepe et
-                  rerum mollitia rem recusandae assumenda
+                <p className='mt-4 text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.{' '}
+                  <Link href='/team' className='text-blue-400 underline'>
+                    Dapibus in amet
+                  </Link>{' '}
+                  adipiscing varius vivamus fames. Tellus pellentesque justo
+                  laoreet suscipit dolor porttitor.
                 </p>
-              </div>
-
-              <div className='col-span-12'>
-                <div className='relative flex w-max flex-col space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0'>
-                  <ButtonLink
-                    href='https://github.com/EyeAct'
-                    variant='primary'
-                  >
-                    Non sunt consequuntur non autem numquam
-                  </ButtonLink>
-                  <ButtonLink
-                    href='https://github.com/EyeAct'
-                    variant='outline'
-                    className='bg-stone-100'
-                  >
-                    Rerum mollitia rem recusandae assumenda
-                  </ButtonLink>
-
-                  <ButtonLink
+                <div className='mt-6'>
+                  <Link
                     href='/team'
-                    variant='dark'
-                    className='hidden bg-slate-100'
+                    className='inline-block rounded-lg bg-black px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-400 sm:text-base'
                   >
-                    Qui accusamus saepe
-                  </ButtonLink>
+                    Dapibus in amet
+                  </Link>
                 </div>
               </div>
             </div>
@@ -132,7 +120,10 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 </p>
 
                 <div>
-                  <ButtonLink href='/team' variant='outline'>
+                  <ButtonLink
+                    href='/team'
+                    className='border-none bg-black text-white hover:border-black hover:bg-white hover:text-black'
+                  >
                     Lorem ipsum dolor sit amet
                   </ButtonLink>
                 </div>

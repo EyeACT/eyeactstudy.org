@@ -48,10 +48,10 @@ export default function Footer() {
       <div className='mx-auto max-w-screen-xl p-4 sm:p-6'>
         <div className='md:flex md:justify-between md:space-x-12'>
           <div className='mb-6 flex flex-col md:mb-0 md:max-w-md lg:max-w-xl'>
-            <a href='https://aireadi.org/' className='flex items-center'>
+            <a href='https://fairdataihub/' className='flex items-center'>
               <img
                 className='mr-3 h-14'
-                src='/images/member-orgs/temp-symbol.png'
+                src='/images/logo-regular.png'
                 alt='temp logo'
               />
               <span className='self-center whitespace-nowrap text-5xl font-bold text-sky-900'>
@@ -73,11 +73,6 @@ export default function Footer() {
                   non ullam nobis eum saepe temporibus vel beatae tenetur est
                   laudantium tempora est sint nisi 33 praesentium officia!
                 </p>
-                <img
-                  src='/images/member-orgs/temp-logo.png'
-                  className='mt-4 h-auto w-[130px]'
-                  alt='temp Logo'
-                />
               </div>
             </div>
 

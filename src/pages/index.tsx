@@ -124,7 +124,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   whileInView='show'
                   viewport={{ once: true }}
                   custom={1}
-                  className='bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] text-9xl font-bold leading-tight text-white sm:text-4xl md:text-5xl'
+                  className='bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl'
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua

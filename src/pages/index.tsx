@@ -114,7 +114,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
         <main>
           <SkipNavContent />
 
-          <section className="relative flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[150px] after:w-full after:bg-gradient-to-t after:from-gray-200 after:to-transparent md:h-[94vh]">
+          <section className="relative flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[150px] after:w-full after:bg-gradient-to-t after:from-black after:to-transparent md:h-[100vh]">
             <div className='relative grid w-full grid-cols-12 items-center gap-8 px-6 py-16 lg:ml-16 lg:py-16 xl:gap-0'>
               {/* Left Text Section */}
               <div className='col-span-12 pr-0 md:col-span-6 md:pr-16'>
@@ -124,7 +124,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   whileInView='show'
                   viewport={{ once: true }}
                   custom={1}
-                  className='text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl'
+                  className='bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] text-4xl font-bold leading-tight text-white sm:text-4xl md:text-5xl'
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -135,7 +135,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   whileInView='show'
                   viewport={{ once: true }}
                   custom={2}
-                  className='mt-4 text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl'
+                  className='mt-4 bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl'
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -154,12 +154,13 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   custom={2}
                   className='mt-6'
                 >
-                  <Link
+                  <ButtonLink
                     href='/team'
-                    className='inline-block rounded-lg bg-black px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-400 sm:text-base'
+                    variant='primary'
+                    className='inline-block rounded-lg bg-sky-700 px-5 py-3 text-sm font-semibold transition sm:text-base'
                   >
                     Dapibus in amet
-                  </Link>
+                  </ButtonLink>
                 </motion.div>
               </div>
             </div>
@@ -293,10 +294,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 </p>
 
                 <div>
-                  <ButtonLink
-                    href='/team'
-                    className='border-none bg-black text-white hover:border-black hover:bg-white hover:text-black'
-                  >
+                  <ButtonLink href='/team' variant='primary' className=''>
                     Lorem ipsum dolor sit amet
                   </ButtonLink>
                 </div>
@@ -350,7 +348,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-white to-sky-100 py-8'>
+          <section className='bg-gradient-to-t from-white to-sky-100 py-24'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -434,7 +432,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white py-12'>
+          <section className='bg-gradient-to-t from-sky-100 to-white py-20'>
             <div className='mx-auto max-w-screen-xl px-8 text-center'>
               <motion.h2
                 variants={fadeInVariants}

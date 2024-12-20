@@ -124,7 +124,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   whileInView='show'
                   viewport={{ once: true }}
                   custom={1}
-                  className='bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] text-4xl font-bold leading-tight text-white sm:text-4xl md:text-5xl'
+                  className='bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] text-9xl font-bold leading-tight text-white sm:text-4xl md:text-5xl'
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -135,7 +135,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   whileInView='show'
                   viewport={{ once: true }}
                   custom={2}
-                  className='mt-4 bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl'
+                  className='mt-4 bg-[radial-gradient(circle_at_40%_50%,rgba(0,0,0,0.8),transparent)] text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl'
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.

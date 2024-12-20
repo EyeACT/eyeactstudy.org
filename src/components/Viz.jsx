@@ -4,17 +4,17 @@ import { useEffect, useRef, useState } from 'react';
 import VIZ_JSON from '~/data/viz.json';
 
 const vizOptions = [
-  { value: 'state-def', label: 'Default' },
-  { value: 'state-group', label: 'T2DM Status' },
-  { value: 'state-age', label: 'Decade' },
-  { value: 'state-site', label: 'Site' },
-  { value: 'state-split', label: 'Splits' },
-  { value: 'state-Clinical', label: 'Clinical' },
-  { value: 'state-ECG', label: 'ECG' },
-  { value: 'state-FLIO', label: 'FLIO' },
-  { value: 'state-OCT', label: 'OCT' },
-  { value: 'state-OCTA', label: 'OCTA' },
-  { value: 'state-CFP', label: 'CFP' },
+  { value: 'state-def', label: 'Nisi' },
+  { value: 'state-group', label: 'Potenti' },
+  { value: 'state-age', label: 'Leo fusce' },
+  { value: 'state-site', label: 'Lobortis' },
+  { value: 'state-split', label: 'Facilisis' },
+  { value: 'state-Clinical', label: 'Elit' },
+  { value: 'state-ECG', label: 'Amet' },
+  { value: 'state-FLIO', label: 'Phasellus' },
+  { value: 'state-OCT', label: 'Diam' },
+  { value: 'state-OCTA', label: 'Auctor' },
+  { value: 'state-CFP', label: 'Ultrices' },
 ];
 
 const VizComponent = () => {
@@ -52,12 +52,12 @@ const VizComponent = () => {
     const data = VIZ_JSON;
     const { width, height } = dimensions;
 
-    const  getSelectedStateId = () => {
+    const getSelectedStateId = () => {
       const selectedRadio = document.querySelector(
         'input[name="state"]:checked',
       );
       return selectedRadio ? selectedRadio.id : null;
-    }
+    };
 
     const countUniqueValues = (data) => {
       const uniqueCounts = {};
@@ -96,7 +96,7 @@ const VizComponent = () => {
       });
 
       return result;
-    }
+    };
 
     (function (nodes = data) {
       const nodeUniqes = countUniqueValues(nodes);
@@ -145,7 +145,7 @@ const VizComponent = () => {
         );
         simulation.force('y', d3.forceY(0).strength(xyforce));
         simulation.alpha(1).restart();
-      }
+      };
 
       // sourcery skip: avoid-function-declarations-in-blocks
       function ticked() {
@@ -239,7 +239,7 @@ const VizComponent = () => {
         ))}
       </ul>
 
-      <canvas ref={canvasRef} id='viz' className='w-full p-4 m-4' />
+      <canvas ref={canvasRef} id='viz' className='m-4 w-full p-4' />
     </div>
   );
 };

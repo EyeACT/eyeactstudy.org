@@ -44,21 +44,22 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className='bg-slate-100'>
+    <footer className='bg-gradient-to-t from-white to-sky-100'>
       <div className='mx-auto max-w-screen-xl p-4 sm:p-6'>
+        <hr className='mb-8 border-slate-300 sm:mx-auto' />
         <div className='md:flex md:justify-between md:space-x-12'>
           <div className='mb-6 flex flex-col md:mb-0 md:max-w-md lg:max-w-xl'>
-            <a href='https://aireadi.org/' className='flex items-center'>
+            <a href='https://fairdataihub.org/' className='flex items-center'>
               <img
                 className='mr-3 h-14'
-                src='/images/member-orgs/temp-symbol.png'
+                src='/images/logo-regular.png'
                 alt='temp logo'
               />
-              <span className='self-center whitespace-nowrap text-5xl font-bold text-sky-900'>
+              <span className='self-center whitespace-nowrap text-5xl font-bold text-sky-700'>
                 EyeACT
               </span>
             </a>
-            <span className='pb-2 pt-3 text-lg font-semibold text-sky-900'>
+            <span className='pb-2 pt-3 text-lg font-semibold text-sky-700'>
               At fugit recusandae aut aliquam. Quisquam et voluptatem. Quisquam
             </span>
 
@@ -73,11 +74,6 @@ export default function Footer() {
                   non ullam nobis eum saepe temporibus vel beatae tenetur est
                   laudantium tempora est sint nisi 33 praesentium officia!
                 </p>
-                <img
-                  src='/images/member-orgs/temp-logo.png'
-                  className='mt-4 h-auto w-[130px]'
-                  alt='temp Logo'
-                />
               </div>
             </div>
 
@@ -94,7 +90,7 @@ export default function Footer() {
                   {footerLink.links.map((link) => (
                     <li key={link.title}>
                       <Link href={link.href} passHref>
-                        <span className='text-base font-medium text-sky-800 transition-all hover:text-slate-500'>
+                        <span className='text-base font-medium text-sky-700 transition-all hover:text-sky-900 hover:underline'>
                           {link.title}
                         </span>
                       </Link>
@@ -111,7 +107,7 @@ export default function Footer() {
         <div className='flex items-center justify-between'>
           <span className='text-base font-medium text-slate-800 sm:text-center'>
             © {new Date().getFullYear()} {` `}
-            <a href='https://github.com/EyeACT/' className='hover:underline'>
+            <a href='https://github.com/EyeACT' className='hover:underline'>
               EyeACT™
             </a>
             . All Rights Reserved.

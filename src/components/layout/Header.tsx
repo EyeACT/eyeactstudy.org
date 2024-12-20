@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Dialog, Popover } from '@headlessui/react';
 import { Icon } from '@iconify/react';
+import Image from 'next/image';
 import { useState } from 'react';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
@@ -10,6 +11,18 @@ const regularLinks = [
   {
     href: '/team',
     title: 'Team',
+  },
+  {
+    href: '/publications',
+    title: 'Publications',
+  },
+  {
+    href: '/dataset',
+    title: 'Dataset',
+  },
+  {
+    href: '/events',
+    title: 'Events',
   },
   {
     href: '/contact',
@@ -21,15 +34,22 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className='fixed top-0 z-10 w-full border-b bg-white'>
+    <header className='fixed top-0 z-10 w-full border-b border-black bg-black'>
       <nav
-        className='mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8'
+        className='max-w-screen mx-auto flex items-center justify-between px-6 py-4 lg:px-8'
         aria-label='Global'
       >
-        <div className='flex lg:flex-1'>
+        <div className='flex items-center lg:flex-1'>
+          <Image
+            src='/images/logo-white-letter.png'
+            alt='EyeACT Logo'
+            width={40}
+            height={40}
+            className='h-10 w-10'
+          />
           <UnstyledLink
             href='/'
-            className='pl-3 text-lg font-bold transition-all hover:text-sky-500'
+            className='pl-3 text-lg font-bold text-white transition-all hover:text-sky-200'
           >
             EyeACT
           </UnstyledLink>
@@ -37,7 +57,7 @@ export default function Header() {
         <div className='flex lg:hidden'>
           <button
             type='button'
-            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
+            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white'
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className='sr-only'>Open main menu</span>
@@ -49,7 +69,7 @@ export default function Header() {
             <UnstyledLink
               key={index}
               href={link.href}
-              className='font-semibold text-gray-800 transition-all hover:text-blue-400'
+              className='font-semibold text-gray-800 transition-all hover:text-blue-400 md:text-white'
             >
               {link.title}
             </UnstyledLink>

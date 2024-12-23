@@ -38,7 +38,6 @@ interface Member {
   education: { degree: string; institution: string }[];
   expertise: string[];
   about: string;
-  after: string;
   social: {
     linkedin?: string;
     resume?: string;
@@ -289,14 +288,6 @@ const ScholarsPage: React.FC<
 
                       <p className='text-base font-normal text-slate-600'>
                         {selectedScholar?.about}
-                      </p>
-
-                      <h3 className='text-lg font-semibold text-slate-700'>
-                        After AI-READI
-                      </h3>
-
-                      <p className='text-base font-normal text-slate-600'>
-                        {selectedScholar?.after}
                       </p>
                     </VStack>
                   </GridItem>

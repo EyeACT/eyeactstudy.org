@@ -16,6 +16,16 @@
       "american-indian-engagement",
       "data-collection"
     ],
+    "education": [
+      { "degree": "MD Internal Medicine", "institution": "" },
+      { "degree": "MS Ophthalmology", "institution": "" },
+      { "degree": "MCR Translational Research", "institution": "" }
+    ],
+    "expertise": [
+      "Translational Medicine",
+      "Research Methodology Training",
+      "Grant Writing"
+    ],
     "social": {
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
@@ -34,6 +44,16 @@
     "image": "https://ucarecdn.com/dca922ac-d2dc-4fb4-8c37-5bdc2d5aa768/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
     "moduleImageParams": "-/crop/face/200px150p/",
     "modules": ["data-sharing", "data-sharing", "data-collection"],
+    "education": [
+      { "degree": "MD Internal Medicine", "institution": "" },
+      { "degree": "MS Ophthalmology", "institution": "" },
+      { "degree": "MCR Translational Research", "institution": "" }
+    ],
+    "expertise": [
+      "Translational Medicine",
+      "Research Methodology Training",
+      "Grant Writing"
+    ],
     "social": {
       "website": ["https://sanjaysoundarajan.dev"],
       "github": "https://github.com/megasanjay",
@@ -52,6 +72,16 @@
     "image": "https://ucarecdn.com/a3ed77eb-24bc-4b55-b8f9-118a9d07f760/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
     "moduleImageParams": "-/crop/face/200px200p/",
     "modules": ["data-sharing", "data-collection"],
+    "education": [
+      { "degree": "MD Internal Medicine", "institution": "" },
+      { "degree": "MS Ophthalmology", "institution": "" },
+      { "degree": "MCR Translational Research", "institution": "" }
+    ],
+    "expertise": [
+      "Translational Medicine",
+      "Research Methodology Training",
+      "Grant Writing"
+    ],
     "social": {
       "website": ["https://dorianportillo.dev"],
       "github": "https://github.com/slugb0t",

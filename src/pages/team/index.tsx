@@ -1,255 +1,317 @@
 /* eslint-disable @next/next/no-img-element */
-import { Divider } from '@chakra-ui/react';
+import {
+  Grid,
+  GridItem,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalOverlay,
+  Tag,
+  useDisclosure,
+  VStack,
+} from '@chakra-ui/react';
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav';
+import { motion } from 'framer-motion';
 import { InferGetStaticPropsType } from 'next';
 import Image from 'next/image';
 import { getPlaiceholder } from 'plaiceholder';
-import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai';
-import { BiBuildingHouse } from 'react-icons/bi';
-import { BsGlobe, BsMastodon } from 'react-icons/bs';
-import { FaHospitalUser } from 'react-icons/fa';
-import { HiUserGroup } from 'react-icons/hi';
+import { useState } from 'react';
+import { FaLinkedin } from 'react-icons/fa';
 import { IoSchoolSharp } from 'react-icons/io5';
-import { MdLocationOn } from 'react-icons/md';
-import { RiInstagramFill } from 'react-icons/ri';
+import { RiAwardFill } from 'react-icons/ri';
 
 import Layout from '@/components/layout/Layout';
+import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
+
+import { FramerContainer } from '@/utils/framer';
 
 import TEAM_JSON from '~/data/team.json';
 
-const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  TeamMembers,
-}) => (
-  <>
-    <SkipNavLink>Skip to content</SkipNavLink>
+interface Member {
+  id: string;
+  name: string;
+  image: string;
+  blurDataURL: string;
+  moduleImageParams: string;
+  education: { degree: string; institution: string }[];
+  expertise: string[];
+  about: string;
+  after: string;
+  social: {
+    linkedin?: string;
+    resume?: string;
+    medprofile?: string;
+    website?: string[];
+    twitter?: string;
+    instagram?: string;
+    github?: string;
+  };
+}
 
-    <Layout>
-      <Seo templateTitle='Meet the Team' />
+const MembersGrid: React.FC<{
+  members: Member[];
+  openModal: (scholarId: string) => void;
+}> = ({ members, openModal }) => {
+  return (
+    <motion.div
+      variants={FramerContainer}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: true }}
+      className='align-center mx-auto grid max-w-screen-xl gap-8 px-4 pb-8 pt-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-8 lg:px-6 lg:pb-16 lg:pt-8'
+    >
+      {members.map((scholar) => (
+        <motion.div
+          // variants={FadeFramerItem}
+          key={scholar.id + Math.random()}
+          id={scholar.id}
+          onClick={() => openModal(scholar.id)}
+          className='parent hover:child:shadow-xl flex h-full flex-col items-center justify-between rounded-lg border-solid bg-slate-50 px-4 py-4 transition-all hover:shadow-xl'
+        >
+          <div key={scholar.name} className='w-full'>
+            {/* {scholar.tag.length > 0 ? (
+              <Wrap>
+                {scholar.tag.map((tag) => (
+                  <WrapItem key={tag}>
+                    <Badge
+                      className='mb-2'
+                      colorScheme={tag === '#OpenToWork' ? 'teal' : 'cyan'}
+                      fontSize='0.7em'
+                      variant='outline'
+                    >
+                      {tag}
+                    </Badge>
+                  </WrapItem>
+                ))}
+              </Wrap>
+            ) : (
+              <div className='mb-2 h-[18px]'></div>
+            )} */}
 
-      <main>
-        <SkipNavContent />
+            <div className='relative mx-auto mb-2 min-h-[350px] w-full sm:min-h-[500px]'>
+              <Image
+                src={`${scholar.image}${
+                  scholar.moduleImageParams != ''
+                    ? scholar.moduleImageParams
+                    : ''
+                }`}
+                alt={scholar.name + ' image'}
+                fill
+                placeholder='blur'
+                blurDataURL={scholar.blurDataURL}
+                className='child h-full w-full rounded-lg object-cover object-center'
+                sizes='(max-width: 768px) 100vw, 50vw'
+              />
+              <div className='relative left-[-5px] top-[434px] px-4'>
+                <h3 className='relative pb-1 text-left text-2xl font-extrabold text-white'>
+                  {scholar.name}
+                </h3>
 
-        <section className='bg-white !font-primary'>
-          <div className='mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16'>
-            <div className='mx-auto mb-8 max-w-screen-sm text-center lg:mb-16'>
-              <h1 className='mb-1 text-3xl font-extrabold tracking-tight sm:text-4xl'>
-                Our Team
-              </h1>
-              <p className='mb-6 text-xl font-medium text-slate-600 sm:mb-8'>
-                Meet the people behind the scenes who make it all happen
-              </p>
+                <Grid templateColumns='repeat(10, 1fr)' className='relative'>
+                  <GridItem>
+                    <IoSchoolSharp size={20} style={{ color: 'white' }} />
+                  </GridItem>
+
+                  <GridItem colSpan={9}>
+                    <p className='mb-2 ml-2 text-left font-semibold text-white'>
+                      {scholar.education[0].degree}
+                    </p>
+                  </GridItem>
+
+                  {/* <GridItem>
+                <RiAwardFill size={20} />
+              </GridItem> */}
+
+                  {/* <GridItem colSpan={9}>
+                <Wrap>
+                  {scholar.expertise.map((expertise, index) => (
+                    <WrapItem key={index}>
+                      <Tag colorScheme='blue' size='sm'>
+                        {expertise}
+                      </Tag>
+                    </WrapItem>
+                  ))}
+                </Wrap>
+              </GridItem> */}
+                </Grid>
+              </div>
             </div>
 
-            <div className='grid grid-cols-1 gap-6 lg:grid-cols-2'>
-              {TeamMembers.map((member, index) => (
-                <div
-                  className='flex w-full flex-col items-start overflow-hidden rounded-lg bg-gray-50 shadow-lg md:flex-row'
-                  key={member.name}
-                  id={member.id}
+            {/* <Button
+              size='sm'
+              colorScheme='teal'
+              className='mt-5 place-content-end'
+              rightIcon={<BsPlusCircleDotted />}
+              onClick={() => openModal(scholar.id)}
+            >
+              Expand
+            </Button> */}
+          </div>
+        </motion.div>
+      ))}
+    </motion.div>
+  );
+};
+
+const ScholarsPage: React.FC<
+  InferGetStaticPropsType<typeof getStaticProps>
+> = ({ AllMembers }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedScholar, setSelectedScholar] = useState<Member | null>(null);
+
+  const openModal = (scholarid: string) => {
+    const scholar = AllMembers.find((scholar) => scholar.id === scholarid);
+
+    if (!scholar) {
+      return;
+    }
+
+    setSelectedScholar(scholar);
+
+    onOpen();
+  };
+
+  return (
+    <>
+      <SkipNavLink>Skip to content</SkipNavLink>
+
+      <Layout>
+        <Seo templateTitle='Scholars' />
+
+        <main>
+          <SkipNavContent />
+
+          <h2 className='pt-8 text-center text-3xl font-extrabold tracking-tight sm:text-4xl lg:pt-16'>
+            Meet the Team
+          </h2>
+
+          <MembersGrid members={AllMembers} openModal={openModal} />
+
+          <Modal isOpen={isOpen} onClose={onClose} isCentered size='3xl'>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalCloseButton />
+              <ModalBody>
+                <Grid
+                  templateColumns='repeat(10, 1fr)'
+                  gap={6}
+                  className='px-2 py-3'
                 >
-                  <div className='relative h-full min-h-[500px] w-full md:min-h-fit md:w-[45%]'>
-                    <Image
-                      src={member.image}
-                      alt='user profile picture'
-                      fill
-                      placeholder='blur'
-                      priority={index < 6}
-                      blurDataURL={member.blurDataURL}
-                      className='h-full w-full object-cover object-top md:object-center'
-                      sizes='(max-width: 768px) 100vw, 50vw'
-                    />
-                  </div>
+                  <GridItem colSpan={4}>
+                    <VStack spacing={4} align='stretch'>
+                      <img
+                        src={selectedScholar?.image}
+                        alt={selectedScholar?.name}
+                        className='h-full w-full rounded-lg object-cover object-center'
+                      />
 
-                  <div className='w-full px-6 py-8 text-left md:w-[55%] md:p-4'>
-                    <h3 className='text-xl font-extrabold text-gray-900'>
-                      {member.name}{' '}
-                      {member.pronoun && (
-                        <span className='text-large font-medium text-gray-600'>
-                          ({member.pronoun})
-                        </span>
-                      )}
-                    </h3>
+                      <Grid templateColumns='repeat(10, 1fr)' rowGap={3}>
+                        {'linkedin' in (selectedScholar?.social || {}) && (
+                          <>
+                            <GridItem>
+                              <div className='my-auto flex items-center'>
+                                <FaLinkedin size={20} />
+                              </div>
+                            </GridItem>
 
-                    {member.roles.map((role, index) => (
-                      <p className='font-semibold' key={index}>
-                        {role}
-                      </p>
-                    ))}
+                            <GridItem colSpan={9}>
+                              <UnstyledLink
+                                href={selectedScholar?.social.linkedin || ''}
+                                className='ml-2 text-left font-semibold text-slate-600'
+                              >
+                                LinkedIn Profile
+                              </UnstyledLink>
+                            </GridItem>
+                          </>
+                        )}
 
-                    <Divider className='my-1' />
+                        {'resume' in (selectedScholar?.social || {}) && (
+                          <>
+                            <GridItem>
+                              <RiAwardFill size={20} />
+                            </GridItem>
 
-                    <div className='my-2'>
-                      {member.department && (
-                        <div className='my-1 flex items-start font-medium text-gray-600'>
-                          <div className='mt-1 h-[20px] w-[20px]'>
-                            <IoSchoolSharp size={20} />
-                          </div>
-                          <p className='ml-2'>{member.department}</p>
-                        </div>
-                      )}
+                            <GridItem colSpan={9}>
+                              <UnstyledLink
+                                href={selectedScholar?.social.resume || ''}
+                                className='ml-2 text-left font-semibold text-slate-600'
+                              >
+                                Resume
+                              </UnstyledLink>
+                            </GridItem>
+                          </>
+                        )}
+                      </Grid>
+                    </VStack>
+                  </GridItem>
 
-                      {member.organization && (
-                        <div className='my-1 flex items-start font-semibold text-sky-700'>
-                          <div className='mt-1 h-[20px] w-[20px]'>
-                            <BiBuildingHouse size={20} />
-                          </div>
-                          <p className='ml-2'>{member.organization}</p>
-                        </div>
-                      )}
-                    </div>
+                  <GridItem colSpan={6}>
+                    <VStack align='stretch'>
+                      <h2 className='text-2xl font-bold text-slate-800'>
+                        {selectedScholar?.name}
+                      </h2>
 
-                    <div className='mb-3 flex items-center font-semibold text-slate-600'>
-                      <MdLocationOn size={20} />
-                      <p className='ml-2'>{member.location}</p>
-                    </div>
+                      <h3 className='text-lg font-semibold text-slate-700'>
+                        Education
+                      </h3>
 
-                    <Divider />
-
-                    <p className='mb-1 mt-3 px-1 text-lg md:text-base'>
-                      {member.caption}
-                    </p>
-
-                    {/* <Divider className='my-2' /> */}
-
-                    {/* <ModulesSection modules={member.modules} /> */}
-
-                    {Object.keys(member.social).length > 0 && (
-                      <Divider className='my-2' />
-                    )}
-
-                    <ul className='flex space-x-3 sm:mt-0'>
-                      {'twitter' in member.social && (
-                        <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
-                          <a
-                            href={member.social.twitter}
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            className='cursor-newtab'
-                          >
-                            <AiOutlineTwitter size={25} />
-                            <span className='sr-only'> Twitter page </span>
-                          </a>
-                        </li>
-                      )}
-
-                      {'mastodon' in member.social && (
-                        <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
-                          <a
-                            href={member.social.mastodon as string | undefined}
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            className='cursor-newtab'
-                          >
-                            <BsMastodon size={20} />
-                            <span className='sr-only'> mastodon page </span>
-                          </a>
-                        </li>
-                      )}
-
-                      {'instagram' in member.social && (
-                        <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
-                          <a
-                            href={member.social.instagram as string}
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            className='cursor-newtab'
-                          >
-                            <RiInstagramFill size={20} />
-                            <span className='sr-only'> instagram page </span>
-                          </a>
-                        </li>
-                      )}
-
-                      {'github' in member.social && (
-                        <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
-                          <a
-                            href={member.social.github}
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            className='cursor-newtab'
-                          >
-                            <AiFillGithub size={25} />
-                            <span className='sr-only'> Github page </span>
-                          </a>
-                        </li>
-                      )}
-
-                      {'linkedin' in member.social && (
-                        <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
-                          <a
-                            href={member.social.linkedin}
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            className='cursor-newtab'
-                          >
-                            <AiFillLinkedin size={25} />
-                            <span className='sr-only'> Linkedin </span>
-                          </a>
-                        </li>
-                      )}
-
-                      {'profiles' in member.social && (
-                        <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
-                          <a
-                            href={member.social.profiles as string | undefined}
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            className='cursor-newtab'
-                          >
-                            <HiUserGroup size={20} />
-                            <span className='sr-only'> website </span>
-                          </a>
-                        </li>
-                      )}
-
-                      {'medprofile' in member.social && (
-                        <li className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'>
-                          <a
-                            href={
-                              member.social.medprofile as string | undefined
-                            }
-                            rel='noopener noreferrer'
-                            target='_blank'
-                            className='cursor-newtab'
-                          >
-                            <FaHospitalUser size={22} />
-                            <span className='sr-only'> website </span>
-                          </a>
-                        </li>
-                      )}
-
-                      {'website' in member.social &&
-                        member.social.website?.map((website: string) => (
-                          <li
-                            className='flex items-center justify-center text-gray-500 transition-all hover:text-sky-600'
-                            key={website}
-                          >
-                            <a
-                              href={website}
-                              rel='noopener noreferrer'
-                              target='_blank'
-                              className='cursor-newtab'
-                            >
-                              <BsGlobe size={20} />
-                              <span className='sr-only'> website </span>
-                            </a>
+                      <ul>
+                        {selectedScholar?.education.map((edu, index) => (
+                          <li key={index} className='text-base font-normal'>
+                            {edu.degree}{' '}
+                            {edu.institution && <>({edu.institution})</>}
                           </li>
                         ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </main>
-    </Layout>
-  </>
-);
+                      </ul>
+
+                      <h3 className='text-lg font-semibold text-slate-700'>
+                        Expertise
+                      </h3>
+
+                      <p>
+                        {selectedScholar?.expertise.map((expertise, index) => (
+                          <Tag
+                            key={index}
+                            colorScheme='blue'
+                            size='sm'
+                            className='mr-2'
+                          >
+                            {expertise}
+                          </Tag>
+                        ))}
+                      </p>
+
+                      <h3 className='text-lg font-semibold text-slate-700'>
+                        About Me
+                      </h3>
+
+                      <p className='text-base font-normal text-slate-600'>
+                        {selectedScholar?.about}
+                      </p>
+
+                      <h3 className='text-lg font-semibold text-slate-700'>
+                        After AI-READI
+                      </h3>
+
+                      <p className='text-base font-normal text-slate-600'>
+                        {selectedScholar?.after}
+                      </p>
+                    </VStack>
+                  </GridItem>
+                </Grid>
+              </ModalBody>
+            </ModalContent>
+          </Modal>
+        </main>
+      </Layout>
+    </>
+  );
+};
 
 export const getStaticProps = async () => {
-  const TeamMembers = await Promise.all(
+  const AllMembers = await Promise.all(
     TEAM_JSON.map(async (member) => {
       const {
         base64,
@@ -267,7 +329,7 @@ export const getStaticProps = async () => {
   ).then((values) => values);
 
   // sort by name
-  TeamMembers.sort((a, b) => {
+  AllMembers.sort((a, b) => {
     if (a.name < b.name) {
       return -1;
     }
@@ -279,26 +341,11 @@ export const getStaticProps = async () => {
     return 0;
   });
 
-  // sort modules by name
-  TeamMembers.forEach((member) => {
-    member.modules.sort((a, b) => {
-      if (a < b) {
-        return -1;
-      }
-
-      if (a > b) {
-        return 1;
-      }
-
-      return 0;
-    });
-  });
-
   return {
     props: {
-      TeamMembers,
+      AllMembers,
     },
   };
 };
 
-export default TeamPage;
+export default ScholarsPage;

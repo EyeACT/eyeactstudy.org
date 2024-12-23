@@ -59,6 +59,11 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      boxShadow: ['hover', 'hover:child'],
+    },
+  },
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),

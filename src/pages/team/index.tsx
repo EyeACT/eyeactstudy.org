@@ -17,6 +17,7 @@ import { InferGetStaticPropsType } from 'next';
 import Image from 'next/image';
 import { getPlaiceholder } from 'plaiceholder';
 import { useState } from 'react';
+import { FaRegBuilding } from 'react-icons/fa';
 import {
   FaGithub,
   FaGlobe,
@@ -26,7 +27,9 @@ import {
 } from 'react-icons/fa';
 import { FaCircleInfo } from 'react-icons/fa6';
 import { IoSchoolSharp } from 'react-icons/io5';
+import { IoLocationOutline } from 'react-icons/io5';
 import { MdOutlineBadge } from 'react-icons/md';
+import { PiUserListBold } from 'react-icons/pi';
 import { RiAwardFill } from 'react-icons/ri';
 
 import Layout from '@/components/layout/Layout';
@@ -41,11 +44,15 @@ interface Member {
   id: string;
   name: string;
   image: string;
+  organization: string;
   blurDataURL: string;
   moduleImageParams: string;
   education: { degree: string; institution: string }[];
-  expertise: string[];
+  expertise?: string[];
   about: string;
+  pronoun?: string;
+  roles?: string[];
+  location?: string;
   social: {
     linkedin?: string;
     resume?: string;
@@ -195,7 +202,7 @@ const ScholarsPage: React.FC<
                 >
                   {/* Left Section */}
                   <GridItem colSpan={4}>
-                    <VStack spacing={4} align='stretch'>
+                    <VStack spacing={4} align='stretch' className='h-full'>
                       <img
                         src={selectedScholar?.image}
                         alt={selectedScholar?.name}
@@ -313,9 +320,49 @@ const ScholarsPage: React.FC<
                   {/* Right Section */}
                   <GridItem colSpan={6}>
                     <VStack align='stretch'>
-                      <h2 className='text-4xl font-extrabold text-slate-900'>
-                        {selectedScholar?.name}
-                      </h2>
+                      <div className='flex flex-col items-center border-b-2 pb-2 align-middle'>
+                        <h2 className='mr-8 flex items-center text-4xl font-extrabold text-slate-900'>
+                          {selectedScholar?.name}
+                          <p className='ml-2 text-lg text-slate-700'>
+                            ({selectedScholar?.pronoun})
+                          </p>
+                        </h2>
+                        {/* Location */}
+                        <div className='flex h-full w-full items-center justify-center'>
+                          <IoLocationOutline
+                            size={22}
+                            className='text-slate-700'
+                          />
+
+                          <p className='ml-2 text-lg text-slate-700'>
+                            {selectedScholar?.location}
+                          </p>
+
+                          <FaRegBuilding
+                            size={22}
+                            className='ml-10 text-slate-700'
+                          />
+
+                          <p className='ml-2 text-lg text-slate-700'>
+                            {selectedScholar?.organization}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Roles */}
+                      <div className='mt-2 flex flex-wrap items-center gap-2'>
+                        <PiUserListBold size={26} />
+                        {selectedScholar?.roles?.map((role, index) => (
+                          <Tag
+                            key={index}
+                            colorScheme='green'
+                            size='lg'
+                            className='rounded-full px-3 py-1 shadow-sm'
+                          >
+                            {role}
+                          </Tag>
+                        ))}
+                      </div>
 
                       {/* Education */}
                       <div className='mt-4 flex items-center'>
@@ -341,7 +388,7 @@ const ScholarsPage: React.FC<
                       </ul>
 
                       {/* Expertise */}
-                      <div className='mt-6 flex items-center'>
+                      <div className='mt-4 flex items-center'>
                         <MdOutlineBadge
                           size={22}
                           className='mr-3 text-slate-700'
@@ -351,7 +398,7 @@ const ScholarsPage: React.FC<
                         </h3>
                       </div>
                       <div className='mt-2 flex flex-wrap gap-2'>
-                        {selectedScholar?.expertise.map((expertise, index) => (
+                        {selectedScholar?.expertise?.map((expertise, index) => (
                           <Tag
                             key={index}
                             colorScheme='blue'

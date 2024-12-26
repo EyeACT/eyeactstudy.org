@@ -17,8 +17,16 @@ import { InferGetStaticPropsType } from 'next';
 import Image from 'next/image';
 import { getPlaiceholder } from 'plaiceholder';
 import { useState } from 'react';
-import { FaLinkedin } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaGlobe,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from 'react-icons/fa';
+import { FaCircleInfo } from 'react-icons/fa6';
 import { IoSchoolSharp } from 'react-icons/io5';
+import { MdOutlineBadge } from 'react-icons/md';
 import { RiAwardFill } from 'react-icons/ri';
 
 import Layout from '@/components/layout/Layout';
@@ -175,7 +183,7 @@ const ScholarsPage: React.FC<
 
           <MembersGrid members={AllMembers} openModal={openModal} />
 
-          <Modal isOpen={isOpen} onClose={onClose} isCentered size='4xl'>
+          <Modal isOpen={isOpen} onClose={onClose} isCentered size='6xl'>
             <ModalOverlay />
             <ModalContent>
               <ModalCloseButton />
@@ -183,97 +191,189 @@ const ScholarsPage: React.FC<
                 <Grid
                   templateColumns='repeat(10, 1fr)'
                   gap={6}
-                  className='px-2 py-3'
+                  className='px-4 py-6'
                 >
+                  {/* Left Section */}
                   <GridItem colSpan={4}>
                     <VStack spacing={4} align='stretch'>
                       <img
                         src={selectedScholar?.image}
                         alt={selectedScholar?.name}
-                        className='h-full w-full rounded-lg object-cover object-center'
+                        className='h-full w-full rounded-lg object-cover object-center shadow-md'
                       />
-
-                      <Grid templateColumns='repeat(10, 1fr)' rowGap={3}>
+                      <Grid templateColumns='repeat(10, 1fr)' rowGap={4}>
                         {'linkedin' in (selectedScholar?.social || {}) && (
                           <>
                             <GridItem>
-                              <div className='my-auto flex items-center'>
-                                <FaLinkedin size={20} />
+                              <div className='flex items-center'>
+                                <UnstyledLink
+                                  href={selectedScholar?.social.linkedin || ''}
+                                  target='_blank'
+                                  rel='noopener noreferrer'
+                                  className='ml-2 text-left font-semibold text-blue-600 hover:text-blue-800'
+                                >
+                                  <FaLinkedin size={22} />
+                                </UnstyledLink>
                               </div>
                             </GridItem>
-
-                            <GridItem colSpan={9}>
-                              <UnstyledLink
-                                href={selectedScholar?.social.linkedin || ''}
-                                className='ml-2 text-left font-semibold text-slate-600'
-                              >
-                                LinkedIn Profile
-                              </UnstyledLink>
+                          </>
+                        )}
+                        {'resume' in (selectedScholar?.social || {}) && (
+                          <>
+                            {/* <GridItem></GridItem> */}
+                            <GridItem colSpan={1}>
+                              <div className='flex items-center'>
+                                <UnstyledLink
+                                  href={selectedScholar?.social.resume || ''}
+                                  target='_blank'
+                                  rel='noopener noreferrer'
+                                  className='ml-2 text-left font-semibold text-[#F9C801] hover:text-[#d0b442]'
+                                >
+                                  <RiAwardFill size={22} />
+                                </UnstyledLink>
+                              </div>
                             </GridItem>
                           </>
                         )}
 
-                        {'resume' in (selectedScholar?.social || {}) && (
+                        {'twitter' in (selectedScholar?.social || {}) && (
                           <>
-                            <GridItem>
-                              <RiAwardFill size={20} />
+                            <GridItem colSpan={1}>
+                              <div className='flex items-center'>
+                                <UnstyledLink
+                                  href={selectedScholar?.social.twitter || ''}
+                                  target='_blank'
+                                  rel='noopener noreferrer'
+                                  className='ml-2 text-left font-semibold text-[#26a7de] hover:text-[#1b95d6]'
+                                >
+                                  <FaTwitter size={22} />
+                                </UnstyledLink>
+                              </div>
                             </GridItem>
+                          </>
+                        )}
 
-                            <GridItem colSpan={9}>
-                              <UnstyledLink
-                                href={selectedScholar?.social.resume || ''}
-                                className='ml-2 text-left font-semibold text-slate-600'
-                              >
-                                Resume
-                              </UnstyledLink>
+                        {'instagram' in (selectedScholar?.social || {}) && (
+                          <>
+                            <GridItem colSpan={1}>
+                              <div className='flex items-center'>
+                                <UnstyledLink
+                                  href={selectedScholar?.social.instagram || ''}
+                                  target='_blank'
+                                  rel='noopener noreferrer'
+                                  className='ml-2 text-left font-semibold text-[#e4405f] hover:text-[#ae374d]'
+                                >
+                                  <FaInstagram size={22} />
+                                </UnstyledLink>
+                              </div>
                             </GridItem>
+                          </>
+                        )}
+
+                        {'github' in (selectedScholar?.social || {}) && (
+                          <>
+                            <GridItem colSpan={1}>
+                              <div className='flex items-center'>
+                                <UnstyledLink
+                                  href={selectedScholar?.social.github || ''}
+                                  target='_blank'
+                                  rel='noopener noreferrer'
+                                  className='ml-2 text-left font-semibold text-gray-700 hover:text-gray-900'
+                                >
+                                  <FaGithub size={22} />
+                                </UnstyledLink>
+                              </div>
+                            </GridItem>
+                          </>
+                        )}
+                        {'website' in (selectedScholar?.social || {}) && (
+                          <>
+                            {selectedScholar?.social.website?.map(
+                              (site, index) => (
+                                <GridItem colSpan={1} key={index}>
+                                  <div className='flex items-center'>
+                                    <UnstyledLink
+                                      href={site}
+                                      target='_blank'
+                                      rel='noopener noreferrer'
+                                      className='ml-2 text-left font-semibold text-gray-600 hover:text-gray-900'
+                                    >
+                                      <FaGlobe size={22} />
+                                    </UnstyledLink>
+                                  </div>
+                                </GridItem>
+                              ),
+                            )}
                           </>
                         )}
                       </Grid>
                     </VStack>
                   </GridItem>
 
+                  {/* Right Section */}
                   <GridItem colSpan={6}>
                     <VStack align='stretch'>
-                      <h2 className='text-2xl font-bold text-slate-800'>
+                      <h2 className='text-4xl font-extrabold text-slate-900'>
                         {selectedScholar?.name}
                       </h2>
 
-                      <h3 className='text-lg font-semibold text-slate-700'>
-                        Education
-                      </h3>
-
-                      <ul>
+                      {/* Education */}
+                      <div className='mt-4 flex items-center'>
+                        <IoSchoolSharp
+                          size={22}
+                          className='mr-3 text-slate-700'
+                        />
+                        <h3 className='text-xl font-bold text-slate-800'>
+                          Education
+                        </h3>
+                      </div>
+                      <ul className='mt-2 space-y-1'>
                         {selectedScholar?.education.map((edu, index) => (
-                          <li key={index} className='text-base font-normal'>
+                          <li key={index} className='text-lg text-slate-700'>
                             {edu.degree}{' '}
-                            {edu.institution && <>({edu.institution})</>}
+                            {edu.institution && (
+                              <span className='text-slate-600'>
+                                ({edu.institution})
+                              </span>
+                            )}
                           </li>
                         ))}
                       </ul>
 
-                      <h3 className='text-lg font-semibold text-slate-700'>
-                        Expertise
-                      </h3>
-
-                      <p>
+                      {/* Expertise */}
+                      <div className='mt-6 flex items-center'>
+                        <MdOutlineBadge
+                          size={22}
+                          className='mr-3 text-slate-700'
+                        />
+                        <h3 className='text-xl font-bold text-slate-800'>
+                          Expertise
+                        </h3>
+                      </div>
+                      <div className='mt-2 flex flex-wrap gap-2'>
                         {selectedScholar?.expertise.map((expertise, index) => (
                           <Tag
                             key={index}
                             colorScheme='blue'
-                            size='sm'
-                            className='mr-2'
+                            size='lg'
+                            className='rounded-full px-3 py-1 shadow-sm'
                           >
                             {expertise}
                           </Tag>
                         ))}
-                      </p>
+                      </div>
 
-                      <h3 className='text-lg font-semibold text-slate-700'>
-                        About Me
-                      </h3>
-
-                      <p className='text-base font-normal text-slate-600'>
+                      {/* About Me */}
+                      <div className='mt-6 flex items-center'>
+                        <FaCircleInfo
+                          size={22}
+                          className='mr-3 text-slate-700'
+                        />
+                        <h3 className='text-xl font-bold text-slate-800'>
+                          About Me
+                        </h3>
+                      </div>
+                      <p className='mt-2 text-lg leading-relaxed text-slate-700'>
                         {selectedScholar?.about}
                       </p>
                     </VStack>

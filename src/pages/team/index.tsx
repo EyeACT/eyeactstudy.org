@@ -63,14 +63,12 @@ const MembersGrid: React.FC<{
     >
       {members.map((scholar) => (
         <motion.div
-          // variants={FadeFramerItem}
+          className='transform items-center justify-between transition-transform hover:translate-y-[0px] hover:scale-105 hover:shadow-2xl'
           key={scholar.id + Math.random()}
           id={scholar.id}
           onClick={() => openModal(scholar.id)}
-          className='parent hover:child:shadow-xl flex h-full flex-col items-center justify-between rounded-lg border-solid bg-slate-50 px-4 py-4 transition-all hover:shadow-xl'
         >
-          <div key={scholar.name} className='w-full'>
-            {/* {scholar.tag.length > 0 ? (
+          {/* {scholar.tag.length > 0 ? (
               <Wrap>
                 {scholar.tag.map((tag) => (
                   <WrapItem key={tag}>
@@ -88,42 +86,42 @@ const MembersGrid: React.FC<{
             ) : (
               <div className='mb-2 h-[18px]'></div>
             )} */}
+          <div className='relative mx-auto min-h-[350px] w-full sm:min-h-[500px]'>
+            <Image
+              src={`${scholar.image}${
+                scholar.moduleImageParams != '' ? scholar.moduleImageParams : ''
+              }`}
+              alt={scholar.name + ' image'}
+              fill
+              placeholder='blur'
+              blurDataURL={scholar.blurDataURL}
+              className='child h-full w-full rounded-lg object-cover object-center'
+              sizes='(max-width: 768px) 100vw, 50vw'
+            />
+            <div className='relative left-[-6px] top-[431px] px-2'>
+              <h3 className='relative bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] pb-1 pl-4 text-left text-2xl font-extrabold text-white'>
+                {scholar.name}
+              </h3>
 
-            <div className='relative mx-auto mb-2 min-h-[350px] w-full sm:min-h-[500px]'>
-              <Image
-                src={`${scholar.image}${
-                  scholar.moduleImageParams != ''
-                    ? scholar.moduleImageParams
-                    : ''
-                }`}
-                alt={scholar.name + ' image'}
-                fill
-                placeholder='blur'
-                blurDataURL={scholar.blurDataURL}
-                className='child h-full w-full rounded-lg object-cover object-center'
-                sizes='(max-width: 768px) 100vw, 50vw'
-              />
-              <div className='relative left-[-5px] top-[434px] px-4'>
-                <h3 className='relative pb-1 text-left text-2xl font-extrabold text-white'>
-                  {scholar.name}
-                </h3>
+              <Grid
+                templateColumns='repeat(10, 1fr)'
+                className='relative bg-[radial-gradient(circle_at_40%_0%,rgba(0,0,0,0.8),transparent)] pl-4'
+              >
+                <GridItem>
+                  <IoSchoolSharp size={20} style={{ color: 'white' }} />
+                </GridItem>
 
-                <Grid templateColumns='repeat(10, 1fr)' className='relative'>
-                  <GridItem>
-                    <IoSchoolSharp size={20} style={{ color: 'white' }} />
-                  </GridItem>
+                <GridItem colSpan={9}>
+                  <p className='mb-2 text-left font-semibold text-white'>
+                    {scholar.education[0].degree}
+                  </p>
+                </GridItem>
 
-                  <GridItem colSpan={9}>
-                    <p className='mb-2 ml-2 text-left font-semibold text-white'>
-                      {scholar.education[0].degree}
-                    </p>
-                  </GridItem>
-
-                  {/* <GridItem>
+                {/* <GridItem>
                 <RiAwardFill size={20} />
               </GridItem> */}
 
-                  {/* <GridItem colSpan={9}>
+                {/* <GridItem colSpan={9}>
                 <Wrap>
                   {scholar.expertise.map((expertise, index) => (
                     <WrapItem key={index}>
@@ -134,19 +132,8 @@ const MembersGrid: React.FC<{
                   ))}
                 </Wrap>
               </GridItem> */}
-                </Grid>
-              </div>
+              </Grid>
             </div>
-
-            {/* <Button
-              size='sm'
-              colorScheme='teal'
-              className='mt-5 place-content-end'
-              rightIcon={<BsPlusCircleDotted />}
-              onClick={() => openModal(scholar.id)}
-            >
-              Expand
-            </Button> */}
           </div>
         </motion.div>
       ))}
@@ -188,7 +175,7 @@ const ScholarsPage: React.FC<
 
           <MembersGrid members={AllMembers} openModal={openModal} />
 
-          <Modal isOpen={isOpen} onClose={onClose} isCentered size='3xl'>
+          <Modal isOpen={isOpen} onClose={onClose} isCentered size='4xl'>
             <ModalOverlay />
             <ModalContent>
               <ModalCloseButton />

@@ -74,7 +74,7 @@ const MembersGrid: React.FC<{
       initial='hidden'
       whileInView='show'
       viewport={{ once: true }}
-      className='align-center mx-auto grid max-w-screen-xl gap-8 px-4 pb-8 pt-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-8 lg:px-6 lg:pb-16 lg:pt-8'
+      className='align-center mx-auto grid max-w-screen-xl gap-8 px-4 pb-8 pt-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-8 lg:px-8 lg:pb-16 lg:pt-8'
     >
       {members.map((scholar) => (
         <motion.div
@@ -83,7 +83,7 @@ const MembersGrid: React.FC<{
           id={scholar.id}
           onClick={() => openModal(scholar.id)}
         >
-          <div className='relative mx-auto min-h-[350px] w-full sm:min-h-[500px]'>
+          <div className='relative mx-auto min-h-[350px] w-full sm:min-h-[400px]'>
             <Image
               src={`${scholar.image}${
                 scholar.moduleImageParams !== ''

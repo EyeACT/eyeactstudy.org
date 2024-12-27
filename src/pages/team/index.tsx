@@ -166,7 +166,7 @@ const ScholarsPage: React.FC<
                       <img
                         src={selectedScholar?.image}
                         alt={selectedScholar?.name}
-                        className='h-full w-full rounded-lg object-cover object-center shadow-md'
+                        className='h-full max-h-[40rem] w-full rounded-lg object-cover object-center shadow-md'
                       />
                       {/* Social Icons */}
                       <Grid templateColumns='repeat(6, 1fr)' gap={4} rowGap={2}>

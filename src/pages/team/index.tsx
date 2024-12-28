@@ -141,7 +141,7 @@ const ScholarsPage: React.FC<
       <Layout>
         <Seo templateTitle='Scholars' />
 
-        <main>
+        <main className='bg-gradient-to-t from-sky-100 to-white'>
           <SkipNavContent />
 
           <h2 className='pt-8 text-center text-3xl font-extrabold tracking-tight sm:text-4xl lg:pt-16'>

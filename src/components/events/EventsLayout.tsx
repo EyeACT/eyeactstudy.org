@@ -1,4 +1,3 @@
-import { Divider, Tag, VStack } from '@chakra-ui/react';
 import dayjs from 'dayjs';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,60 +7,51 @@ import EventDates from '@/components/events/EventDates';
 const EventsLayout: React.FC<EventsLayoutProps> = ({ eventList }) => {
   return (
     <>
-      <hr className='mx-6 my-2 border-dashed border-slate-200' />
+      <hr className='mx-6 my-1 border-dashed border-slate-300' />
 
-      {eventList.map((event) => (
-        <div
-          className='mb-4 grid w-full grid-cols-12 items-start gap-3 border-b px-2 py-4 md:px-7'
-          key={event.slug}
-        >
-          <div className='col-span-8 px-4 py-3'>
-            <VStack spacing={4} align='flex-start'>
-              {dayjs(event.frontMatter.startDateTime).isAfter(dayjs()) && (
-                <Tag variant='subtle' colorScheme='twitter'>
-                  Upcoming
-                </Tag>
-              )}
-
-              <Link href={`/events/${event.slug}`} passHref>
-                <h2 className='mb-2 text-left text-3xl font-extrabold hover:underline'>
-                  {event.frontMatter.title}
-                </h2>
-              </Link>
-            </VStack>
-
-            <p className='py-2 font-medium text-slate-700'>
-              {event.frontMatter.subtitle}
-            </p>
-
-            <Divider />
-
-            <div className='flex flex-col space-y-1 py-2'>
-              <EventDates
-                startDateTime={event.frontMatter.startDateTime}
-                endDateTime={event.frontMatter.endDateTime}
-              />
-
-              <p className='my-1 text-sm font-light text-slate-600'>
-                {event.timeToRead} min read
-              </p>
-            </div>
-          </div>
-
-          <div className='col-span-4 pl-8 pr-8'>
+      <div className='grid grid-cols-1 gap-6 px-8 sm:grid-cols-2 lg:grid-cols-3'>
+        {eventList.map((event) => (
+          <div
+            key={event.slug}
+            className='group relative flex flex-col rounded-lg border border-gray-200 bg-white shadow-lg transition-shadow duration-300 hover:shadow-2xl'
+          >
             <Link href={`/events/${event.slug}`} passHref>
-              <div className='relative h-auto min-h-[200px] overflow-hidden rounded-xl sm:min-h-[300px] md:min-h-[300px]'>
+              <div className='relative h-56 overflow-hidden rounded-t-lg'>
                 <Image
                   src={event.frontMatter.heroImage}
                   alt={event.frontMatter.title}
                   fill
-                  className='h-full w-full cursor-pointer object-cover object-center transition-all hover:scale-[1.01] md:object-center'
+                  className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
                 />
+                {dayjs(event.frontMatter.startDateTime).isAfter(dayjs()) && (
+                  <span className='absolute left-4 top-4 rounded bg-blue-500 px-2 py-1 text-xs font-semibold text-white'>
+                    Upcoming
+                  </span>
+                )}
               </div>
             </Link>
+
+            <div className='flex flex-col p-5'>
+              <Link href={`/events/${event.slug}`} passHref>
+                <h3 className='text-lg font-bold text-gray-800 transition duration-300 group-hover:text-blue-500'>
+                  {event.frontMatter.title}
+                </h3>
+              </Link>
+              <p className='mt-2 text-sm text-gray-600'>
+                {event.frontMatter.subtitle}
+              </p>
+
+              <div className='mt-4 border-t pt-4 text-sm text-gray-500'>
+                <EventDates
+                  startDateTime={event.frontMatter.startDateTime}
+                  endDateTime={event.frontMatter.endDateTime}
+                />
+                <p className='mt-1'>{event.timeToRead} min read</p>
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </>
   );
 };

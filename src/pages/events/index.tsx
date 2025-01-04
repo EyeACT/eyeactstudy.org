@@ -18,17 +18,31 @@ const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
       <Layout>
         <Seo templateTitle='Events' />
 
-        <section className='relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-8 sm:py-10 lg:px-6'>
-          <div className='mb-5 px-2 pt-5 sm:pt-0 md:px-7'>
-            <h1 className='mb-2 text-left text-5xl font-bold'>Events</h1>
-
-            <h2 className='text-left text-xl'>
-              A record of all past, present and future events and workshops from
-              the EyeACT team are listed here.
-            </h2>
+        <section className='bg-gradient-to-t from-sky-100 via-white to-white'>
+          <div
+            className='relative flex h-[27rem] items-center justify-center text-center'
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            {/* Overlay */}
+            <div className='absolute inset-0 bg-black opacity-50'></div>
+            {/* Text Content */}
+            <div className='relative z-10'>
+              <h1 className='text-5xl font-bold text-white'>UPCOMING EVENTS</h1>
+              <h2 className='text-left text-xl text-white'>
+                A record of all past, present and future events and workshops
+                from the EyeACT team are listed here.
+              </h2>
+            </div>
           </div>
 
-          <EventsLayout eventList={eventList} />
+          <div className='relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-8 lg:px-6'>
+            <EventsLayout eventList={eventList} />
+          </div>
         </section>
       </Layout>
     </>

@@ -1,7 +1,7 @@
 import { SkipNavLink } from '@chakra-ui/skip-nav';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
-import Lottie from 'react-lottie-player';
 
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
@@ -14,6 +14,9 @@ const fadeInVariants = {
     transition: { delay: i * 0.2, duration: 0.5 },
   }),
 };
+
+// Dynamically import Lottie to disable SSR
+const Lottie = dynamic(() => import('react-lottie-player'), { ssr: false });
 
 const Comingsoon: React.FC = () => {
   const [animationData, setAnimationData] = useState<any>(null);

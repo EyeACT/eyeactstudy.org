@@ -11,6 +11,14 @@ import Seo from '@/components/Seo';
 // The Blog Page Content
 
 const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
+  const pastEvents = eventList.filter((event) =>
+    dayjs(event.frontMatter.startDateTime).isBefore(dayjs()),
+  );
+
+  const upcomingEvents = eventList.filter((event) =>
+    dayjs(event.frontMatter.startDateTime).isAfter(dayjs()),
+  );
+
   return (
     <>
       <SkipNavLink>Skip to content</SkipNavLink>
@@ -41,7 +49,19 @@ const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
           </div>
 
           <div className='relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-8 lg:px-6'>
-            <EventsLayout eventList={eventList} />
+            <EventsLayout eventList={upcomingEvents} />
+
+            <div
+              className='relative my-8 flex justify-center rounded shadow-sm'
+              style={{
+                backgroundImage: 'linear-gradient(to bottom, #f9f9f9, #eaeaea)',
+                padding: '2rem 0',
+              }}
+            >
+              <h2 className='text-5xl font-bold text-sky-700'>PAST EVENTS</h2>
+            </div>
+
+            <EventsLayout eventList={pastEvents} />
           </div>
         </section>
       </Layout>

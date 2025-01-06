@@ -2,7 +2,7 @@
 title: 'Introduction to AI-READI, Studying Salutogenesis in T2DM'
 startDateTime: '2024-10-10T12:00:00'
 endDateTime: '2024-10-10T15:00:00'
-heroImage: 'https://images.unsplash.com/photo-1560439514-e960a3ef5019?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+heroImage: 'https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 subtitle: 'This lecture, in collaboration with the Grand Challenges (GCs) at Bridge2AI, the Bridge Center Training, Recruitment, and Mentorship Working Group introduces a new education module: “Introduction to the Bridge2AI GC Datasets".'
 type: 'Lecture'
 timeZone: 'America/New_York'

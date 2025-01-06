@@ -1,21 +1,25 @@
-/* eslint-disable @next/next/no-img-element */
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav';
 import { useEffect, useState } from 'react';
-import Lottie from 'react-lottie-player';
+import dynamic from 'next/dynamic';
 
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
+// Dynamically import Lottie to disable SSR
+const Lottie = dynamic(() => import('react-lottie-player'), { ssr: false });
+
 const Dataset: React.FC = () => {
-  const [animationData, setAnimationData] = useState(null);
+  const [animationData, setAnimationData] = useState<any>(null);
 
   useEffect(() => {
-    import('public/lotties/construction.json').then((data: any) =>
-      setAnimationData(data),
-    );
+    // Dynamically import the animation JSON to avoid issues with SSR
+    import('public/lotties/construction.json').then((data) => {
+      setAnimationData(data);
+    });
   }, []);
 
   if (!animationData) return <div>Loading animation...</div>;
+
   return (
     <>
       <SkipNavLink>Skip to content</SkipNavLink>
@@ -50,8 +54,6 @@ const Dataset: React.FC = () => {
                   style={{ width: '100%', height: 'auto' }}
                 />
               </div>
-
-              {/* <Viz /> */}
             </div>
           </section>
         </main>

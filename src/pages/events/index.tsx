@@ -40,7 +40,7 @@ const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
             <div className='absolute inset-0 bg-black opacity-50'></div>
             {/* Text Content */}
             <div className='relative'>
-              <h1 className='text-5xl font-bold text-white'>UPCOMING EVENTS</h1>
+              <h1 className='text-4xl font-bold text-white'>UPCOMING EVENTS</h1>
               <h2 className='text-left text-xl text-white'>
                 A record of all past, present and future events and workshops
                 from the EyeACT team are listed here.
@@ -58,7 +58,7 @@ const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
                 padding: '2rem 0',
               }}
             >
-              <h2 className='text-5xl font-bold text-sky-700'>PAST EVENTS</h2>
+              <h2 className='text-4xl font-bold text-sky-700'>PAST EVENTS</h2>
             </div>
 
             <EventsLayout eventList={pastEvents} />

@@ -9,7 +9,7 @@ const EventsLayout: React.FC<EventsLayoutProps> = ({ eventList }) => {
     <>
       <hr className='mx-6 my-1 border-dashed border-slate-300' />
 
-      <div className='flex flex-wrap gap-6 px-8'>
+      <div className='flex flex-wrap gap-8 px-8'>
         {eventList.map((event) => (
           <div
             key={event.slug}
@@ -32,11 +32,11 @@ const EventsLayout: React.FC<EventsLayoutProps> = ({ eventList }) => {
             </div>
             <div className='flex flex-1 flex-col p-5'>
               <Link href={`/events/${event.slug}`} passHref>
-                <h3 className='text-lg font-bold text-gray-800 transition duration-300 group-hover:text-blue-500'>
+                <h3 className='text-xl font-bold text-gray-800 transition duration-300 group-hover:text-blue-500'>
                   {event.frontMatter.title}
                 </h3>
               </Link>
-              <p className='mt-2 text-sm text-gray-600'>
+              <p className='mt-2 text-lg text-gray-600'>
                 {event.frontMatter.subtitle}
               </p>
               <div className='mt-4 border-t pt-4 text-sm text-gray-500'>

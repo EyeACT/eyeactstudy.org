@@ -31,7 +31,7 @@ const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
             {/* Overlay */}
             <div className='absolute inset-0 bg-black opacity-50'></div>
             {/* Text Content */}
-            <div className='relative z-10'>
+            <div className='relative'>
               <h1 className='text-5xl font-bold text-white'>UPCOMING EVENTS</h1>
               <h2 className='text-left text-xl text-white'>
                 A record of all past, present and future events and workshops

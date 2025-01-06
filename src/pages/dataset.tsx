@@ -1,12 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav';
-import animationData from 'public/lotties/construction.json';
+import { useEffect, useState } from 'react';
 import Lottie from 'react-lottie-player';
 
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 const Dataset: React.FC = () => {
+  const [animationData, setAnimationData] = useState(null);
+
+  useEffect(() => {
+    import('public/lotties/construction.json').then((data: any) =>
+      setAnimationData(data),
+    );
+  }, []);
+
+  if (!animationData) return <div>Loading animation...</div>;
   return (
     <>
       <SkipNavLink>Skip to content</SkipNavLink>

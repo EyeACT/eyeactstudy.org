@@ -74,7 +74,8 @@ const MembersGrid: React.FC<{
       initial='hidden'
       whileInView='show'
       viewport={{ once: true }}
-      className='align-center mx-auto grid max-w-screen-xl gap-8 px-4 pb-8 pt-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-8 lg:px-8 lg:pb-16 lg:pt-8'
+      className='align-center mx-auto grid max-w-screen-xl gap-8 px-4 pb-8 pt-4 text-center lg:gap-8 lg:px-8 lg:pb-16 lg:pt-8'
+      style={{ gridTemplateColumns: '1fr' }} // Ensures vertical stacking
     >
       {members.map((scholar) => (
         <motion.div

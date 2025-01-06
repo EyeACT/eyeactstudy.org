@@ -9,7 +9,7 @@ const EventsLayout: React.FC<EventsLayoutProps> = ({ eventList }) => {
     <>
       <hr className='mx-6 my-1 border-dashed border-slate-300' />
 
-      <div className='grid grid-cols-1 gap-6 px-8 sm:grid-cols-2 lg:grid-cols-3'>
+      <div className='flex flex-col gap-6 px-8'>
         {eventList.map((event) => (
           <div
             key={event.slug}
@@ -22,6 +22,7 @@ const EventsLayout: React.FC<EventsLayoutProps> = ({ eventList }) => {
                   alt={event.frontMatter.title}
                   fill
                   className='h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105'
+                  style={{ aspectRatio: '16 / 9' }} // Dynamically adjust aspect ratio
                 />
                 {dayjs(event.frontMatter.startDateTime).isAfter(dayjs()) && (
                   <span className='absolute left-4 top-4 rounded bg-blue-500 px-2 py-1 text-xs font-semibold text-white'>

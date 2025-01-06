@@ -1,6 +1,6 @@
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav';
-import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
 
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';

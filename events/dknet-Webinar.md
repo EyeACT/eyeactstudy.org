@@ -2,7 +2,7 @@
 title: 'Introduction to AI-READI, Studying Salutogenesis in T2DM'
 startDateTime: '2024-10-11T11:00:00'
 endDateTime: '2024-10-11T12:00:00'
-heroImage: 'https://images.unsplash.com/photo-1560439514-e960a3ef5019?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+heroImage: 'https://images.unsplash.com/photo-1561491431-71b89da6056a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 subtitle: 'This webinar will introduce the AI-READI project, present the dataset, show how to request it, and explore research questions for machine learning, such as predicting health improvement in T2DM, understanding disease progression, and investigating risk factors.'
 type: 'Webinar '
 timeZone: 'America/Los_Angeles'

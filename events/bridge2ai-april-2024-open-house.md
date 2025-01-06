@@ -2,7 +2,7 @@
 title: 'Bridge2AI April 2024 Open House'
 startDateTime: '2024-04-18T15:45:00'
 endDateTime: '2024-04-19T17:00:00'
-heroImage: 'https://images.unsplash.com/photo-1576085898323-218337e3e43c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+heroImage: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 subtitle: 'People, Ethics and Data'
 type: 'Conference'
 timeZone: 'America/New_York'

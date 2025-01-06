@@ -11,6 +11,14 @@ import Seo from '@/components/Seo';
 // The Blog Page Content
 
 const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
+  const pastEvents = eventList.filter((event) =>
+    dayjs(event.frontMatter.startDateTime).isBefore(dayjs()),
+  );
+
+  const upcomingEvents = eventList.filter((event) =>
+    dayjs(event.frontMatter.startDateTime).isAfter(dayjs()),
+  );
+
   return (
     <>
       <SkipNavLink>Skip to content</SkipNavLink>
@@ -18,17 +26,54 @@ const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
       <Layout>
         <Seo templateTitle='Events' />
 
-        <section className='relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-8 sm:py-10 lg:px-6'>
-          <div className='mb-5 px-2 pt-5 sm:pt-0 md:px-7'>
-            <h1 className='mb-2 text-left text-5xl font-bold'>Events</h1>
-
-            <h2 className='text-left text-xl'>
-              A record of all past, present and future events and workshops from
-              the EyeACT team are listed here.
-            </h2>
+        <section className='bg-gradient-to-t from-sky-100 via-white to-white'>
+          <div
+            className='relative flex h-[27rem] items-center justify-center text-center'
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            {/* Overlay */}
+            <div className='absolute inset-0 bg-black opacity-50'></div>
+            {/* Text Content */}
+            <div className='relative'>
+              <h1 className='text-4xl font-bold text-white'>EVENTS</h1>
+              <h2 className='text-left text-xl text-white'>
+                A record of all past, present and future events and workshops
+                from the EyeACT team are listed here.
+              </h2>
+            </div>
           </div>
 
-          <EventsLayout eventList={eventList} />
+          <div className='relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-8 lg:px-6'>
+            <div
+              className='relative my-6 flex justify-center rounded shadow-sm'
+              style={{
+                backgroundImage: 'linear-gradient(to bottom, #f9f9f9, #eaeaea)',
+                padding: '2rem 0',
+              }}
+            >
+              <h2 className='text-4xl font-bold text-sky-700'>
+                UPCOMING EVENTS
+              </h2>
+            </div>
+            <EventsLayout eventList={upcomingEvents} />
+
+            <div
+              className='relative my-6 flex justify-center rounded shadow-sm'
+              style={{
+                backgroundImage: 'linear-gradient(to bottom, #f9f9f9, #eaeaea)',
+                padding: '2rem 0',
+              }}
+            >
+              <h2 className='text-4xl font-bold text-sky-700'>PAST EVENTS</h2>
+            </div>
+
+            <EventsLayout eventList={pastEvents} />
+          </div>
         </section>
       </Layout>
     </>

@@ -1,6 +1,7 @@
 import { SkipNavLink } from '@chakra-ui/skip-nav';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import Lottie from 'react-lottie-player';
 
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
@@ -15,6 +16,16 @@ const fadeInVariants = {
 };
 
 const Comingsoon: React.FC = () => {
+  const [animationData, setAnimationData] = useState<any>(null);
+
+  useEffect(() => {
+    // Dynamically import the animation JSON to avoid issues with SSR
+    import('public/lotties/construction.json').then((data) => {
+      setAnimationData(data);
+    });
+  }, []);
+
+  if (!animationData) return <div>Loading animation...</div>;
   return (
     <>
       <SkipNavLink>Skip to content</SkipNavLink>
@@ -36,17 +47,17 @@ const Comingsoon: React.FC = () => {
             </motion.h1>
             <figure className='mt-10'>
               <motion.div
-                className='mx-auto mb-8 h-40 w-40 rounded-lg shadow-xl'
+                className='mx-auto mb-8'
                 variants={fadeInVariants}
                 initial='hidden'
                 animate='visible'
                 custom={1}
               >
-                <Image
-                  alt='Coming Soon'
-                  width={160}
-                  height={160}
-                  src='https://images.unsplash.com/photo-1725917482759-435bfa3d8d93?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                <Lottie
+                  loop
+                  animationData={animationData}
+                  play
+                  style={{ width: '100%', height: 'auto' }}
                 />
               </motion.div>
               <motion.blockquote

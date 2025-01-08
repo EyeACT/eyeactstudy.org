@@ -204,7 +204,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section> */}
 
-          <section className='bg-gradient-to-t from-sky-100 to-white px-8 py-16'>
+          <section className='bg-gradient-to-t from-sky-100 to-white px-8 py-10'>
             <div className='mx-auto max-w-7xl text-center text-black'>
               <motion.h2
                 variants={fadeInVariants}

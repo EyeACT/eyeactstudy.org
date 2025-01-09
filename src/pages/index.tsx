@@ -49,7 +49,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
   const cardData = [
     {
       id: 1,
-      title: 'Understanding Eye Conditions',
+      title: 'How Eye Conditions Provide Early Warning Signs',
       description:
         'Explore the link between glaucoma, macular degeneration, and diabetic retinopathy with Alzheimer’s disease risk. Our research sheds light on the underlying mechanisms.',
       linkText: 'Learn More',
@@ -59,7 +59,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     },
     {
       id: 2,
-      title: 'The ACT Study',
+      title: 'ACT Study Contributions to Eye-Brain Research',
       description:
         'With over 5,400 participants, the Adult Changes in Thought study provides unique insights into dementia-free aging and the role of eye health in neurodegeneration',
       linkText: 'Learn About Our Study',
@@ -69,7 +69,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     },
     {
       id: 3,
-      title: 'Improving early detection',
+      title: 'Transforming Early Detection Through Research',
       description:
         'Discover how monitoring ophthalmic conditions may lead to earlier interventions for Alzheimer’s disease and related dementias.',
       linkText: 'Find Out How',
@@ -83,7 +83,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     {
       id: 1,
       title: 'Detailed Data Collection',
-      subtitle: 'Comprehensive Insights into Alzheimer’s Risk',
+      subtitle: 'Expanding the Understanding of Alzheimer’s Risk Factors',
       description:
         'Our study collects data beyond eye health, including genetic factors like APOE genotypes, medical history, and cognitive evaluations, providing a holistic understanding of Alzheimer’s risk.',
     },
@@ -249,7 +249,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             <div className='mx-auto max-w-screen-xl border-b-2 border-gray-300 pt-32 lg:pt-24'></div>
           </section>
 
-          <section className='bg-gradient-to-t from-white to-sky-100 px-8 py-16'>
+          <section className='bg-gradient-to-t from-white to-sky-100 px-8 py-24'>
             <div className='mx-auto max-w-7xl text-center text-black'>
               <motion.h2
                 variants={fadeInVariants}
@@ -315,7 +315,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white py-20'>
+          <section className='bg-gradient-to-t from-sky-100 to-white py-10'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -326,7 +326,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             >
               <div className='px-5 lg:max-w-2xl'>
                 <h1 className='mb-4 text-3xl font-bold tracking-tight sm:text-4xl'>
-                  How the ACT Study Provides Key Insights
+                  Shaping the Future of Alzheimer’s Detection and Care
                 </h1>
                 <p className='mb-6 text-lg text-gray-700 sm:mb-4'>
                   Our study analyzes data from over 3,877 participants aged 65
@@ -336,7 +336,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 </p>
 
                 <div>
-                  <ButtonLink href='/dataset' variant='outline'>
+                  <ButtonLink href='/dataset' variant='primary'>
                     View Our Methods and Results
                   </ButtonLink>
                 </div>
@@ -351,7 +351,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-white to-sky-100 pt-20'>
+          <section className='bg-gradient-to-t from-white to-sky-100 py-20'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -362,7 +362,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             >
               <div className='px-5 lg:max-w-2xl'>
                 <h1 className='mb-4 text-3xl font-bold tracking-tight sm:text-4xl'>
-                  Unveiling the Link Between Eye Health and Alzheimer's Disease
+                  Revolutionizing Alzheimer’s Research Through Ophthalmology
                 </h1>
                 <p className='mb-6 text-lg text-gray-700 sm:mb-4'>
                   Our research, conducted as part of the Adult Changes in

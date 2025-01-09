@@ -32,7 +32,7 @@ const ContactUs: React.FC = () => {
         <main>
           <SkipNavContent />
 
-          <section className='bg-white'>
+          <section className='bg-gradient-to-t from-sky-100 to-white'>
             <div className='mx-auto max-w-screen-md px-4 py-8 lg:pb-0 lg:pt-16'>
               <h1 className='mb-1 text-center text-3xl font-extrabold tracking-tight sm:text-4xl'>
                 Contact Us

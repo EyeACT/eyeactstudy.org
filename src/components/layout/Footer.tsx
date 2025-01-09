@@ -60,7 +60,7 @@ export default function Footer() {
               </span>
             </a>
             <span className='pb-2 pt-3 text-lg font-semibold text-sky-700'>
-              At fugit recusandae aut aliquam. Quisquam et voluptatem. Quisquam
+              Advancing Alzheimer's Research
             </span>
 
             <Divider orientation='horizontal' />
@@ -68,11 +68,10 @@ export default function Footer() {
             <div className='flex flex-col pt-6'>
               <div className='flex flex-col justify-start'>
                 <p className='pt-2 text-sm font-medium text-sky-900'>
-                  Ea autem excepturi qui atque rerum ut perspiciatis quis aut
-                  velit quasi sed laboriosam sapiente. Et fuga voluptas sed
-                  velit consequuntur non debitis perspiciatis. Et illum officia
-                  non ullam nobis eum saepe temporibus vel beatae tenetur est
-                  laudantium tempora est sint nisi 33 praesentium officia!
+                  EyeACT bridges the connection between eye health and brain
+                  function, pioneering research to uncover early indicators of
+                  Alzheimer’s disease. Our mission is to transform how we detect
+                  and prevent neurodegenerative disorders.
                 </p>
               </div>
             </div>

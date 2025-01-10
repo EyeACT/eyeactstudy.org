@@ -88,7 +88,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     },
     {
       id: 2,
-      title: 'Longitudinal Follow-Up',
+      title: 'Long-Term Follow-Up',
       subtitle: 'Decades of Data for Deeper Understanding',
       description:
         'With over 31,142 person-years of follow-up, the ACT study offers insights into how ophthalmic conditions evolve and their impact on brain health.',

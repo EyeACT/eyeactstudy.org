@@ -28,7 +28,7 @@ const footerLinks = [
       },
       {
         title: 'GitHub',
-        href: 'https://github.com/AI-READI',
+        href: 'https://github.com/EyeACT',
       },
       // {
       //   title: 'Components',
@@ -60,7 +60,7 @@ export default function Footer() {
               </span>
             </a>
             <span className='pb-2 pt-3 text-lg font-semibold text-sky-700'>
-              Advancing Alzheimer's Research
+              Seeing the Future of Brain Health Through the Eyes
             </span>
 
             <Divider orientation='horizontal' />

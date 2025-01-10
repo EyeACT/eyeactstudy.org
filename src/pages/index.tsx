@@ -6,7 +6,6 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
 
-import ImageWithCredit from '@/components/images/ImageWithCredit';
 import Layout from '@/components/layout/Layout';
 import ButtonLink from '@/components/links/ButtonLink';
 import Seo from '@/components/Seo';
@@ -92,7 +91,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       title: 'Longitudinal Follow-Up',
       subtitle: 'Decades of Data for Deeper Understanding',
       description:
-        'With over 31,142 person-years of follow-up, the ACT study offers unmatched insights into how ophthalmic conditions evolve and their impact on brain health.',
+        'With over 31,142 person-years of follow-up, the ACT study offers insights into how ophthalmic conditions evolve and their impact on brain health.',
     },
     {
       id: 3,
@@ -161,7 +160,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white pb-0 pt-20'>
+          <section className='bg-gradient-to-t from-sky-100 to-white pb-0 pt-16'>
             <div className='mx-auto max-w-screen-xl text-center'>
               <motion.h2
                 variants={fadeInVariants}
@@ -315,7 +314,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white py-10'>
+          <section className='bg-gradient-to-t from-sky-100 to-white'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -342,16 +341,16 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 </div>
               </div>
               <div className='flex w-full items-center justify-center px-5 py-5'>
-                <ImageWithCredit
-                  src='https://images.unsplash.com/photo-1727705744337-5da00ac764a6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                <img
+                  src='https://images.unsplash.com/photo-1518152006812-edab29b069ac?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                   alt=''
-                  author='lorem ipsum'
+                  className='rounded-lg'
                 />
               </div>
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-white to-sky-100 py-20'>
+          <section className='bg-gradient-to-t from-white to-sky-100 py-24'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -365,14 +364,10 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   Revolutionizing Alzheimer’s Research Through Ophthalmology
                 </h1>
                 <p className='mb-6 text-lg text-gray-700 sm:mb-4'>
-                  Our research, conducted as part of the Adult Changes in
-                  Thought (ACT) study, investigates how ophthalmic conditions
-                  like glaucoma, age-related macular degeneration (AMD), and
-                  diabetic retinopathy (DR) may increase the risk of Alzheimer's
-                  disease. With rigorous cognitive assessments, genetic
-                  analysis, and long-term follow-ups, we aim to shed light on
-                  the role of eye health as a window into neurodegenerative
-                  processes.
+                  Our research shows how changes in the retina mirror
+                  neurodegenerative processes, providing an accessible window
+                  into brain health. By identifying retinal biomarkers, we’re
+                  creating tools for non-invasive Alzheimer’s risk assessment.
                 </p>
 
                 <div>
@@ -384,14 +379,14 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
               <div className='flex w-full items-center justify-center px-5 py-5'>
                 <img
                   className='rounded-lg'
-                  src='https://images.unsplash.com/photo-1726344603918-156e119eb6d7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  src='https://images.unsplash.com/photo-1711409664431-4e7914ac2370?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                   alt='lorem ipsum'
                 />
               </div>
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white py-10'>
+          <section className='bg-gradient-to-t from-sky-100 to-white py-14'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'

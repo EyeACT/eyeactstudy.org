@@ -21,6 +21,7 @@ import { WidthFramerContainer } from '@/utils/framer';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 
+// Missing items will be added to the events list
 const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
   const {
     title,
@@ -35,7 +36,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
 
   const fadeInVariants = {
     hidden: { opacity: 0, y: 20 },
-    show: (i: any) => ({
+    show: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: { delay: i * 0.2, duration: 0.5 },

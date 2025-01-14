@@ -134,11 +134,12 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   custom={2}
                   className='mt-4 bg-[radial-gradient(circle_at_50%_90%,rgba(0,0,0,0.8),transparent)] text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl'
                 >
-                  Our research sheds light on how ophthalmic conditions such as
-                  glaucoma and diabetic retinopathy can provide early clues to
-                  Alzheimer’s disease. By understanding the connection between
-                  the eyes and brain, we aim to drive advancements in early
-                  detection and prevention of neurodegenerative diseases.
+                  The Eye ACT study aims sheds light on how ophthalmic
+                  conditions such as glaucoma and diabetic retinopathy can
+                  provide early clues to Alzheimer’s disease. By understanding
+                  the connection between the eyes and brain, we aim to drive
+                  advancements in early detection and prevention of
+                  neurodegenerative diseases.
                 </motion.p>
                 <motion.div
                   variants={fadeInVariants}
@@ -294,7 +295,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                     />
                     <div className='flex flex-grow flex-col p-6'>
                       <h3 className='mb-2 text-xl font-bold text-black'>
-                        {`0${entry.id}`} <br /> {entry.title}
+                        {entry.title}
                       </h3>
                       <p className='mb-4 flex-grow text-gray-700'>
                         {entry.description}
@@ -335,7 +336,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 </p>
 
                 <div>
-                  <ButtonLink href='/dataset' variant='primary'>
+                  <ButtonLink href='/publications' variant='primary'>
                     View Our Methods and Results
                   </ButtonLink>
                 </div>

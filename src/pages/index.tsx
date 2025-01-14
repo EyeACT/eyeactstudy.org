@@ -45,9 +45,9 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
   const cardData = [
     {
       id: 1,
-      title: 'Retinal Imaging and Alzheimer’s Risk',
+      title: 'Revolutionizing Retinal Imaging',
       description:
-        'Our cutting-edge research demonstrates how advanced imaging techniques like OCT and OCTA can detect early retinal changes that correlate with neurodegeneration in Alzheimer’s disease.',
+        'Our research utilizes advanced imaging techniques such as OCT and OCTA to detect early retinal changes. These insights provide a clearer understanding of the relationship between retinal health and Alzheimer’s disease progression.',
       linkText: 'Learn More',
       linkUrl: '',
       imgSrc:
@@ -55,19 +55,19 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     },
     {
       id: 2,
-      title: 'Personalized Early Detection Tools',
+      title: 'Innovative Detection Strategies',
       description:
-        'By identifying retinal biomarkers, EyeACT is pioneering non-invasive, personalized tools that can predict Alzheimer’s risk years before symptoms emerge.',
-      linkText: 'Explore Our Methods',
+        'By identifying key retinal biomarkers, EyeACT is pioneering tools that predict Alzheimer’s risk years before clinical symptoms emerge, offering a unique approach to early detection.',
+      linkText: 'Discover Our Approach',
       linkUrl: '',
       imgSrc:
         'https://images.unsplash.com/photo-1579684385127-1ef15d508118?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       id: 3,
-      title: 'Transforming Clinical Applications',
+      title: 'Transforming Patient Care',
       description:
-        'Discover how the integration of eye health and brain research can transform Alzheimer’s treatment by enabling early, targeted interventions that improve patient outcomes.',
+        'EyeACT integrates eye and brain research to inform targeted interventions for Alzheimer’s. These breakthroughs are shaping personalized treatments to improve patient outcomes.',
       linkText: 'Find Out How',
       linkUrl: '',
       imgSrc:
@@ -79,24 +79,23 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     {
       id: 1,
       title: 'Detailed Data Collection',
-      subtitle:
-        'Focusing on the Connection Between Eye Health and Alzheimer’s Risk',
+      subtitle: 'Integrating Eye and Brain Health Insights',
       description:
-        'The EyeACT study collects comprehensive data on ophthalmic conditions, such as glaucoma, age-related macular degeneration (AMD), and diabetic retinopathy (DR). By integrating eye health data with Alzheimer’s risk assessments, the study sheds light on how changes in the retina may signal neurodegenerative processes.',
+        'EyeACT combines advanced imaging, genetic data, and clinical evaluations to uncover the connection between retinal changes and neurodegenerative processes. By analyzing ophthalmic data with Alzheimer’s risk factors, the study offers actionable insights for early intervention.',
     },
     {
       id: 2,
       title: 'Long-Term Follow-Up',
-      subtitle: 'Tracking Ophthalmic Changes Over Time',
+      subtitle: 'Revealing Retinal Health Trends Over Time',
       description:
-        'Through long-term monitoring of participants, the EyeACT study explores the progression of ophthalmic conditions and their relationship to Alzheimer’s disease risk, providing insights into how eye health and brain health intersect.',
+        'With ongoing monitoring, EyeACT tracks how retinal biomarkers evolve alongside cognitive decline. This long-term approach offers unique insights into how eye health may predict brain health changes, advancing Alzheimer’s detection strategies.',
     },
     {
       id: 3,
       title: 'Rigorous Analytical Methods',
-      subtitle: 'Innovative Approaches to Eye-Brain Research',
+      subtitle: 'Innovative Non-Invasive Diagnostic Tools',
       description:
-        'The EyeACT study uses imaging technologies and statistical models to analyze the link between eye health and Alzheimer’s risk. By examining retinal biomarkers and other ophthalmic indicators, the study is pioneering non-invasive methods for early detection.',
+        'Using imaging technologies and statistical analysis, EyeACT identifies retinal biomarkers that align with Alzheimer’s risk. These non-invasive methods are transforming early detection and paving the way for personalized care.',
     },
   ];
 
@@ -132,7 +131,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   custom={2}
                   className='mt-4 bg-[radial-gradient(circle_at_50%_90%,rgba(0,0,0,0.8),transparent)] text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl'
                 >
-                  The Eye ACT study aims sheds light on how ophthalmic
+                  The Eye ACT study aims provides insights on how ophthalmic
                   conditions such as glaucoma and diabetic retinopathy can
                   provide early clues to Alzheimer’s disease. By understanding
                   the connection between the eyes and brain, we aim to drive
@@ -279,74 +278,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white pb-8 pt-8'>
-            <motion.div
-              variants={fadeInVariants}
-              initial='hidden'
-              whileInView='show'
-              viewport={{ once: true }}
-              custom={0}
-              className="mx-auto max-w-screen-xl rounded-md bg-[url('/images/polygon-card.svg')] shadow-lg"
-            >
-              <div className='mx-auto flex max-w-7xl flex-col items-center md:flex-row'>
-                <div className='relative flex-shrink-0 md:w-1/2'>
-                  <motion.div
-                    variants={fadeInVariants}
-                    initial='hidden'
-                    whileInView='show'
-                    viewport={{ once: true }}
-                    custom={0}
-                    className='absolute inset-0 flex flex-col items-center justify-center'
-                  >
-                    <Image
-                      src='https://images.unsplash.com/photo-1615552440985-d652ebf4c199?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                      width={500}
-                      height={500}
-                      alt='Retinal Imaging'
-                      className='rounded-full shadow-md'
-                    />
-                  </motion.div>
-                </div>
-
-                <div className='my-10 flex flex-col md:w-1/2 md:pl-10'>
-                  <motion.div
-                    variants={fadeInVariants}
-                    initial='hidden'
-                    whileInView='show'
-                    viewport={{ once: true }}
-                    custom={1}
-                  >
-                    <h2 className='mb-4 text-2xl font-semibold text-black'>
-                      Connecting Eye Health to Brain Function
-                    </h2>
-                    <p className='mb-6 text-gray-700'>
-                      Retinal changes, such as progressive neurodegeneration,
-                      microvascular damage, and amyloid β deposits, provide a
-                      window into brain health. These biomarkers are now
-                      recognized as early indicators of Alzheimer’s and other
-                      neurodegenerative conditions.
-                    </p>
-                    <div className='flex items-center space-x-4'>
-                      <div className='flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white'>
-                        ✓
-                      </div>
-                      <h3 className='text-xl font-semibold text-sky-500'>
-                        Retinal Imaging as a Key Tool
-                      </h3>
-                    </div>
-                    <p className='mt-4 text-gray-700'>
-                      Using advanced imaging techniques, such as OCT and OCTA,
-                      EyeACT identifies subtle retinal changes that align with
-                      neurodegeneration. These insights could enable earlier,
-                      non-invasive detection of Alzheimer’s risk.
-                    </p>
-                  </motion.div>
-                </div>
-              </div>
-            </motion.div>
-          </section>
-
-          <section className='bg-gradient-to-t from-white to-sky-100 py-16'>
+          <section className='bg-gradient-to-t from-sky-100 to-white py-10'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -382,7 +314,74 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white pb-20 pt-10'>
+          <section className='bg-gradient-to-t from-white to-sky-100 py-10'>
+            <motion.div
+              variants={fadeInVariants}
+              initial='hidden'
+              whileInView='show'
+              viewport={{ once: true }}
+              custom={0}
+              className="mx-auto max-w-screen-xl rounded-md bg-[url('/images/polygon-card.svg')] shadow-lg"
+            >
+              <div className='mx-auto flex max-w-7xl flex-col items-center md:flex-row'>
+                <div className='relative flex-shrink-0 md:w-1/2'>
+                  <motion.div
+                    variants={fadeInVariants}
+                    initial='hidden'
+                    whileInView='show'
+                    viewport={{ once: true }}
+                    custom={0}
+                    className='absolute inset-0 flex flex-col items-center justify-center'
+                  >
+                    <Image
+                      src='https://images.unsplash.com/photo-1615552440985-d652ebf4c199?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                      width={500}
+                      height={500}
+                      alt='Retinal Imaging'
+                      className='rounded-full shadow-md'
+                    />
+                  </motion.div>
+                </div>
+
+                <div className='my-10 flex flex-col md:w-1/2 md:pl-10'>
+                  <motion.div
+                    variants={fadeInVariants}
+                    initial='hidden'
+                    whileInView='show'
+                    viewport={{ once: true }}
+                    custom={1}
+                    className='pr-4'
+                  >
+                    <h2 className='mb-4 text-2xl font-semibold text-black'>
+                      Exploring Retinal Changes for Brain Health Insights
+                    </h2>
+                    <p className='mb-6 text-base text-gray-700'>
+                      The EyeACT study goes beyond traditional approaches by
+                      exploring how subtle retinal changes can provide a dynamic
+                      view of brain health over time. These insights are shaping
+                      how we detect and understand neurodegenerative conditions.
+                    </p>
+                    <div className='flex items-center space-x-4'>
+                      <div className='flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white'>
+                        ✓
+                      </div>
+                      <h3 className='text-xl font-semibold text-sky-500'>
+                        Bridging Retinal and Cognitive Health
+                      </h3>
+                    </div>
+                    <p className='mt-4 text-gray-700'>
+                      EyeACT uniquely correlates retinal imaging findings with
+                      cognitive decline, providing a clearer picture of
+                      Alzheimer’s progression and opening avenues for targeted
+                      intervention strategies.
+                    </p>
+                  </motion.div>
+                </div>
+              </div>
+            </motion.div>
+          </section>
+
+          <section className='bg-gradient-to-t from-sky-100 to-white pb-20 pt-14'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -397,8 +396,8 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 </h1>
                 <p className='mb-6 text-lg text-gray-700 sm:mb-4'>
                   Our research shows how changes in the retina mirror
-                  neurodegenerative processes, providing an accessible window
-                  into brain health. By identifying retinal biomarkers, we’re
+                  neurodegenerative processes provide an accessible window into
+                  brain health. By identifying retinal biomarkers, we’re
                   creating tools for non-invasive Alzheimer’s risk assessment.
                 </p>
 

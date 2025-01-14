@@ -86,7 +86,7 @@ export default function StatsText() {
           </h1>
 
           <p className='mb-12 text-xl font-medium text-slate-600'>
-            Some key numbers from the project
+            Project Milestones
           </p>
 
           <div className='flex justify-center'>

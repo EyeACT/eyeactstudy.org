@@ -19,8 +19,8 @@ const StatsList = [
 
 export default function StatsText() {
   // Create refs for each countUp animation
-  const refs = useRef([]);
-  const [visibleIndexes, setVisibleIndexes] = useState([]);
+  const refs = useRef<(HTMLDivElement | null)[]>([]);
+  const [visibleIndexes, setVisibleIndexes] = useState<number[]>([]); // Explicitly define state type
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,7 +29,7 @@ export default function StatsText() {
           if (entry.isIntersecting) {
             setVisibleIndexes((prev) => {
               if (!prev.includes(index)) {
-                return [...prev, index];
+                return [...prev, index]; // Add index to visibleIndexes if not already there
               }
               return prev;
             });
@@ -52,7 +52,7 @@ export default function StatsText() {
     }
   }, [visibleIndexes]);
 
-  async function initCountUps(indexes) {
+  async function initCountUps(indexes: number[]) {
     const countUpModule = await import('countup.js');
     indexes.forEach((index) => {
       const ref = refs.current[index];
@@ -96,10 +96,10 @@ export default function StatsText() {
                 <div
                   key={stat.heading}
                   className='flex flex-col items-center justify-start space-y-3 p-3 text-center'
+                  ref={(el) => (refs.current[index] = el)}
                 >
                   <div className='flex items-center justify-center space-x-1'>
                     <dt
-                      ref={(el) => (refs.current[index] = el)}
                       className='text-5xl font-bold text-sky-500'
                       style={{
                         minWidth: '120px',

@@ -44,9 +44,9 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
   const cardData = [
     {
       id: 1,
-      title: 'How Eye Conditions Provide Early Warning Signs',
+      title: 'Retinal Imaging and Alzheimer’s Risk',
       description:
-        'Explore the link between glaucoma, macular degeneration, and diabetic retinopathy with Alzheimer’s disease risk. Our research sheds light on the underlying mechanisms.',
+        'Our cutting-edge research demonstrates how advanced imaging techniques like OCT and OCTA can detect early retinal changes that correlate with neurodegeneration in Alzheimer’s disease.',
       linkText: 'Learn More',
       linkUrl: '',
       imgSrc:
@@ -54,19 +54,19 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     },
     {
       id: 2,
-      title: 'ACT Study Contributions to Eye-Brain Research',
+      title: 'Personalized Early Detection Tools',
       description:
-        'With over 5,400 participants, the Adult Changes in Thought study provides unique insights into dementia-free aging and the role of eye health in neurodegeneration',
-      linkText: 'Learn About Our Study',
+        'By identifying retinal biomarkers, EyeACT is pioneering non-invasive, personalized tools that can predict Alzheimer’s risk years before symptoms emerge.',
+      linkText: 'Explore Our Methods',
       linkUrl: '',
       imgSrc:
         'https://images.unsplash.com/photo-1579684385127-1ef15d508118?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       id: 3,
-      title: 'Transforming Early Detection Through Research',
+      title: 'Transforming Clinical Applications',
       description:
-        'Discover how monitoring ophthalmic conditions may lead to earlier interventions for Alzheimer’s disease and related dementias.',
+        'Discover how the integration of eye health and brain research can transform Alzheimer’s treatment by enabling early, targeted interventions that improve patient outcomes.',
       linkText: 'Find Out How',
       linkUrl: '',
       imgSrc:
@@ -168,7 +168,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 custom={0}
                 className='border-b-2 border-gray-300 pb-4 text-4xl font-bold text-gray-800'
               >
-                How the ACT Study Stands Out
+                How the EyeACT Study Stands Out
               </motion.h2>
               <div className='mt-4 grid grid-cols-1 gap-8 md:grid-cols-3'>
                 {checkData.map((trust) => (
@@ -235,7 +235,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 <div className='flex justify-between'>
                   <span className='text-sm font-medium text-gray-700'>0</span>
                   <span className='text-sm font-medium text-gray-700'>
-                    1000 Participants
+                    1,000 Participants
                   </span>
                 </div>
               </motion.div>
@@ -264,11 +264,11 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 custom={0}
                 className='mb-12 text-lg leading-relaxed'
               >
-                Our groundbreaking studies explore how ophthalmic conditions,
-                such as glaucoma, age-related macular degeneration (AMD), and
-                diabetic retinopathy (DR), can serve as early indicators of
-                Alzheimer’s disease, paving the way for better detection and
-                prevention.
+                EyeACT leverages advances in retinal imaging and data analysis
+                to bridge the gap between eye health and Alzheimer’s research.
+                Our focus is on translating these findings into actionable tools
+                for early detection and treatment, paving the way for
+                personalized care.
               </motion.p>
 
               <div className='grid grid-cols-1 gap-8 md:grid-cols-3'>
@@ -309,7 +309,74 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white'>
+          <section className='bg-gradient-to-t from-sky-100 to-white py-14'>
+            <motion.div
+              variants={fadeInVariants}
+              initial='hidden'
+              whileInView='show'
+              viewport={{ once: true }}
+              custom={0}
+              className="mx-auto max-w-screen-xl rounded-md bg-[url('/images/polygon-card.svg')] shadow-lg"
+            >
+              <div className='mx-auto flex max-w-7xl flex-col items-center md:flex-row'>
+                <div className='relative flex-shrink-0 md:w-1/2'>
+                  <motion.div
+                    variants={fadeInVariants}
+                    initial='hidden'
+                    whileInView='show'
+                    viewport={{ once: true }}
+                    custom={0}
+                    className='absolute inset-0 flex flex-col items-center justify-center'
+                  >
+                    <Image
+                      src='https://images.unsplash.com/photo-1615552440985-d652ebf4c199?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                      width={500}
+                      height={500}
+                      alt='Retinal Imaging'
+                      className='rounded-full shadow-md'
+                    />
+                  </motion.div>
+                </div>
+
+                <div className='my-10 flex flex-col md:w-1/2 md:pl-10'>
+                  <motion.div
+                    variants={fadeInVariants}
+                    initial='hidden'
+                    whileInView='show'
+                    viewport={{ once: true }}
+                    custom={1}
+                  >
+                    <h2 className='mb-4 text-2xl font-semibold text-black'>
+                      Connecting Eye Health to Brain Function
+                    </h2>
+                    <p className='mb-6 text-gray-700'>
+                      Retinal changes, such as progressive neurodegeneration,
+                      microvascular damage, and amyloid β deposits, provide a
+                      window into brain health. These biomarkers are now
+                      recognized as early indicators of Alzheimer’s and other
+                      neurodegenerative conditions.
+                    </p>
+                    <div className='flex items-center space-x-4'>
+                      <div className='flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white'>
+                        ✓
+                      </div>
+                      <h3 className='text-xl font-semibold text-sky-500'>
+                        Retinal Imaging as a Key Tool
+                      </h3>
+                    </div>
+                    <p className='mt-4 text-gray-700'>
+                      Using advanced imaging techniques, such as OCT and OCTA,
+                      EyeACT identifies subtle retinal changes that align with
+                      neurodegeneration. These insights could enable earlier,
+                      non-invasive detection of Alzheimer’s risk.
+                    </p>
+                  </motion.div>
+                </div>
+              </div>
+            </motion.div>
+          </section>
+
+          <section className='bg-gradient-to-t from-white to-sky-100'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -345,7 +412,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-white to-sky-100 py-24'>
+          <section className='bg-gradient-to-t from-sky-100 to-white py-24'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -377,97 +444,6 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   src='https://images.unsplash.com/photo-1711409664431-4e7914ac2370?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                   alt='lorem ipsum'
                 />
-              </div>
-            </motion.div>
-          </section>
-
-          <section className='bg-gradient-to-t from-sky-100 to-white py-14'>
-            <motion.div
-              variants={fadeInVariants}
-              initial='hidden'
-              whileInView='show'
-              viewport={{ once: true }}
-              custom={0}
-              className='mx-auto max-w-screen-xl rounded-md bg-[url("/images/polygon-card.svg")] shadow-lg'
-            >
-              <div className='mx-auto flex max-w-7xl flex-col items-center md:flex-row'>
-                <div className='relative flex-shrink-0 md:w-1/2'>
-                  <motion.div
-                    variants={fadeInVariants}
-                    initial='hidden'
-                    whileInView='show'
-                    viewport={{ once: true }}
-                    custom={0}
-                    className='absolute inset-0 flex flex-col items-center justify-center'
-                  >
-                    <Image
-                      src='https://images.unsplash.com/photo-1615552440985-d652ebf4c199?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                      width={500}
-                      height={500}
-                      alt='lorem ipsum'
-                      className='rounded-full shadow-md'
-                    />
-                  </motion.div>
-                </div>
-
-                <div className='my-10 flex flex-col md:w-1/2 md:pl-10'>
-                  <motion.div
-                    variants={fadeInVariants}
-                    initial='hidden'
-                    whileInView='show'
-                    viewport={{ once: true }}
-                    custom={1}
-                  >
-                    <h2 className='mb-4 text-2xl font-semibold text-black'>
-                      Connecting Eye Health to Brain Function
-                    </h2>
-                    <div className='flex items-center space-x-4'>
-                      <div className='flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white'>
-                        1
-                      </div>
-                      <h3 className='text-xl font-semibold text-sky-500'>
-                        Shared Mechanisms
-                      </h3>
-                    </div>
-                    <ul className='mt-4 list-disc space-y-2 pl-10 text-gray-700'>
-                      <li>Progressive neurodegeneration</li>
-                      <li>Microvascular damage</li>
-                      <li>Amyloid β deposits</li>
-                    </ul>
-                  </motion.div>
-
-                  {/* Connector */}
-                  {/* <div className='mx-auto h-20 w-1 bg-blue-500'></div> */}
-
-                  {/* Step 2: Data Exchange */}
-                  <motion.div
-                    variants={fadeInVariants}
-                    initial='hidden'
-                    whileInView='show'
-                    viewport={{ once: true }}
-                    custom={2}
-                    className='ml-64'
-                  >
-                    <div className='flex items-center space-x-4'>
-                      <div className='flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white'>
-                        2
-                      </div>
-                      <h3 className='text-xl font-semibold text-sky-500'>
-                        Early Detection Potential
-                      </h3>
-                    </div>
-                    <ul className='mt-4 list-disc space-y-2 pl-10 text-gray-700'>
-                      <li>
-                        Changes in retinal health could indicate brain health
-                        risks
-                      </li>
-                      <li>
-                        Regular eye exams may help identify Alzheimer’s risk
-                        factors early
-                      </li>
-                    </ul>
-                  </motion.div>
-                </div>
               </div>
             </motion.div>
           </section>

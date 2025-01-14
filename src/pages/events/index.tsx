@@ -8,9 +8,9 @@ import EventsLayout from '@/components/events/EventsLayout';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
-// The Blog Page Content
+// The Events Page Content
 
-const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
+const Events: React.FC<EventsLayoutProps> = ({ eventList }) => {
   const pastEvents = eventList.filter((event) =>
     dayjs(event.frontMatter.startDateTime).isBefore(dayjs()),
   );
@@ -49,27 +49,20 @@ const Blog: React.FC<EventsLayoutProps> = ({ eventList }) => {
           </div>
 
           <div className='relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-8 lg:px-6'>
-            <div
-              className='relative my-6 flex justify-center rounded shadow-sm'
-              style={{
-                backgroundImage: 'linear-gradient(to bottom, #f9f9f9, #eaeaea)',
-                padding: '2rem 0',
-              }}
-            >
-              <h2 className='text-4xl font-bold text-sky-700'>
-                UPCOMING EVENTS
-              </h2>
+            <div className='my-10 rounded-lg bg-gradient-to-t from-white to-sky-100'>
+              <div className="flex items-center justify-center rounded-lg border bg-[url('/images/polygon-card.svg')] py-8 shadow-lg">
+                <h2 className='text-4xl font-bold text-sky-700'>
+                  UPCOMING EVENTS
+                </h2>
+              </div>
             </div>
+
             <EventsLayout eventList={upcomingEvents} />
 
-            <div
-              className='relative my-6 flex justify-center rounded shadow-sm'
-              style={{
-                backgroundImage: 'linear-gradient(to bottom, #f9f9f9, #eaeaea)',
-                padding: '2rem 0',
-              }}
-            >
-              <h2 className='text-4xl font-bold text-sky-700'>PAST EVENTS</h2>
+            <div className='my-10 rounded-lg bg-gradient-to-t from-white to-sky-100'>
+              <div className="flex items-center justify-center rounded-lg border bg-[url('/images/polygon-card.svg')] py-8 shadow-lg">
+                <h2 className='text-4xl font-bold text-sky-700'>PAST EVENTS</h2>
+              </div>
             </div>
 
             <EventsLayout eventList={pastEvents} />
@@ -125,4 +118,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Blog;
+export default Events;

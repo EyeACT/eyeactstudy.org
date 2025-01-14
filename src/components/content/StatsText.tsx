@@ -1,46 +1,125 @@
+import { Stack, StackDivider } from '@chakra-ui/react';
+import parse from 'html-react-parser';
+import { useEffect, useRef, useState } from 'react';
+
 const StatsList = [
   {
-    heading: '4,000',
-    text: 'Participants anticipated in the study',
+    heading: 1000,
+    text: 'Participants in the study',
   },
   {
-    heading: '15+',
-    text: 'Data types to be collected (vitals, electrocardiogram, etc.)',
+    heading: 4000,
+    text: 'Patient visits',
   },
   {
-    heading: '8',
-    text: `Research institutions involved`,
-  },
-  {
-    heading: '50+',
-    text: 'Team members',
+    heading: 300,
+    text: `Data collected`,
   },
 ];
 
 export default function StatsText() {
-  return (
-    <section className='bg-white'>
-      <div className='mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6'>
-        <h2 className='mb-4 text-4xl font-bold tracking-tight'>
-          Snapshot of the AI-READI project
-        </h2>
-        <p className='max-w-screen-md text-2xl font-light text-slate-600'>
-          Some key numbers from the project
-        </p>
-        <div className='grid pt-8 text-left md:grid-cols-4 md:gap-8'>
-          {StatsList.map((stat) => (
-            <div key={stat.heading}>
-              <div className='mb-5'>
-                <dt className='mb-3 flex items-center text-4xl font-bold text-gray-900'>
-                  {stat.heading}
-                </dt>
+  // Create refs for each countUp animation
+  const refs = useRef([]);
+  const [visibleIndexes, setVisibleIndexes] = useState([]);
 
-                <dd className='text-lg font-light text-slate-500'>
-                  {stat.text}
-                </dd>
-              </div>
-            </div>
-          ))}
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            setVisibleIndexes((prev) => {
+              if (!prev.includes(index)) {
+                return [...prev, index];
+              }
+              return prev;
+            });
+          }
+        });
+      },
+      { threshold: 0.5 }, // Trigger when 50% of the element is visible
+    );
+
+    refs.current.forEach((ref, index) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect(); // Clean up observer
+  }, []);
+
+  useEffect(() => {
+    if (visibleIndexes.length > 0) {
+      initCountUps(visibleIndexes);
+    }
+  }, [visibleIndexes]);
+
+  async function initCountUps(indexes) {
+    const countUpModule = await import('countup.js');
+    indexes.forEach((index) => {
+      const ref = refs.current[index];
+      if (ref) {
+        const countUpAnim = new countUpModule.CountUp(
+          ref,
+          StatsList[index].heading,
+          {
+            duration: 2,
+            separator: ',',
+          },
+        );
+        if (!countUpAnim.error) {
+          countUpAnim.start();
+        } else {
+          console.error(countUpAnim.error);
+        }
+      }
+    });
+  }
+
+  return (
+    <section className='pt-4'>
+      <div className='px-8'>
+        <div className='border[1px] m-2 mx-auto max-w-screen-xl rounded-lg border-gray-200 bg-[url(/images/polygon-card-v2.svg)] p-8 text-center shadow-lg'>
+          <h1 className='mb-2 text-3xl font-bold tracking-tight sm:text-4xl'>
+            Snapshot of the Eye ACT project
+          </h1>
+
+          <p className='mb-12 text-xl font-medium text-slate-600'>
+            Some key numbers from the project
+          </p>
+
+          <div className='flex justify-center'>
+            <Stack
+              direction={['column', 'column', 'column', 'row']}
+              spacing='70px'
+              divider={<StackDivider borderColor='gray.200' />}
+            >
+              {StatsList.map((stat, index) => (
+                <div
+                  key={stat.heading}
+                  className='flex flex-col items-center justify-start space-y-3 p-3 text-center'
+                >
+                  <div className='flex items-center justify-center space-x-1'>
+                    <dt
+                      ref={(el) => (refs.current[index] = el)}
+                      className='text-5xl font-bold text-sky-500'
+                      style={{
+                        minWidth: '120px',
+                        textAlign: 'center',
+                      }}
+                    >
+                      0
+                    </dt>
+                    {stat.heading > 500 && (
+                      <span className='text-5xl font-bold text-sky-500'>+</span>
+                    )}
+                  </div>
+
+                  <dd className='text-lg font-medium text-gray-700'>
+                    {parse(stat.text)}
+                  </dd>
+                </div>
+              ))}
+            </Stack>
+          </div>
         </div>
       </div>
     </section>

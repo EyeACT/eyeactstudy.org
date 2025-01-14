@@ -6,11 +6,12 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
 
+import StatsText from '@/components/content/StatsText';
 import Layout from '@/components/layout/Layout';
 import ButtonLink from '@/components/links/ButtonLink';
 import Seo from '@/components/Seo';
 
-import { WidthFramerContainer, WidthFramerItem } from '@/utils/framer';
+import { WidthFramerContainer } from '@/utils/framer';
 
 /**
  * SVGR Supportgray
@@ -158,7 +159,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white pb-0 pt-16'>
+          <section className='bg-gradient-to-t from-sky-100 to-white pb-0 pt-12'>
             <div className='mx-auto max-w-screen-xl text-center'>
               <motion.h2
                 variants={fadeInVariants}
@@ -206,44 +207,13 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 viewport={{ once: true, amount: 1 }}
                 className='relative w-full space-y-6 p-4'
               >
-                {/* Stacked Bars */}
-                <div className='relative h-[40px] w-full rounded-full bg-gray-200'>
-                  {/* Bar for Patient Visits */}
-                  <motion.div
-                    variants={WidthFramerItem}
-                    className='absolute inset-0 w-[80%] rounded-l-full bg-blue-600'
-                  >
-                    <span className='absolute right-2 top-[50%] -translate-y-1/2 transform text-sm font-bold text-white'>
-                      4,000 Patient Visits
-                    </span>
-                  </motion.div>
-                </div>
-
-                <div className='relative h-[40px] w-full rounded-full bg-gray-200'>
-                  {/* Bar for Data Collected */}
-                  <motion.div
-                    variants={WidthFramerItem}
-                    className='absolute inset-0 w-[40%] rounded-l-full bg-blue-300'
-                  >
-                    <span className='absolute right-2 top-[50%] -translate-y-1/2 transform text-sm font-bold text-gray-800'>
-                      300GB Data Collected
-                    </span>
-                  </motion.div>
-                </div>
-
-                {/* Labels */}
-                <div className='flex justify-between'>
-                  <span className='text-sm font-medium text-gray-700'>0</span>
-                  <span className='text-sm font-medium text-gray-700'>
-                    1,000 Participants
-                  </span>
-                </div>
+                <StatsText />
               </motion.div>
             </div>
-            <div className='mx-auto max-w-screen-xl border-b-2 border-gray-300 pt-32 lg:pt-24'></div>
+            <div className='mx-auto max-w-screen-xl border-b-2 border-gray-300 pt-32 lg:pt-2'></div>
           </section>
 
-          <section className='bg-gradient-to-t from-white to-sky-100 px-8 py-24'>
+          <section className='bg-gradient-to-t from-white to-sky-100 px-8 py-16'>
             <div className='mx-auto max-w-7xl text-center text-black'>
               <motion.h2
                 variants={fadeInVariants}
@@ -309,7 +279,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white py-14'>
+          <section className='bg-gradient-to-t from-sky-100 to-white pb-8 pt-8'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -376,7 +346,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-white to-sky-100'>
+          <section className='bg-gradient-to-t from-white to-sky-100 py-16'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'
@@ -412,7 +382,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </motion.div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white py-24'>
+          <section className='bg-gradient-to-t from-sky-100 to-white pb-20 pt-10'>
             <motion.div
               variants={fadeInVariants}
               initial='hidden'

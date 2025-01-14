@@ -20,16 +20,17 @@ const StatsList = [
 export default function StatsText() {
   // Create refs for each countUp animation
   const refs = useRef<(HTMLDivElement | null)[]>([]);
-  const [visibleIndexes, setVisibleIndexes] = useState<number[]>([]); // Explicitly define state type
+  const [visibleIndexes, setVisibleIndexes] = useState<number[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
+        entries.forEach((entry) => {
+          const index = refs.current.findIndex((ref) => ref === entry.target);
+          if (entry.isIntersecting && index !== -1) {
             setVisibleIndexes((prev) => {
               if (!prev.includes(index)) {
-                return [...prev, index]; // Add index to visibleIndexes if not already there
+                return [...prev, index];
               }
               return prev;
             });
@@ -39,7 +40,7 @@ export default function StatsText() {
       { threshold: 0.5 }, // Trigger when 50% of the element is visible
     );
 
-    refs.current.forEach((ref, index) => {
+    refs.current.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
@@ -96,7 +97,9 @@ export default function StatsText() {
                 <div
                   key={stat.heading}
                   className='flex flex-col items-center justify-start space-y-3 p-3 text-center'
-                  ref={(el) => (refs.current[index] = el)}
+                  ref={(el) => {
+                    refs.current[index] = el;
+                  }}
                 >
                   <div className='flex items-center justify-center space-x-1'>
                     <dt

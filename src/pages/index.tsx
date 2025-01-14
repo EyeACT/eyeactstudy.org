@@ -314,7 +314,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
 
                 <div>
                   <ButtonLink href='/publications' variant='primary'>
-                    View Our Methods and Results
+                    View our methods and results
                   </ButtonLink>
                 </div>
               </div>

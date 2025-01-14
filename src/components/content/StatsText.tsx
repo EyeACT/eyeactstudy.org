@@ -6,19 +6,21 @@ const StatsList = [
   {
     heading: 1000,
     text: 'Participants in the study',
+    suffix: '+',
   },
   {
     heading: 4000,
     text: 'Patient visits',
+    suffix: '+',
   },
   {
     heading: 300,
     text: `Data collected`,
+    suffix: 'GB',
   },
 ];
 
 export default function StatsText() {
-  // Create refs for each countUp animation
   const refs = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleIndexes, setVisibleIndexes] = useState<number[]>([]);
 
@@ -37,14 +39,14 @@ export default function StatsText() {
           }
         });
       },
-      { threshold: 0.5 }, // Trigger when 50% of the element is visible
+      { threshold: 0.5 },
     );
 
     refs.current.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
-    return () => observer.disconnect(); // Clean up observer
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -91,29 +93,25 @@ export default function StatsText() {
             <Stack
               direction={['column', 'column', 'column', 'row']}
               spacing='70px'
-              divider={<StackDivider borderColor='gray.200' />}
+              divider={<StackDivider borderColor='gray-200' />}
             >
               {StatsList.map((stat, index) => (
                 <div
                   key={stat.heading}
-                  className='flex flex-col items-center justify-start space-y-3 p-3 text-center'
-                  ref={(el) => {
-                    refs.current[index] = el;
-                  }}
+                  className='flex flex-col items-center justify-center space-y-3 text-center'
                 >
-                  <div className='flex items-center justify-center space-x-1'>
+                  <div className='flex items-baseline justify-center space-x-2'>
                     <dt
-                      className='text-5xl font-bold text-sky-500'
-                      style={{
-                        minWidth: '120px',
-                        textAlign: 'center',
+                      ref={(el) => {
+                        refs.current[index] = el as HTMLDivElement;
                       }}
+                      className='text-5xl font-extrabold text-blue-500'
                     >
                       0
                     </dt>
-                    {stat.heading > 500 && (
-                      <span className='text-5xl font-bold text-sky-500'>+</span>
-                    )}
+                    <span className='text-4xl font-bold text-blue-500'>
+                      {stat.suffix}
+                    </span>
                   </div>
 
                   <dd className='text-lg font-medium text-gray-700'>

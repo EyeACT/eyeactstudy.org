@@ -10,11 +10,7 @@ import Layout from '@/components/layout/Layout';
 import ButtonLink from '@/components/links/ButtonLink';
 import Seo from '@/components/Seo';
 
-import {
-  FadeFramerItem,
-  WidthFramerContainer,
-  WidthFramerItem,
-} from '@/utils/framer';
+import { WidthFramerContainer, WidthFramerItem } from '@/utils/framer';
 
 /**
  * SVGR Supportgray
@@ -82,23 +78,24 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     {
       id: 1,
       title: 'Detailed Data Collection',
-      subtitle: 'Expanding the Understanding of Alzheimer’s Risk Factors',
+      subtitle:
+        'Focusing on the Connection Between Eye Health and Alzheimer’s Risk',
       description:
-        'Our study collects data beyond eye health, including genetic factors like APOE genotypes, medical history, and cognitive evaluations, providing a holistic understanding of Alzheimer’s risk.',
+        'The EyeACT study collects comprehensive data on ophthalmic conditions, such as glaucoma, age-related macular degeneration (AMD), and diabetic retinopathy (DR). By integrating eye health data with Alzheimer’s risk assessments, the study sheds light on how changes in the retina may signal neurodegenerative processes.',
     },
     {
       id: 2,
       title: 'Long-Term Follow-Up',
-      subtitle: 'Decades of Data for Deeper Understanding',
+      subtitle: 'Tracking Ophthalmic Changes Over Time',
       description:
-        'With over 31,142 person-years of follow-up, the ACT study offers insights into how ophthalmic conditions evolve and their impact on brain health.',
+        'Through long-term monitoring of participants, the EyeACT study explores the progression of ophthalmic conditions and their relationship to Alzheimer’s disease risk, providing insights into how eye health and brain health intersect.',
     },
     {
       id: 3,
       title: 'Rigorous Analytical Methods',
-      subtitle: 'Precision in Research and Analysis',
+      subtitle: 'Innovative Approaches to Eye-Brain Research',
       description:
-        'Advanced statistical models ensure robust results, examining recent and established ophthalmic conditions and their interplay with genetic and lifestyle factors.',
+        'The EyeACT study uses imaging technologies and statistical models to analyze the link between eye health and Alzheimer’s risk. By examining retinal biomarkers and other ophthalmic indicators, the study is pioneering non-invasive methods for early detection.',
     },
   ];
 
@@ -207,43 +204,40 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: true, amount: 1 }}
-                className='relative h-[40px] w-full'
+                className='relative w-full space-y-6 p-4'
               >
-                <div className='h-full rounded-full border border-blue-100 bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)]'>
-                  <span className='absolute bottom-[45px] right-2 text-base font-medium'>
-                    4000 participants
-                  </span>
+                {/* Stacked Bars */}
+                <div className='relative h-[40px] w-full rounded-full bg-gray-200'>
+                  {/* Bar for Patient Visits */}
+                  <motion.div
+                    variants={WidthFramerItem}
+                    className='absolute inset-0 w-[80%] rounded-l-full bg-blue-600'
+                  >
+                    <span className='absolute right-2 top-[50%] -translate-y-1/2 transform text-sm font-bold text-white'>
+                      4,000 Patient Visits
+                    </span>
+                  </motion.div>
                 </div>
 
-                <motion.div
-                  variants={WidthFramerItem}
-                  className='absolute inset-0 max-w-[78%] rounded-full bg-blue-300'
-                />
+                <div className='relative h-[40px] w-full rounded-full bg-gray-200'>
+                  {/* Bar for Data Collected */}
+                  <motion.div
+                    variants={WidthFramerItem}
+                    className='absolute inset-0 w-[40%] rounded-l-full bg-blue-300'
+                  >
+                    <span className='absolute right-2 top-[50%] -translate-y-1/2 transform text-sm font-bold text-gray-800'>
+                      300GB Data Collected
+                    </span>
+                  </motion.div>
+                </div>
 
-                <motion.div
-                  variants={FadeFramerItem}
-                  className='completed-consent-text'
-                >
-                  <span className='block text-xl font-bold'>3,140+</span>
-                  <span className='text-[16px] font-normal'>
-                    participants have completed the consent process
+                {/* Labels */}
+                <div className='flex justify-between'>
+                  <span className='text-sm font-medium text-gray-700'>0</span>
+                  <span className='text-sm font-medium text-gray-700'>
+                    1000 Participants
                   </span>
-                </motion.div>
-
-                <motion.div
-                  variants={WidthFramerItem}
-                  className='absolute inset-0 max-w-[40%] rounded-full bg-blue-600'
-                />
-
-                <motion.div
-                  variants={FadeFramerItem}
-                  className='completed-study-text'
-                >
-                  <span className='block text-xl font-bold'>1590+</span>
-                  <span className='text-[16px] font-normal'>
-                    participants have completed in-person study visit
-                  </span>
-                </motion.div>
+                </div>
               </motion.div>
             </div>
             <div className='mx-auto max-w-screen-xl border-b-2 border-gray-300 pt-32 lg:pt-24'></div>

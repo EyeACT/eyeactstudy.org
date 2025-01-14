@@ -130,7 +130,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <UnstyledLink href='/'>Internal Links</UnstyledLink>
-                  <UnstyledLink href='https://aireadi.org'>
+                  <UnstyledLink href='https://eyeact.org'>
                     Outside Links
                   </UnstyledLink>
                 </div>
@@ -143,7 +143,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <PrimaryLink href='/'>Internal Links</PrimaryLink>
-                  <PrimaryLink href='https://aireadi.org'>
+                  <PrimaryLink href='https://eyeact.org'>
                     Outside Links
                   </PrimaryLink>
                 </div>
@@ -156,7 +156,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <UnderlineLink href='/'>Internal Links</UnderlineLink>
-                  <UnderlineLink href='https://aireadi.org'>
+                  <UnderlineLink href='https://eyeact.org'>
                     Outside Links
                   </UnderlineLink>
                 </div>
@@ -195,27 +195,27 @@ export default function ComponentsPage() {
                   Button styled link with 3 variants.
                 </p>
                 <div className='flex flex-wrap gap-2'>
-                  <ButtonLink variant='primary' href='https://aireadi.org'>
+                  <ButtonLink variant='primary' href='https://eyeact.org'>
                     Primary Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='outline'
                     isDarkBg={mode === 'dark'}
-                    href='https://aireadi.org'
+                    href='https://eyeact.org'
                   >
                     Outline Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='ghost'
                     isDarkBg={mode === 'dark'}
-                    href='https://aireadi.org'
+                    href='https://eyeact.org'
                   >
                     Ghost Variant
                   </ButtonLink>
-                  <ButtonLink variant='dark' href='https://aireadi.org'>
+                  <ButtonLink variant='dark' href='https://eyeact.org'>
                     Dark Variant
                   </ButtonLink>
-                  <ButtonLink variant='light' href='https://aireadi.org'>
+                  <ButtonLink variant='light' href='https://eyeact.org'>
                     Light Variant
                   </ButtonLink>
                 </div>

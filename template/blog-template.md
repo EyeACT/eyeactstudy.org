@@ -39,13 +39,13 @@ You can also use a markdown editor to write your article. A few good ones are li
 
 Copy the contents of this file and paste it into the markdown editor of your choice. You should have a live preview of your article on the right side of the editor. Once you are done writing your article, send the source content to the Bhavesh Patel on basecamp and we will publish it on the website.
 
-The name of the file will be used as the URL for the article. For example, if you name the file `data-subject.md`, the URL for the article will be `https://aireadi.org/blog/data-subject`. Please make sure that the file name is in `kebab-case` and does not contain any special characters or spaces.
+The name of the file will be used as the URL for the article. For example, if you name the file `data-subject.md`, the URL for the article will be `https://eyeact.org/blog/data-subject`. Please make sure that the file name is in `kebab-case` and does not contain any special characters or spaces.
 
-An example of an already published article can be found here: <https://raw.githubusercontent.com/AI-READI/aireadi.org/main/blog/data-subject.md>
+An example of an already published article can be found here: <https://raw.githubusercontent.com/AI-READI/eyeact.org/main/blog/data-subject.md>
 
 ### Important
 
 - Don't use a top level heading (#) in your article. The title of the article counts as a top level heading so you don't need to add one. Use second level headings (##) and below.
 - If you don't want to host your images on an online platform, you can send the images to Bhavesh Patel on basecamp and we will host them for you on the website itself.
-- If you are already on the AI-READI [team page](https://aireadi.org/team), your image will be used as the author image. Each person on the team has a unique ID(in the format `firstname-lastname`). Use this id to reference yourself in this instance. Any authors that are not on the team page will have a rendomly generated image as their author image.
+- If you are already on the AI-READI [team page](https://eyeact.org/team), your image will be used as the author image. Each person on the team has a unique ID(in the format `firstname-lastname`). Use this id to reference yourself in this instance. Any authors that are not on the team page will have a rendomly generated image as their author image.
 - The hero image will be zoomed in slightly on the website. Please make sure that the image you choose is high resolution and can be zoomed in without losing quality. Also make sure the main content takes the middle 60% of the image. This image should also be in landscape orientation.

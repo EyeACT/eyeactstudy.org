@@ -33,7 +33,7 @@ const EventPost: React.FC<EventItem> = ({ slug, frontMatter, content }) => {
 
   const copyLinkToClipboard = () => {
     navigator.clipboard
-      .writeText(`https://aireadi.org/blog/${slug}`)
+      .writeText(`https://eyeact.org/blog/${slug}`)
       .then(() => {
         toast.success(`Copied to clipboard succesfully.`, {
           position: `bottom-right`,
@@ -127,7 +127,7 @@ const EventPost: React.FC<EventItem> = ({ slug, frontMatter, content }) => {
             </span>
 
             <a
-              href={`http://twitter.com/share?text=Here is an event y'all need to take a look at&url=https://aireadi.org/events/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
+              href={`http://twitter.com/share?text=Here is an event y'all need to take a look at&url=https://eyeact.org/events/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
               target='_blank'
               rel='noopener noreferrer'
               className='mx-2 text-slate-500 transition-all hover:text-sky-500'
@@ -139,7 +139,7 @@ const EventPost: React.FC<EventItem> = ({ slug, frontMatter, content }) => {
             </a>
 
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://aireadi.org/events/${slug}"`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://eyeact.org/events/${slug}"`}
               target='_blank'
               rel='noopener noreferrer'
               className='mx-2 text-slate-500 transition-all hover:text-sky-500'
@@ -151,7 +151,7 @@ const EventPost: React.FC<EventItem> = ({ slug, frontMatter, content }) => {
             </a>
 
             <a
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://aireadi.org/events/${slug}`}
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://eyeact.org/events/${slug}`}
               target='_blank'
               rel='noopener noreferrer'
               className='mx-2 text-slate-500 transition-all hover:text-sky-500'

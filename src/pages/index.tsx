@@ -49,7 +49,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       title: 'Revolutionizing Retinal Imaging',
       description:
         'Our research utilizes advanced imaging techniques such as OCT and OCTA to detect early retinal changes. These insights provide a clearer understanding of the relationship between retinal health and Alzheimer’s disease progression.',
-      linkText: 'Learn More',
+      linkText: 'Learn more',
       linkUrl: '',
       imgSrc:
         'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -59,7 +59,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       title: 'Innovative Detection Strategies',
       description:
         'By identifying key retinal biomarkers, EyeACT is pioneering tools that predict Alzheimer’s risk years before clinical symptoms emerge, offering a unique approach to early detection.',
-      linkText: 'Discover Our Approach',
+      linkText: 'Discover our approach',
       linkUrl: '',
       imgSrc:
         'https://images.unsplash.com/photo-1579684385127-1ef15d508118?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -69,7 +69,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       title: 'Transforming Patient Care',
       description:
         'EyeACT integrates eye and brain research to inform targeted interventions for Alzheimer’s. These breakthroughs are shaping personalized treatments to improve patient outcomes.',
-      linkText: 'Find Out How',
+      linkText: 'Find out how',
       linkUrl: '',
       imgSrc:
         'https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -110,7 +110,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
         <main>
           <SkipNavContent />
 
-          <section className="relative flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[150px] after:w-full after:bg-gradient-to-t after:from-black after:to-transparent md:h-[100vh]">
+          <section className="relative mb-12 flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[150px] after:w-full after:bg-gradient-to-t after:from-black after:to-transparent md:h-[100vh]">
             <div className='relative grid w-full grid-cols-12 items-center gap-8 px-6 py-16 lg:ml-16 lg:py-16 xl:gap-0'>
               {/* Left Text Section */}
               <div className='col-span-12 pr-0 md:col-span-6 md:pr-16'>
@@ -120,17 +120,18 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   whileInView='show'
                   viewport={{ once: true }}
                   custom={1}
-                  className='bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.8),transparent)] text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl'
+                  className='text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl'
                 >
                   Seeing the Future of Brain Health Through the Eyes
                 </motion.h1>
+
                 <motion.p
                   variants={fadeInVariants}
                   initial='hidden'
                   whileInView='show'
                   viewport={{ once: true }}
                   custom={2}
-                  className='mt-4 bg-[radial-gradient(circle_at_50%_90%,rgba(0,0,0,0.8),transparent)] text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl'
+                  className='mt-4 bg-[radial-gradient(circle_at_50%_90%,rgba(0,0,0,0.8),transparent)] text-base font-medium leading-relaxed text-gray-200 sm:text-lg md:text-2xl'
                 >
                   The Eye ACT study aims provides insights on how ophthalmic
                   conditions such as glaucoma and diabetic retinopathy can
@@ -139,6 +140,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   advancements in early detection and prevention of
                   neurodegenerative diseases.
                 </motion.p>
+
                 <motion.div
                   variants={fadeInVariants}
                   initial='hidden'
@@ -150,7 +152,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   <ButtonLink
                     href='/dataset'
                     variant='primary'
-                    className='inline-block rounded-lg bg-sky-700 px-5 py-3 text-sm font-semibold transition sm:text-base'
+                    className='inline-block rounded-lg bg-sky-700 px-5 py-3 text-sm font-semibold transition sm:text-xl'
                   >
                     Discover Our Research
                   </ButtonLink>
@@ -171,6 +173,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
               >
                 How the EyeACT Study Stands Out
               </motion.h2>
+
               <div className='mt-4 grid grid-cols-1 gap-8 md:grid-cols-3'>
                 {checkData.map((trust) => (
                   <motion.div
@@ -182,24 +185,29 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                     key={trust.id}
                     className='p-4 text-left'
                   >
-                    <div className='mb-2 flex justify-between pr-4'>
-                      <span className='flex items-center justify-center text-xl font-bold text-sky-500'>
-                        {trust.title}
-                      </span>
+                    <div className='mb-2 flex justify-start gap-4'>
                       <span className='flex h-12 w-12 items-center justify-center rounded-full border-2 border-sky-500 text-sky-500'>
                         ✓
                       </span>
+
+                      <span className='flex items-center justify-center text-xl font-bold text-sky-500'>
+                        {trust.title}
+                      </span>
                     </div>
-                    <h3 className='text-md mb-2 font-bold text-gray-800'>
+
+                    <h3 className='mb-2 text-base font-bold text-gray-800'>
                       {trust.subtitle}
                     </h3>
-                    <p className='text-gray-600'>{trust.description}</p>
+
+                    <p className='text-base font-medium text-gray-600'>
+                      {trust.description}
+                    </p>
                   </motion.div>
                 ))}
               </div>
             </div>
 
-            <div className='mx-auto my-10 max-w-screen-xl px-8'>
+            <div className='mx-auto max-w-screen-xl px-8 py-10'>
               <motion.div
                 variants={WidthFramerContainer}
                 initial='hidden'
@@ -210,6 +218,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 <StatsText />
               </motion.div>
             </div>
+
             <div className='mx-auto max-w-screen-xl border-b-2 border-gray-300 pt-32 lg:pt-2'></div>
           </section>
 
@@ -221,18 +230,19 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 whileInView='show'
                 viewport={{ once: true }}
                 custom={0}
-                className='mb-6 text-4xl font-bold'
+                className='mx-auto mb-6 max-w-6xl text-4xl font-bold'
               >
                 Advancing Research at the Intersection of Eye Health and
                 Alzheimer’s Disease
               </motion.h2>
+
               <motion.p
                 variants={fadeInVariants}
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: true }}
                 custom={0}
-                className='mb-12 text-lg leading-relaxed'
+                className='mx-auto mb-12 max-w-5xl text-lg font-normal'
               >
                 EyeACT leverages advances in retinal imaging and data analysis
                 to bridge the gap between eye health and Alzheimer’s research.
@@ -245,7 +255,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 {cardData.map((entry, i) => (
                   <motion.div
                     key={entry.id}
-                    className='flex h-full flex-col overflow-hidden rounded-lg bg-white text-left shadow-lg'
+                    className='flex h-full flex-col overflow-hidden rounded-lg border bg-white text-left shadow-lg'
                     variants={fadeInVariants}
                     initial='hidden'
                     whileInView='show'
@@ -257,13 +267,16 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                       alt={entry.title}
                       className='h-48 w-full object-cover'
                     />
+
                     <div className='flex flex-grow flex-col p-6'>
                       <h3 className='mb-2 text-xl font-bold text-black'>
                         {entry.title}
                       </h3>
+
                       <p className='mb-4 flex-grow text-gray-700'>
                         {entry.description}
                       </p>
+
                       <ButtonLink
                         href={entry.linkUrl}
                         variant='outline'
@@ -322,7 +335,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
               whileInView='show'
               viewport={{ once: true }}
               custom={0}
-              className="mx-auto max-w-screen-xl rounded-md bg-[url('/images/polygon-card.svg')] shadow-lg"
+              className="mx-auto max-w-screen-xl rounded-md border bg-[url('/images/polygon-card.svg')] shadow-lg"
             >
               <div className='mx-auto flex max-w-7xl flex-col items-center md:flex-row'>
                 <div className='relative flex-shrink-0 md:w-1/2'>
@@ -353,24 +366,22 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                     custom={1}
                     className='pr-4'
                   >
-                    <h2 className='mb-4 text-2xl font-semibold text-black'>
+                    <h2 className='pb-4 text-2xl font-semibold text-black'>
                       Exploring Retinal Changes for Brain Health Insights
                     </h2>
-                    <p className='mb-6 text-base text-gray-700'>
+
+                    <p className='pb-6 text-base text-gray-800'>
                       The EyeACT study goes beyond traditional approaches by
                       exploring how subtle retinal changes can provide a dynamic
                       view of brain health over time. These insights are shaping
                       how we detect and understand neurodegenerative conditions.
                     </p>
-                    <div className='flex items-center space-x-4'>
-                      <div className='flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white'>
-                        ✓
-                      </div>
-                      <h3 className='text-xl font-semibold text-sky-500'>
-                        Bridging Retinal and Cognitive Health
-                      </h3>
-                    </div>
-                    <p className='mt-4 text-gray-700'>
+
+                    <h3 className='pt-6 text-xl font-semibold text-sky-500'>
+                      Bridging Retinal and Cognitive Health
+                    </h3>
+
+                    <p className='pt-4 text-gray-800'>
                       EyeACT uniquely correlates retinal imaging findings with
                       cognitive decline, providing a clearer picture of
                       Alzheimer’s progression and opening avenues for targeted
@@ -404,7 +415,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
 
                 <div>
                   <ButtonLink href='/dataset' variant='primary' className=''>
-                    Learn More About Our Study
+                    Learn more about our study
                   </ButtonLink>
                 </div>
               </div>

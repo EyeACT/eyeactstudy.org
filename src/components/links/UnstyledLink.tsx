@@ -19,7 +19,7 @@ const UnstyledLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
         : href && !href.startsWith('/') && !href.startsWith('#');
 
     // Use the anchor tag for explicit same domain links. Should rerender iframes.
-    const isHomeDomain = href && href.includes('aireadi.org');
+    const isHomeDomain = href && href.includes('eyeact.org');
 
     if (!isNewTab) {
       return (

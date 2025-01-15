@@ -12,7 +12,7 @@ import { unified } from 'unified';
 /**
  * Custom plugin to wrap sections in cards
  */
-function rehypeWrapInCards() {
+function rehypeWrapInCards(params: { card: boolean }) {
   return (tree: any) => {
     const children = tree.children;
     const wrappedChildren: any[] = [];
@@ -32,17 +32,19 @@ function rehypeWrapInCards() {
           type: 'element',
           tagName: 'div',
           properties: {
-            className: [
-              'bg-white',
-              'rounded-lg',
-              'shadow-lg',
-              'px-6',
-              'mb-6',
-              'pb-4',
-              'pt-1',
-              'border-gray-200',
-              'border-[1px]',
-            ],
+            className: params.card
+              ? [
+                  'bg-white',
+                  'rounded-lg',
+                  'shadow-lg',
+                  'px-6',
+                  'mb-6',
+                  'pb-4',
+                  'pt-1',
+                  'border-gray-200',
+                  'border-[1px]',
+                ]
+              : [],
           },
           children: [node], // Add the current <h2> as the first child
         };
@@ -68,14 +70,16 @@ function rehypeWrapInCards() {
 /**
  * Converts markdown to HTML with Tailwind cards
  */
-export default async function markdownToHtml(markdown: string) {
+export default async function markdownToHtml(markdown: string, card = false) {
   const result = await unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeHighlight)
-    .use(rehypeWrapInCards) // Apply card wrapping
+    .use(rehypeWrapInCards, {
+      card,
+    }) // Apply card wrapping
     .use(rehypeDocument, {
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

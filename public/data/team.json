@@ -30,7 +30,6 @@
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "twitter": "https://twitter.com/fairdataihub",
-      "resume": "https://fairdataihub.org/resume",
       "instagram": "https://instagram.com/fairdataihub",
       "github": "https://github.com/slugb0t"
     }
@@ -61,7 +60,6 @@
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "twitter": "https://twitter.com/fairdataihub",
-      "resume": "https://fairdataihub.org/resume",
       "instagram": "https://instagram.com/fairdataihub",
       "github": "https://github.com/slugb0t"
     }
@@ -126,7 +124,6 @@
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "twitter": "https://twitter.com/fairdataihub",
-      "resume": "https://fairdataihub.org/resume",
       "instagram": "https://instagram.com/fairdataihub",
       "github": "https://github.com/slugb0t"
     }
@@ -156,8 +153,7 @@
     "social": {
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
-      "twitter": "https://twitter.com/fairdataihub",
-      "resume": "https://fairdataihub.org/resume"
+      "twitter": "https://twitter.com/fairdataihub"
     }
   },
   {
@@ -185,8 +181,6 @@
     "social": {
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
-      "twitter": "https://twitter.com/fairdataihub",
-      "resume": "https://fairdataihub.org/resume",
       "instagram": "https://instagram.com/fairdataihub",
       "github": "https://github.com/slugb0t"
     }

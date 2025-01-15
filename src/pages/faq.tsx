@@ -31,7 +31,7 @@ export default function ContactUs() {
                 looking for?
                 <br />
                 <UnderlineLink
-                  href='https://aireadi.org/contact'
+                  href='https://eyeact.org/contact'
                   className='text-sky-600'
                 >
                   Contact us
@@ -87,7 +87,7 @@ export default function ContactUs() {
                     that time. If you have not received it after 3 weeks, please
                     reach out to us through our{' '}
                     <UnderlineLink
-                      href='https://aireadi.org/contact'
+                      href='https://eyeact.org/contact'
                       className='text-sky-600'
                     >
                       contact form

@@ -7,13 +7,11 @@ import EventDates from '@/components/events/EventDates';
 const EventsLayout: React.FC<EventsLayoutProps> = ({ eventList }) => {
   return (
     <>
-      <hr className='mx-6 my-1 border-dashed border-slate-300' />
-
-      <div className='flex flex-wrap gap-8 px-8'>
+      <div className='flex flex-wrap gap-8 px-8 pb-20'>
         {eventList.map((event) => (
           <div
             key={event.slug}
-            className='group relative flex flex-row rounded-lg border border-gray-200 bg-white shadow-lg transition-shadow duration-300 hover:shadow-2xl'
+            className='group relative flex flex-row rounded-lg border border-gray-200 bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl'
           >
             <div className='relative w-full max-w-[40%] overflow-hidden rounded-l-lg'>
               <Image
@@ -32,7 +30,7 @@ const EventsLayout: React.FC<EventsLayoutProps> = ({ eventList }) => {
             </div>
             <div className='flex flex-1 flex-col p-5'>
               <Link href={`/events/${event.slug}`} passHref>
-                <h3 className='text-xl font-bold text-gray-800 transition duration-300 group-hover:text-blue-500'>
+                <h3 className='text-2xl font-bold text-gray-800 transition-all duration-300 group-hover:text-blue-500'>
                   {event.frontMatter.title}
                 </h3>
               </Link>

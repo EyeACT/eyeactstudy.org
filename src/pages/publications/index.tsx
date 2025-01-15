@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async () => {
     `utf-8`,
   );
 
-  const pageContent = await markdownToHtml(fileContent || ``);
+  const pageContent = await markdownToHtml(fileContent || ``, true);
 
   return {
     props: {

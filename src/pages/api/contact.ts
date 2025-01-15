@@ -20,7 +20,7 @@ export default function handler(
 
   //   const ourmsg = {
   //     to: `jpowen@uw.edu`,
-  //     from: `sendgrid@aireadi.org`,
+  //     from: `sendgrid@eyeact.org`,
   //     subject: `A new request has arrived!`,
   //     html: `<p>Email: ${email}</p>
   //     <p>Subject: ${subject}</p>
@@ -29,7 +29,7 @@ export default function handler(
 
   //   const usermsg = {
   //     to: email,
-  //     from: `contact@aireadi.org`,
+  //     from: `contact@eyeact.org`,
   //     subject: `Hi there!`,
   //     html: `<strong>Thank you for contacting us. We will be in touch with you soon.</strong>
   //     <p>Email: ${email}</p>

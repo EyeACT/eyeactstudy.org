@@ -8,7 +8,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Header />
-      <div className='pt-[61px]'>{children}</div>
+      <div className='bg-gradient-to-t from-sky-100 to-white pt-[61px]'>
+        {children}
+      </div>
       <Footer />
     </>
   );

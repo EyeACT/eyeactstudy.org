@@ -32,17 +32,7 @@ function rehypeWrapInCards() {
           type: 'element',
           tagName: 'div',
           properties: {
-            className: [
-              'bg-white',
-              'rounded-lg',
-              'shadow-lg',
-              'px-6',
-              'mb-6',
-              'pb-4',
-              'pt-1',
-              'border-gray-200',
-              'border-[1px]',
-            ],
+            className: [],
           },
           children: [node], // Add the current <h2> as the first child
         };

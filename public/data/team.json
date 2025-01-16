@@ -1,5 +1,27 @@
 [
   {
+    "id": "Aaron-Lee",
+    "name": "Aaron Lee",
+    "pronoun": "",
+    "roles": [
+      "C. Dan and Irene Hunter Endowed Professorship",
+      "Professor in Ophthalmology"
+    ],
+    "education": [],
+    "expertise": [],
+    "department": "Department of Ophthalmology",
+    "organization": "University of Washington",
+    "location": "Seattle, WA",
+    "about": "Lorem ex et ipsum ut exercitation ut velit nostrud ad. Commodo ea ipsum aute eu velit. Veniam duis exercitation tempor ex aute velit ullamco excepteur aliquip ea consequat proident. Pariatur velit nulla fugiat pariatur velit nulla commodo laboris sunt veniam enim incididunt non aliqua.",
+    "image": "https://ucarecdn.com/9e75ff67-3bbe-4d0b-93f7-52d72dd551ad/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
+    "moduleImageParams": "-/crop/face/200px150p/",
+    "social": {
+      "website": ["https://comp.ophthalmology.uw.edu/"],
+      "twitter": "https://twitter.com/aaronylee",
+      "linkedin": "https://linkedin.com/in/aaron-y-lee-md-msci-a102b87/"
+    }
+  },
+  {
     "id": "Bhavesh-Patel",
     "name": "Bhavesh Patel",
     "pronoun": "he/him",
@@ -7,29 +29,74 @@
     "department": "FAIR Data Innovations Hub",
     "organization": "California Medical Innovations Institute",
     "location": "San Diego, CA",
-    "about": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo. Qui molestiae aspernatur a ducimus architecto et impedit molestias aut. Qui molestiae aspernatur a ducimus architecto et impedit molestias aut. Qui molestiae aspernatur a ducimus architecto et.",
+    "about": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos?",
     "image": "https://ucarecdn.com/b36da179-1c47-4fa9-9e9b-9001ffc9b869/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
     "moduleImageParams": "-/crop/face/250px200p/",
-    "modules": [
-      "data-sharing",
-      "capacity-building",
-      "american-indian-engagement",
-      "data-collection"
-    ],
     "education": [
-      { "degree": "MD Internal Medicine", "institution": "" },
-      { "degree": "MS Ophthalmology", "institution": "" },
-      { "degree": "MCR Translational Research", "institution": "" }
+      {
+        "degree": "Ph.D. in Mechanical Engineering",
+        "institution": "UC Berkeley, 2015"
+      },
+      { "degree": "M.A. in Mathematics", "institution": "UC Berkeley, 2014" },
+      {
+        "degree": "M.Sc. In Mechanical Engineering",
+        "institution": "UC Berkeley, 2013"
+      },
+      {
+        "degree": "Diplôme d'Ingénieur",
+        "institution": "Arts et Métiers ParisTech, 2013"
+      }
     ],
-    "expertise": [
-      "Translational Medicine",
-      "Research Methodology Training",
-      "Grant Writing"
-    ],
+    "expertise": [],
     "social": {
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "twitter": "https://twitter.com/fairdataihub",
+      "instagram": "https://instagram.com/fairdataihub",
+      "github": "https://github.com/slugb0t"
+    }
+  },
+  {
+    "id": "Cecilia-Lee",
+    "name": "Cecilia Lee",
+    "pronoun": "",
+    "roles": [
+      "Klorfine Family Endowed Chair Director of Clinical Research",
+      "Professor"
+    ],
+    "education": [],
+    "expertise": [],
+    "department": "Department of Ophthalmology",
+    "organization": "University of Washington",
+    "location": "Seattle, WA",
+    "about": "Ipsum enim veniam ut laboris aliquip id velit nulla officia incididunt eu. Officia consectetur deserunt amet tempor minim irure do consequat deserunt. Tempor id tempor non occaecat Lorem consequat exercitation dolor et.",
+    "image": "https://ucarecdn.com/4d9dcdd5-42b7-4cd6-8f9a-f16e66b917a8/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
+    "moduleImageParams": "-/crop/face/200px150p/",
+    "social": {
+      "website": ["https://comp.ophthalmology.uw.edu/"]
+    }
+  },
+  {
+    "id": "Dorian-Portillo",
+    "name": "Dorian Portillo",
+    "pronoun": "they/them",
+    "roles": ["Web Developer"],
+    "department": "FAIR Data Innovations Hub",
+    "organization": "California Medical Innovations Institute",
+    "location": "San Bernardino, CA",
+    "about": "Laboris consectetur occaecat irure officia in pariatur voluptate ad. Esse enim pariatur elit do eu duis. Ut mollit pariatur culpa consequat sit reprehenderit qui consequat.",
+    "image": "https://ucarecdn.com/a3ed77eb-24bc-4b55-b8f9-118a9d07f760/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
+    "moduleImageParams": "-/crop/face/250px250p/",
+    "education": [
+      {
+        "degree": "B.Sc in Computer Science ",
+        "institution": "Cal State University, San Bernardino, 2020"
+      }
+    ],
+    "expertise": [],
+    "social": {
+      "website": ["https://fairdataihub.org"],
+      "linkedin": "https://linkedin.com/in/bvhpatel",
       "instagram": "https://instagram.com/fairdataihub",
       "github": "https://github.com/slugb0t"
     }
@@ -42,145 +109,24 @@
     "department": "FAIR Data Innovations Hub",
     "organization": "California Medical Innovations Institute",
     "location": "San Diego, CA",
-    "about": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo. Qui molestiae aspernatur a ducimus architecto et impedit molestias aut. Qui molestiae aspernatur a ducimus architecto et impedit molestias aut. Qui molestiae aspernatur a ducimus architecto et.",
+    "about": "I am a front-end developer with experience in building web applications and data visualization tools.",
     "image": "https://ucarecdn.com/dca922ac-d2dc-4fb4-8c37-5bdc2d5aa768/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
     "moduleImageParams": "-/crop/face/250px200p/",
-    "modules": ["data-sharing", "data-sharing", "data-collection"],
     "education": [
-      { "degree": "MD Internal Medicine", "institution": "" },
-      { "degree": "MS Ophthalmology", "institution": "" },
-      { "degree": "MCR Translational Research", "institution": "" }
+      {
+        "degree": "M.Sc. in Computer Science",
+        "institution": "California State University, Fresno, 2020"
+      },
+      {
+        "degree": "B.Sc. in Computer Science",
+        "institution": "California State University, Fresno, 2018"
+      }
     ],
-    "expertise": [
-      "Translational Medicine",
-      "Research Methodology Training",
-      "Grant Writing"
-    ],
+    "expertise": [],
     "social": {
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "twitter": "https://twitter.com/fairdataihub",
-      "instagram": "https://instagram.com/fairdataihub",
-      "github": "https://github.com/slugb0t"
-    }
-  },
-  {
-    "id": "Dorian-Portillo",
-    "name": "Dorian Portillo",
-    "pronoun": "they/them",
-    "roles": ["Web Developer"],
-    "department": "FAIR Data Innovations Hub",
-    "organization": "California Medical Innovations Institute",
-    "location": "San Bernardino, CA",
-    "about": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo. Qui molestiae aspernatur a ducimus architecto et impedit molestias aut. Qui molestiae aspernatur a ducimus architecto et impedit molestias aut. Qui molestiae aspernatur a ducimus architecto et.",
-    "image": "https://ucarecdn.com/a3ed77eb-24bc-4b55-b8f9-118a9d07f760/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
-    "moduleImageParams": "-/crop/face/250px250p/",
-    "modules": ["data-sharing", "data-collection"],
-    "education": [
-      { "degree": "MD Internal Medicine", "institution": "" },
-      { "degree": "MS Ophthalmology", "institution": "" },
-      { "degree": "MCR Translational Research", "institution": "" }
-    ],
-    "expertise": [
-      "Translational Medicine",
-      "Research Methodology Training",
-      "Grant Writing"
-    ],
-    "social": {
-      "website": ["https://fairdataihub.org"],
-      "linkedin": "https://linkedin.com/in/bvhpatel",
-      "instagram": "https://instagram.com/fairdataihub",
-      "github": "https://github.com/slugb0t"
-    }
-  },
-  {
-    "id": "Bhavesh-Patel1",
-    "name": "Bhavesh Patel",
-    "pronoun": "he/him",
-    "roles": ["Associate Research Professor"],
-    "department": "FAIR Data Innovations Hub",
-    "organization": "California Medical Innovations Institute",
-    "location": "San Diego, CA",
-    "about": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo.",
-    "image": "https://ucarecdn.com/b36da179-1c47-4fa9-9e9b-9001ffc9b869/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
-    "moduleImageParams": "-/crop/face/250px200p/",
-    "modules": [
-      "data-sharing",
-      "capacity-building",
-      "american-indian-engagement",
-      "data-collection"
-    ],
-    "education": [
-      { "degree": "MD Internal Medicine", "institution": "" },
-      { "degree": "MS Ophthalmology", "institution": "" },
-      { "degree": "MCR Translational Research", "institution": "" }
-    ],
-    "expertise": [
-      "Translational Medicine",
-      "Research Methodology Training",
-      "Grant Writing"
-    ],
-    "social": {
-      "website": ["https://fairdataihub.org"],
-      "linkedin": "https://linkedin.com/in/bvhpatel",
-      "twitter": "https://twitter.com/fairdataihub",
-      "instagram": "https://instagram.com/fairdataihub",
-      "github": "https://github.com/slugb0t"
-    }
-  },
-  {
-    "id": "Sanjay-Soundarajan1",
-    "name": "Sanjay Soundarajan",
-    "pronoun": "he/him",
-    "roles": ["Front End Developer"],
-    "department": "FAIR Data Innovations Hub",
-    "organization": "California Medical Innovations Institute",
-    "location": "San Diego, CA",
-    "about": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo. ",
-    "image": "https://ucarecdn.com/dca922ac-d2dc-4fb4-8c37-5bdc2d5aa768/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
-    "moduleImageParams": "-/crop/face/250px200p/",
-    "modules": ["data-sharing", "data-sharing", "data-collection"],
-    "education": [
-      { "degree": "MD Internal Medicine", "institution": "" },
-      { "degree": "MS Ophthalmology", "institution": "" },
-      { "degree": "MCR Translational Research", "institution": "" }
-    ],
-    "expertise": [
-      "Translational Medicine",
-      "Research Methodology Training",
-      "Grant Writing"
-    ],
-    "social": {
-      "website": ["https://fairdataihub.org"],
-      "linkedin": "https://linkedin.com/in/bvhpatel",
-      "twitter": "https://twitter.com/fairdataihub"
-    }
-  },
-  {
-    "id": "Dorian-Portillo1",
-    "name": "Dorian Portillo",
-    "pronoun": "they/them",
-    "roles": ["Web Developer"],
-    "department": "FAIR Data Innovations Hub",
-    "organization": "California Medical Innovations Institute",
-    "location": "San Bernardino, CA",
-    "about": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos? Et error sequi et voluptates iure eum nulla optio aut quia illo. ",
-    "image": "https://ucarecdn.com/a3ed77eb-24bc-4b55-b8f9-118a9d07f760/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
-    "moduleImageParams": "-/crop/face/250px250p/",
-    "modules": ["data-sharing", "data-collection"],
-    "education": [
-      { "degree": "MD Internal Medicine", "institution": "" },
-      { "degree": "MS Ophthalmology", "institution": "" },
-      { "degree": "MCR Translational Research", "institution": "" }
-    ],
-    "expertise": [
-      "Translational Medicine",
-      "Research Methodology Training",
-      "Grant Writing"
-    ],
-    "social": {
-      "website": ["https://fairdataihub.org"],
-      "linkedin": "https://linkedin.com/in/bvhpatel",
       "instagram": "https://instagram.com/fairdataihub",
       "github": "https://github.com/slugb0t"
     }

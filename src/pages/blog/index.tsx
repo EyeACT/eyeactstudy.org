@@ -41,7 +41,7 @@ const Blog: React.FC<BlogProps> = ({ blogList }) => {
             <h1 className='mb-2 text-left text-5xl font-bold'>Blog</h1>
 
             <h2 className='text-left text-xl'>
-              A collection of thoughts, ideas, and resources from the AI-READI
+              A collection of thoughts, ideas, and resources from the Eye ACT
               team.
             </h2>
           </div>

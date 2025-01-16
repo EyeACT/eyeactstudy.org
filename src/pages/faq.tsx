@@ -41,66 +41,18 @@ export default function ContactUs() {
 
               <div className='grid-cols-12 gap-10 border-t py-10 lg:grid'>
                 <dt className='col-span-5 text-xl font-medium'>
-                  How do I access the controlled set of the AI-READI dataset?
+                  Aute qui et ex anim.
                 </dt>
                 <dd className='col-span-7 mt-2 text-lg md:mt-0'>
                   <p className=''>
-                    We are currently working on a suitable process for getting
-                    access to our controlled set and do not have an anticipated
-                    date for completing it. Please keep checking our{' '}
-                    <UnderlineLink href='/' className='text-sky-600'>
-                      website
-                    </UnderlineLink>{' '}
-                    to learn when it is out.
+                    Sit Lorem incididunt commodo esse ad consequat duis est ad
+                    proident eu consectetur incididunt elit. Do nostrud veniam
+                    voluptate proident deserunt irure velit minim esse minim
+                    aute nostrud. Quis et duis Lorem labore exercitation veniam
+                    ex aliqua commodo incididunt ea veniam ipsum dolor.
                   </p>
                 </dd>
               </div>
-
-              <div className='grid-cols-12 gap-10 border-t py-10 lg:grid'>
-                <dt className='col-span-5 text-xl font-medium'>
-                  What is the tentative schedule for releasing subsequent
-                  versions of the AI-READI dataset with data from additional
-                  study participants?
-                </dt>
-                <dd className='col-span-7 mt-2 text-lg md:mt-0'>
-                  <p className=''>
-                    Note that this is an ongoing study and we are releasing data
-                    progressively as it is being collected. Our next release is
-                    planned towards the end of Fall 2024 with data from
-                    approximately 1,000 participants. Another release will
-                    likely be made a year later before the final release with
-                    data from 4,000 participants is made during Fall or Winter
-                    2026.
-                  </p>
-                </dd>
-              </div>
-
-              <div className='grid-cols-12 gap-10 border-t py-10 lg:grid'>
-                <dt className='col-span-5 text-xl font-medium'>
-                  How long would it take for me to receive the download link for
-                  the dataset after I complete the access process?
-                </dt>
-                <dd className='col-span-7 mt-2 text-lg md:mt-0'>
-                  <p className=''>
-                    You should receive the link typically within 2 weeks if not
-                    sooner depending on the number of requests we receive during
-                    that time. If you have not received it after 3 weeks, please
-                    reach out to us through our{' '}
-                    <UnderlineLink
-                      href='https://eyeact.org/contact'
-                      className='text-sky-600'
-                    >
-                      contact form
-                    </UnderlineLink>
-                    .
-                  </p>
-                </dd>
-              </div>
-
-              {/* <p className='my-12 hidden w-full rounded-lg bg-yellow-50 p-10 text-center text-xl font-normal text-slate-600 sm:mb-8'>
-                We are not taking any queries at this time. <br /> We hope you
-                can find all the necessary information on our website.
-              </p> */}
             </div>
           </section>
         </main>

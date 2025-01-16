@@ -14,11 +14,11 @@ We do not use third-party cookies or send any information to third-parties. We d
 
 ## Additional Information
 
-When you access third party sites on our Sites, or when you are reading integration or social media links, cookies can be created by the companies disseminating these links. These third parties may be able to use cookies in the context of AI-READI's Services (partners or other third parties supplying content or services available on the AI-READI site) and are responsible for the cookies they install, and it is their conditions on cookies which apply. For more information, you are advised to check the cookie policy directly on these third-party sites concerning their use of cookies.
+When you access third party sites on our Sites, or when you are reading integration or social media links, cookies can be created by the companies disseminating these links. These third parties may be able to use cookies in the context of EyeAct's Services (partners or other third parties supplying content or services available on the EyeAct site) and are responsible for the cookies they install, and it is their conditions on cookies which apply. For more information, you are advised to check the cookie policy directly on these third-party sites concerning their use of cookies.
 
 ## Questions and complaints
 
-Please feel free to contact us if you have any questions or complaints about AI-READI's Cookie Policy.
+Please feel free to contact us if you have any questions or complaints about EyeAct's Cookie Policy.
 
 **Contact form**: [eyeact.org/contact](https://eyeact.org/contact)
 

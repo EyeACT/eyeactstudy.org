@@ -10,6 +10,8 @@ import {
   Tag,
   useDisclosure,
   VStack,
+  Wrap,
+  WrapItem,
 } from '@chakra-ui/react';
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav';
 import { motion } from 'framer-motion';
@@ -99,12 +101,14 @@ const MembersGrid: React.FC<{
               <h3 className='text-left text-2xl font-extrabold text-white'>
                 {member.name}
               </h3>
-              <div className='mt-2 flex items-center'>
-                <IoSchoolSharp size={20} style={{ color: 'white' }} />
-                <p className='ml-2 text-sm font-semibold text-white'>
-                  {member.education[0].degree}
-                </p>
-              </div>
+              {member.education.length > 0 && (
+                <div className='mt-2 flex items-center'>
+                  <IoSchoolSharp size={20} style={{ color: 'white' }} />
+                  <p className='ml-2 text-sm font-semibold text-white'>
+                    {member.education[0].degree}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </motion.div>
@@ -163,7 +167,7 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                   {/* Left Section */}
                   <GridItem colSpan={{ base: 1, lg: 4 }}>
                     <VStack spacing={4} align='stretch' className='h-full'>
-                      <div className='relative h-full max-h-[40rem] w-full rounded-lg shadow-md'>
+                      <div className='relative h-full max-h-[40rem] w-full rounded-lg shadow-md sm:min-h-[30rem]'>
                         <Image
                           src={selectedTeamMember?.image || ''}
                           alt={selectedTeamMember?.name + ' image'}
@@ -176,9 +180,9 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                       </div>
 
                       {/* Social Icons */}
-                      <Grid templateColumns='repeat(6, 1fr)' gap={4} rowGap={2}>
+                      <Wrap spacing='20px'>
                         {'linkedin' in (selectedTeamMember?.social || {}) && (
-                          <GridItem>
+                          <WrapItem>
                             <UnstyledLink
                               href={selectedTeamMember?.social.linkedin || ''}
                               target='_blank'
@@ -187,11 +191,11 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                             >
                               <FaLinkedin size={22} />
                             </UnstyledLink>
-                          </GridItem>
+                          </WrapItem>
                         )}
 
                         {'twitter' in (selectedTeamMember?.social || {}) && (
-                          <GridItem>
+                          <WrapItem>
                             <UnstyledLink
                               href={selectedTeamMember?.social.twitter || ''}
                               target='_blank'
@@ -200,11 +204,11 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                             >
                               <FaTwitter size={22} />
                             </UnstyledLink>
-                          </GridItem>
+                          </WrapItem>
                         )}
 
                         {'instagram' in (selectedTeamMember?.social || {}) && (
-                          <GridItem>
+                          <WrapItem>
                             <UnstyledLink
                               href={selectedTeamMember?.social.instagram || ''}
                               target='_blank'
@@ -213,11 +217,11 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                             >
                               <FaInstagram size={22} />
                             </UnstyledLink>
-                          </GridItem>
+                          </WrapItem>
                         )}
 
                         {'github' in (selectedTeamMember?.social || {}) && (
-                          <GridItem>
+                          <WrapItem>
                             <UnstyledLink
                               href={selectedTeamMember?.social.github || ''}
                               target='_blank'
@@ -226,13 +230,13 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                             >
                               <FaGithub size={22} />
                             </UnstyledLink>
-                          </GridItem>
+                          </WrapItem>
                         )}
 
                         {'website' in (selectedTeamMember?.social || {}) &&
                           selectedTeamMember?.social.website?.map(
                             (site, index) => (
-                              <GridItem key={index}>
+                              <WrapItem key={index}>
                                 <UnstyledLink
                                   href={site}
                                   target='_blank'
@@ -241,10 +245,10 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                                 >
                                   <FaGlobe size={22} />
                                 </UnstyledLink>
-                              </GridItem>
+                              </WrapItem>
                             ),
                           )}
-                      </Grid>
+                      </Wrap>
                     </VStack>
                   </GridItem>
 
@@ -254,9 +258,11 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                       <div className='flex flex-col items-start border-b-2 pb-2 align-middle'>
                         <h2 className='text-center text-2xl font-extrabold text-slate-900 lg:text-3xl'>
                           {selectedTeamMember?.name}{' '}
-                          <span className='text-lg text-slate-700'>
-                            ({selectedTeamMember?.pronoun})
-                          </span>
+                          {selectedTeamMember?.pronoun && (
+                            <span className='text-lg text-slate-700'>
+                              ({selectedTeamMember?.pronoun})
+                            </span>
+                          )}
                         </h2>
 
                         {/* Location */}
@@ -296,48 +302,61 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                       </div>
 
                       {/* Education */}
-                      <div className='mt-4'>
-                        <h3 className='flex items-center text-xl font-bold text-slate-800'>
-                          <IoSchoolSharp size={22} className='mr-3' />
-                          Education
-                        </h3>
+                      {selectedTeamMember?.education &&
+                        selectedTeamMember?.education.length > 0 && (
+                          <div className='mt-4'>
+                            <h3 className='flex items-center text-xl font-bold text-slate-800'>
+                              <IoSchoolSharp size={22} className='mr-3' />
+                              Education
+                            </h3>
 
-                        <ul className='mt-2'>
-                          {selectedTeamMember?.education.map((edu, index) => (
-                            <li key={index} className='text-lg text-slate-700'>
-                              {edu.degree}{' '}
-                              {edu.institution && (
-                                <span className='text-slate-600'>
-                                  ({edu.institution})
-                                </span>
+                            <ul className='mt-2 list-inside list-disc'>
+                              {selectedTeamMember?.education.map(
+                                (edu, index) => (
+                                  <li
+                                    key={index}
+                                    className='text-lg text-slate-700'
+                                  >
+                                    <span className='text-slate-800'>
+                                      {edu.degree}
+                                    </span>{' '}
+                                    {edu.institution && (
+                                      <span className='text-base text-slate-600'>
+                                        ({edu.institution})
+                                      </span>
+                                    )}
+                                  </li>
+                                ),
                               )}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                            </ul>
+                          </div>
+                        )}
 
                       {/* Expertise */}
-                      <div className='mt-4'>
-                        <h3 className='flex items-center text-xl font-bold text-slate-800'>
-                          <MdOutlineBadge size={22} className='mr-3' />
-                          Expertise
-                        </h3>
+                      {selectedTeamMember?.expertise &&
+                        selectedTeamMember?.expertise.length > 0 && (
+                          <div className='mt-4'>
+                            <h3 className='flex items-center text-xl font-bold text-slate-800'>
+                              <MdOutlineBadge size={22} className='mr-3' />
+                              Expertise
+                            </h3>
 
-                        <div className='mt-2'>
-                          {selectedTeamMember?.expertise?.map(
-                            (expertise, index) => (
-                              <Tag
-                                key={index}
-                                colorScheme='blue'
-                                size='lg'
-                                className='my-1 mr-1 rounded-full px-3 py-1 shadow-sm'
-                              >
-                                {expertise}
-                              </Tag>
-                            ),
-                          )}
-                        </div>
-                      </div>
+                            <div className='mt-2'>
+                              {selectedTeamMember?.expertise?.map(
+                                (expertise, index) => (
+                                  <Tag
+                                    key={index}
+                                    colorScheme='blue'
+                                    size='lg'
+                                    className='my-1 mr-1 rounded-full px-3 py-1 shadow-sm'
+                                  >
+                                    {expertise}
+                                  </Tag>
+                                ),
+                              )}
+                            </div>
+                          </div>
+                        )}
 
                       {/* About Me */}
                       <div className='mt-6'>

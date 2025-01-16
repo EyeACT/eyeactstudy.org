@@ -23,22 +23,6 @@ interface TextWithImagesContent {
   image2: string;
 }
 
-interface ModuleMemberType {
-  name: string;
-  id: string;
-  roles: string[];
-  image: string;
-  modules: string[];
-  moduleImageParams: string;
-  blurDataURL: string;
-}
-
-type ModuleMembersType = ModuleMemberType[];
-
-type ModuleMembersPageProps = {
-  TeamMembers: ModuleMembersType;
-};
-
 interface EventItem {
   slug: string;
   timeToRead: number;

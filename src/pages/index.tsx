@@ -5,10 +5,13 @@ import { motion } from 'framer-motion';
 import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
+import Link from 'next/link';
+import { TbArrowNarrowRight } from 'react-icons/tb';
 
 import StatsText from '@/components/content/StatsText';
 import Layout from '@/components/layout/Layout';
 import ButtonLink from '@/components/links/ButtonLink';
+import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
 import { WidthFramerContainer } from '@/utils/framer';
@@ -100,6 +103,21 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     },
   ];
 
+  const MembersLogosList = [
+    {
+      image:
+        'https://fairdataihub.org/_next/image?url=%2Fimages%2Fcollaborators%2Fcalmi-logo.png&w=256&q=75',
+      imageHeight: 'h-16',
+      href: 'https://calmi2.org/',
+      caption: 'California Medical Innovations Institute',
+    },
+    {
+      image: '/images/member-orgs/uw.png',
+      imageHeight: 'h-14',
+      href: 'https://www.washington.edu/',
+      caption: 'University of Washington',
+    },
+  ];
   return (
     <>
       <SkipNavLink>Skip to content</SkipNavLink>
@@ -110,6 +128,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
         <main>
           <SkipNavContent />
 
+          {/* Hero Section */}
           <section className="relative mb-12 flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[150px] after:w-full after:bg-gradient-to-t after:from-black after:to-transparent md:h-[100vh]">
             <div className='relative grid w-full grid-cols-12 items-center gap-8 px-6 py-16 lg:ml-16 lg:py-16 xl:gap-0'>
               {/* Left Text Section */}
@@ -335,71 +354,6 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
               whileInView='show'
               viewport={{ once: true }}
               custom={0}
-              className="mx-auto max-w-screen-xl rounded-md border bg-[url('/images/polygon-card.svg')] shadow-lg"
-            >
-              <div className='mx-auto flex max-w-7xl flex-col items-center md:flex-row'>
-                <div className='relative flex-shrink-0 md:w-1/2'>
-                  <motion.div
-                    variants={fadeInVariants}
-                    initial='hidden'
-                    whileInView='show'
-                    viewport={{ once: true }}
-                    custom={0}
-                    className='absolute inset-0 flex flex-col items-center justify-center'
-                  >
-                    <Image
-                      src='https://images.unsplash.com/photo-1615552440985-d652ebf4c199?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                      width={500}
-                      height={500}
-                      alt='Retinal Imaging'
-                      className='rounded-full shadow-md'
-                    />
-                  </motion.div>
-                </div>
-
-                <div className='my-10 flex flex-col md:w-1/2 md:pl-10'>
-                  <motion.div
-                    variants={fadeInVariants}
-                    initial='hidden'
-                    whileInView='show'
-                    viewport={{ once: true }}
-                    custom={1}
-                    className='pr-4'
-                  >
-                    <h2 className='pb-4 text-2xl font-semibold text-black'>
-                      Exploring Retinal Changes for Brain Health Insights
-                    </h2>
-
-                    <p className='pb-6 text-base text-gray-800'>
-                      The EyeACT study goes beyond traditional approaches by
-                      exploring how subtle retinal changes can provide a dynamic
-                      view of brain health over time. These insights are shaping
-                      how we detect and understand neurodegenerative conditions.
-                    </p>
-
-                    <h3 className='pt-6 text-xl font-semibold text-sky-500'>
-                      Bridging Retinal and Cognitive Health
-                    </h3>
-
-                    <p className='pt-4 text-gray-800'>
-                      EyeACT uniquely correlates retinal imaging findings with
-                      cognitive decline, providing a clearer picture of
-                      Alzheimer’s progression and opening avenues for targeted
-                      intervention strategies.
-                    </p>
-                  </motion.div>
-                </div>
-              </div>
-            </motion.div>
-          </section>
-
-          <section className='bg-gradient-to-t from-sky-100 to-white py-12'>
-            <motion.div
-              variants={fadeInVariants}
-              initial='hidden'
-              whileInView='show'
-              viewport={{ once: true }}
-              custom={0}
               className='mx-auto flex max-w-screen-xl flex-col items-center justify-between px-4 lg:flex-row'
             >
               <div className='px-5 lg:max-w-2xl'>
@@ -426,6 +380,136 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   alt='lorem ipsum'
                 />
               </div>
+            </motion.div>
+          </section>
+
+          {/* Members Section */}
+          <section className='bg-gradient-to-t from-sky-100 to-white py-16'>
+            <motion.div
+              variants={fadeInVariants}
+              initial='hidden'
+              whileInView='show'
+              viewport={{ once: true }}
+              className='mx-auto max-w-screen-xl px-4 lg:px-6'
+            >
+              <motion.div
+                variants={fadeInVariants}
+                initial='hidden'
+                whileInView='show'
+                viewport={{ once: true }}
+                className="mx-auto max-w-7xl rounded-xl border border-gray-200 bg-[url('/images/curve-line-card.svg')] p-10 shadow-lg"
+              >
+                <div className='text-center'>
+                  <h1 className='mb-3 text-3xl font-bold tracking-tight sm:text-4xl'>
+                    Eye ACT Members
+                  </h1>
+
+                  <p className='mb-4 text-xl font-medium text-slate-600'>
+                    The following organizations are part of the Eye ACT project
+                  </p>
+
+                  <div className='relative mb-8 flex justify-center'>
+                    <Link
+                      href='/team'
+                      passHref
+                      className='flex w-max items-center space-x-1 text-xl font-semibold text-sky-500 transition-all hover:text-sky-700'
+                    >
+                      <span>Meet our team</span>
+                      <TbArrowNarrowRight size={20} />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Organization Logos */}
+                <div className='flex flex-wrap justify-center gap-6'>
+                  {MembersLogosList.map((logo, index) => (
+                    <UnstyledLink href={logo.href} key={index}>
+                      <div className='group relative flex h-[140px] w-[320px] items-center justify-center rounded-lg bg-slate-50 p-4 shadow-md transition-all hover:border hover:bg-slate-100'>
+                        <img
+                          src={logo.image}
+                          alt=''
+                          className={logo.imageHeight}
+                        />
+                        <span className='pointer-events-none absolute bottom-[-5px] text-sm font-medium text-slate-600 opacity-0 transition-all group-hover:bottom-1 group-hover:opacity-100 lg:text-xs'>
+                          {logo.caption}
+                        </span>
+                      </div>
+                    </UnstyledLink>
+                  ))}
+                </div>
+              </motion.div>
+            </motion.div>
+          </section>
+
+          <section className='bg-gradient-to-t from-sky-100 via-white to-sky-100 py-12'>
+            <motion.div
+              variants={fadeInVariants}
+              initial='hidden'
+              whileInView='show'
+              viewport={{ once: true }}
+              custom={0}
+              className='mx-auto max-w-screen-xl px-4 lg:px-6'
+            >
+              <motion.div
+                variants={fadeInVariants}
+                initial='hidden'
+                whileInView='show'
+                viewport={{ once: true }}
+                className="mx-auto max-w-7xl rounded-xl border border-gray-200 bg-[url('/images/polygon-card.svg')] p-10 shadow-lg"
+              >
+                <div className='mx-auto flex max-w-7xl flex-col items-center md:flex-row'>
+                  <div className='relative flex-shrink-0 md:w-1/2'>
+                    <motion.div
+                      variants={fadeInVariants}
+                      initial='hidden'
+                      whileInView='show'
+                      viewport={{ once: true }}
+                      className='flex flex-col items-center justify-center'
+                    >
+                      <Image
+                        src='https://images.unsplash.com/photo-1615552440985-d652ebf4c199?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                        width={500}
+                        height={500}
+                        alt='Retinal Imaging'
+                        className='aspect-auto rounded-full shadow-md'
+                      />
+                    </motion.div>
+                  </div>
+
+                  <div className='my-10 flex flex-col md:w-1/2 md:pl-10'>
+                    <motion.div
+                      variants={fadeInVariants}
+                      initial='hidden'
+                      whileInView='show'
+                      viewport={{ once: true }}
+                      className='pr-4'
+                    >
+                      <h2 className='pb-4 text-2xl font-semibold text-black'>
+                        Exploring Retinal Changes for Brain Health Insights
+                      </h2>
+
+                      <p className='pb-6 text-base text-gray-800'>
+                        The EyeACT study goes beyond traditional approaches by
+                        exploring how subtle retinal changes can provide a
+                        dynamic view of brain health over time. These insights
+                        are shaping how we detect and understand
+                        neurodegenerative conditions.
+                      </p>
+
+                      <h3 className='pt-6 text-xl font-semibold text-sky-500'>
+                        Bridging Retinal and Cognitive Health
+                      </h3>
+
+                      <p className='pt-4 text-gray-800'>
+                        EyeACT uniquely correlates retinal imaging findings with
+                        cognitive decline, providing a clearer picture of
+                        Alzheimer’s progression and opening avenues for targeted
+                        intervention strategies.
+                      </p>
+                    </motion.div>
+                  </div>
+                </div>
+              </motion.div>
             </motion.div>
           </section>
         </main>

@@ -129,7 +129,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
           <SkipNavContent />
 
           {/* Hero Section */}
-          <section className="relative mb-12 flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[150px] after:w-full after:bg-gradient-to-t after:from-black after:to-transparent md:h-[100vh]">
+          <section className="relative flex h-[60vh] min-h-[600px] w-full items-center justify-center text-white before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-home-hero-image before:bg-cover before:bg-center before:bg-no-repeat before:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[150px] after:w-full after:bg-gradient-to-t after:from-black after:to-transparent md:h-[100vh]">
             <div className='relative grid w-full grid-cols-12 items-center gap-8 px-6 py-16 lg:ml-16 lg:py-16 xl:gap-0'>
               {/* Left Text Section */}
               <div className='col-span-12 pr-0 md:col-span-6 md:pr-16'>
@@ -180,7 +180,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white py-8'>
+          <section className='bg-gradient-to-t from-sky-100 to-white pb-8 pt-16'>
             <div className='mx-auto max-w-screen-xl text-center'>
               <motion.h2
                 variants={fadeInVariants}

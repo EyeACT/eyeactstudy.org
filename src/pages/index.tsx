@@ -61,7 +61,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       id: 2,
       title: 'Innovative Detection Strategies',
       description:
-        'By identifying key retinal biomarkers, EyeACT is pioneering tools that predict Alzheimer’s risk years before clinical symptoms emerge, offering a unique approach to early detection.',
+        'By identifying key retinal biomarkers, Eye ACT is pioneering tools that predict Alzheimer’s risk years before clinical symptoms emerge, offering a unique approach to early detection.',
       linkText: 'Discover our approach',
       linkUrl: '',
       imgSrc:
@@ -71,7 +71,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       id: 3,
       title: 'Transforming Patient Care',
       description:
-        'EyeACT integrates eye and brain research to inform targeted interventions for Alzheimer’s. These breakthroughs are shaping personalized treatments to improve patient outcomes.',
+        'Eye ACT integrates eye and brain research to inform targeted interventions for Alzheimer’s. These breakthroughs are shaping personalized treatments to improve patient outcomes.',
       linkText: 'Find out how',
       linkUrl: '',
       imgSrc:
@@ -85,21 +85,21 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       title: 'Detailed Data Collection',
       subtitle: 'Integrating Eye and Brain Health Insights',
       description:
-        'EyeACT combines advanced imaging, genetic data, and clinical evaluations to uncover the connection between retinal changes and neurodegenerative processes. By analyzing ophthalmic data with Alzheimer’s risk factors, the study offers actionable insights for early intervention.',
+        'Eye ACT combines advanced imaging, genetic data, and clinical evaluations to uncover the connection between retinal changes and neurodegenerative processes. By analyzing ophthalmic data with Alzheimer’s risk factors, the study offers actionable insights for early intervention.',
     },
     {
       id: 2,
       title: 'Long-Term Follow-Up',
       subtitle: 'Revealing Retinal Health Trends Over Time',
       description:
-        'With ongoing monitoring, EyeACT tracks how retinal biomarkers evolve alongside cognitive decline. This long-term approach offers unique insights into how eye health may predict brain health changes, advancing Alzheimer’s detection strategies.',
+        'With ongoing monitoring, Eye ACT tracks how retinal biomarkers evolve alongside cognitive decline. This long-term approach offers unique insights into how eye health may predict brain health changes, advancing Alzheimer’s detection strategies.',
     },
     {
       id: 3,
       title: 'Rigorous Analytical Methods',
       subtitle: 'Innovative Non-Invasive Diagnostic Tools',
       description:
-        'Using imaging technologies and statistical analysis, EyeACT identifies retinal biomarkers that align with Alzheimer’s risk. These non-invasive methods are transforming early detection and paving the way for personalized care.',
+        'Using imaging technologies and statistical analysis, Eye ACT identifies retinal biomarkers that align with Alzheimer’s risk. These non-invasive methods are transforming early detection and paving the way for personalized care.',
     },
   ];
 
@@ -123,7 +123,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       <SkipNavLink>Skip to content</SkipNavLink>
 
       <Layout>
-        <Seo templateTitle='About EyeACT' />
+        <Seo templateTitle='About Eye ACT' />
 
         <main>
           <SkipNavContent />
@@ -190,7 +190,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 custom={0}
                 className='border-b-2 border-gray-300 pb-4 text-4xl font-bold text-gray-800'
               >
-                How the EyeACT Study Stands Out
+                How the Eye ACT Study Stands Out
               </motion.h2>
 
               <div className='mt-4 grid grid-cols-1 gap-8 md:grid-cols-3'>
@@ -263,7 +263,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 custom={0}
                 className='mx-auto mb-12 max-w-5xl text-lg font-normal'
               >
-                EyeACT leverages advances in retinal imaging and data analysis
+                Eye ACT leverages advances in retinal imaging and data analysis
                 to bridge the gap between eye health and Alzheimer’s research.
                 Our focus is on translating these findings into actionable tools
                 for early detection and treatment, paving the way for
@@ -489,7 +489,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                       </h2>
 
                       <p className='pb-6 text-base text-gray-800'>
-                        The EyeACT study goes beyond traditional approaches by
+                        The Eye ACT study goes beyond traditional approaches by
                         exploring how subtle retinal changes can provide a
                         dynamic view of brain health over time. These insights
                         are shaping how we detect and understand
@@ -501,8 +501,8 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                       </h3>
 
                       <p className='pt-4 text-gray-800'>
-                        EyeACT uniquely correlates retinal imaging findings with
-                        cognitive decline, providing a clearer picture of
+                        Eye ACT uniquely correlates retinal imaging findings
+                        with cognitive decline, providing a clearer picture of
                         Alzheimer’s progression and opening avenues for targeted
                         intervention strategies.
                       </p>

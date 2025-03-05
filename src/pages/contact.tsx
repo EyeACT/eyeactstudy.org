@@ -67,7 +67,7 @@ const ContactUs: React.FC = () => {
                 loading='lazy'
                 width='100%'
                 height='276'
-                title='EyeACT Contact Form'
+                title='Eye ACT Contact Form'
               ></iframe> */}
             </div>
           </section>

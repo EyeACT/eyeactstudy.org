@@ -2,7 +2,7 @@
 
 **Last updated February 08, 2023**
 
-This privacy notice for EyeACT ("**Company**," "**we**," "**us**," or "**our**"), describes how and why we might collect, store, use, and/or share ("**process**") your information when you use our services ("**Services**"), such as when you:
+This privacy notice for Eye ACT ("**Company**," "**we**," "**us**," or "**our**"), describes how and why we might collect, store, use, and/or share ("**process**") your information when you use our services ("**Services**"), such as when you:
 
 - Visit our website at [eyeact.org](https://eyeact.org), or any website of ours that links to this privacy notice
 - Engage with us in other related ways, including any sales, marketing, or events
@@ -15,7 +15,7 @@ This privacy notice for EyeACT ("**Company**," "**we**," "**us**," or "**our**")
 
 ### What personal information do we process?
 
-When you visit, use, or navigate our Services, we may process personal information depending on how you interact with EyeACT and the Services, the choices you make, and the products and features you use. Click [here](#personalinfo) to learn more.
+When you visit, use, or navigate our Services, we may process personal information depending on how you interact with Eye ACT and the Services, the choices you make, and the products and features you use. Click [here](#personalinfo) to learn more.
 
 ### Do we process any sensitive personal information?
 
@@ -45,7 +45,7 @@ Depending on where you are located geographically, the applicable privacy law ma
 
 The easiest way to exercise your rights is by filling out our data subject request form available [here](https://app.termly.io/notify/bc201a66-26e4-4089-805b-25d11c63a07c), or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
 
-Want to learn more about what EyeACT does with any information we collect? Click [here](#toc) to review the notice in full.
+Want to learn more about what Eye ACT does with any information we collect? Click [here](#toc) to review the notice in full.
 
 ## Table of Contents
 
@@ -79,7 +79,7 @@ Want to learn more about what EyeACT does with any information we collect? Click
 
 **Personal information you disclose to us**
 
-**_In Short:_** *We collect personal information that you provide to us.*
+**_In Short:_** _We collect personal information that you provide to us._
 
 We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.
 
@@ -94,7 +94,7 @@ All personal information that you provide to us must be true, complete, and accu
 
 **Information automatically collected**
 
-**_In Short:_** *Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.*
+**_In Short:_** _Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services._
 
 We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.
 
@@ -110,7 +110,7 @@ The information we collect includes:
 
 ## 2\. How do we process your information?
 
-**_In Short:_** *We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.*
+**_In Short:_** _We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent._
 
 **We process your personal information for a variety of reasons, depending on how you interact with our Services, including:**
 
@@ -134,7 +134,7 @@ The information we collect includes:
 
 ## 3\. When and with whom do we share your personal information?
 
-**_In Short:_** *We may share information in specific situations described in this section and/or with the following third parties.*
+**_In Short:_** _We may share information in specific situations described in this section and/or with the following third parties._
 
 We may need to share your personal information in the following situations:
 
@@ -142,13 +142,13 @@ We may need to share your personal information in the following situations:
 
 ## 4\. Do we use cookies and other tracking technologies?
 
-**_In Short:_** *We may use cookies and other tracking technologies to collect and store your information.*
+**_In Short:_** _We may use cookies and other tracking technologies to collect and store your information._
 
 We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice.
 
 ## 5\. How long do we keep your information?
 
-**_In Short:_** *We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.*
+**_In Short:_** _We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law._
 
 We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements).
 
@@ -156,19 +156,19 @@ When we have no ongoing legitimate business need to process your personal inform
 
 ## 6\. How do we keep your information safe?
 
-**_In Short:_** *We aim to protect your personal information through a system of organizational and technical security measures.*
+**_In Short:_** _We aim to protect your personal information through a system of organizational and technical security measures._
 
 We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
 
 ## 7\. Do we collect information from minors?
 
-**_In Short:_** *We do not knowingly collect data from or market to children under 18 years of age.*
+**_In Short:_** _We do not knowingly collect data from or market to children under 18 years of age._
 
 We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at [contact@eyeact.org](mailto:contact@eyeact.org).
 
 ## 8\. What are your privacy rights?
 
-**_In Short:_**  *You may review, change, or terminate your account at any time.*
+**_In Short:_**  _You may review, change, or terminate your account at any time._
 
 If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: [https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm](https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm).
 
@@ -188,7 +188,7 @@ Most web browsers and some mobile operating systems and mobile applications incl
 
 ## 10\. Do california residents have specific privacy rights?
 
-**_In Short:_** *Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.*
+**_In Short:_** _Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information._
 
 California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
 
@@ -244,7 +244,7 @@ We may disclose your personal information with our service providers pursuant to
 
 We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be "selling" of your personal information.
 
-EyeACT has not disclosed, sold, or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. EyeACT will not sell or share personal information in the future belonging to website visitors, users, and other consumers.
+Eye ACT has not disclosed, sold, or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. Eye ACT will not sell or share personal information in the future belonging to website visitors, users, and other consumers.
 
 ### Your rights with respect to your personal data
 

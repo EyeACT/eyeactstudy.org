@@ -1,4 +1,4 @@
-abstract: Website for EyeACT project
+abstract: Website for Eye ACT project
 authors:
   - affiliation: FAIR Data Innovations Hub
     email: ssoundarajan@calmi2.org
@@ -20,6 +20,6 @@ license: MIT
 message: If you use this software, please cite it as below.
 repository-artifact: https://github.com/EyeACT/eyeactstudy.org
 repository-code: https://github.com/EyeACT/eyeactstudy.org
-title: EyeACT Website
+title: Eye ACT Website
 type: software
 version: 0.0.1

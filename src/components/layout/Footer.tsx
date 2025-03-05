@@ -56,7 +56,7 @@ export default function Footer() {
                 alt='temp logo'
               />
               <span className='self-center whitespace-nowrap text-5xl font-bold text-sky-700'>
-                EyeACT
+                Eye ACT
               </span>
             </a>
             <span className='pb-2 pt-3 text-lg font-semibold text-sky-700'>
@@ -68,7 +68,7 @@ export default function Footer() {
             <div className='flex flex-col pt-6'>
               <div className='flex flex-col justify-start'>
                 <p className='pt-2 text-sm font-medium text-sky-900'>
-                  EyeACT bridges the connection between eye health and brain
+                  Eye ACT bridges the connection between eye health and brain
                   function, pioneering research to uncover early indicators of
                   Alzheimer’s disease. Our mission is to transform how we detect
                   and prevent neurodegenerative disorders.
@@ -107,7 +107,7 @@ export default function Footer() {
           <span className='text-base font-medium text-slate-800 sm:text-center'>
             © {new Date().getFullYear()} {` `}
             <a href='https://github.com/EyeACT' className='hover:underline'>
-              EyeACT™
+              Eye ACT™
             </a>
             . All Rights Reserved.
           </span>

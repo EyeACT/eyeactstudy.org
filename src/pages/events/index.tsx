@@ -43,7 +43,7 @@ const Events: React.FC<EventsLayoutProps> = ({ eventList }) => {
               <h1 className='text-4xl font-bold text-white'>EVENTS</h1>
               <h2 className='text-left text-xl text-white'>
                 A record of all past, present and future events and workshops
-                from the EyeACT team are listed here.
+                from the Eye ACT team are listed here.
               </h2>
             </div>
           </div>

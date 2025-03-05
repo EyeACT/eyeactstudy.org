@@ -42,7 +42,7 @@ export default function Header() {
         <div className='flex items-center lg:flex-1'>
           <Image
             src='/images/logo-white-letter.png'
-            alt='EyeACT Logo'
+            alt='Eye ACT Logo'
             width={40}
             height={40}
             className='h-10 w-10'
@@ -51,7 +51,7 @@ export default function Header() {
             href='/'
             className='pl-3 text-lg font-bold text-white transition-all hover:text-sky-200'
           >
-            EyeACT
+            Eye ACT
           </UnstyledLink>
         </div>
         <div className='flex lg:hidden'>
@@ -92,7 +92,7 @@ export default function Header() {
               href='/'
               className='-m-1.5 p-1.5 text-lg font-bold transition-all hover:text-sky-500'
             >
-              EyeACT
+              Eye ACT
             </UnstyledLink>
 
             <button

@@ -96,7 +96,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               },
             )}
           >
-            <ImSpinner2 className='animate-spin' />
+            {React.createElement(ImSpinner2 as React.ElementType, {
+              className: 'animate-spin',
+            })}
           </div>
         )}
         {children}

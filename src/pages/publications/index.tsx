@@ -129,6 +129,9 @@ const PublicationsPage: React.FC = () => {
         <main className='bg-gradient-to-t from-sky-100 to-white'>
           <div className='bg relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-5 py-5 sm:px-10 sm:pb-20'>
             <SkipNavContent />
+            <h1 className='mb-4 mt-8 text-start text-5xl font-bold'>
+              Publications
+            </h1>
 
             {/* Filtering & Search UI */}
             <div className='mt-4'>

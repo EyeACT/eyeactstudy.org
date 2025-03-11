@@ -96,8 +96,8 @@ const rehypeAddLinkClasses = () => {
         }
         node.properties.className = [
           ...classes,
-          'text-[#025988]',
-          'hover:text-[#0e8cd0]',
+          'text-sky-500',
+          'hover:text-sky-700',
         ];
       }
       if (node.children && Array.isArray(node.children)) {

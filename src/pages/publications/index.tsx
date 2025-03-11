@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react';
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav';
 import { Icon } from '@iconify/react';
+import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 
 import markdownToHtml from '@/lib/markdownToHtml';
@@ -129,9 +130,23 @@ const PublicationsPage: React.FC = () => {
         <main className='bg-gradient-to-t from-sky-100 to-white'>
           <div className='bg relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-5 py-5 sm:px-10 sm:pb-20'>
             <SkipNavContent />
-            <h1 className='mb-4 mt-8 text-start text-5xl font-bold'>
-              Publications
-            </h1>
+            <div className='mb-4 mt-8 text-start'>
+              <h1 className='text-5xl font-bold'>Publications</h1>
+              <p className='text-lg'>
+                We provide below a list of publications and other outcomes from
+                the Eye ACT project. You can also find our publications on
+                PubMed{' '}
+                <Link
+                  href='https://pubmed.ncbi.nlm.nih.gov/?term=%22Eye+ACT%22+or+%22Eye+Adult+Changes+in+Thought%22+OR+R01AG060942&size=200'
+                  passHref
+                  target='_blank'
+                  className='text-sky-500 transition-all hover:text-sky-700'
+                >
+                  <span>here</span>
+                </Link>
+                .
+              </p>
+            </div>
 
             {/* Filtering & Search UI */}
             <div className='mt-4'>

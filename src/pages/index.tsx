@@ -153,10 +153,10 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                   className='mt-4 bg-[radial-gradient(circle_at_50%_90%,rgba(0,0,0,0.8),transparent)] text-base font-medium leading-relaxed text-gray-200 sm:text-lg md:text-2xl'
                 >
                   The Eye ACT study aims to provide insights on how ophthalmic
-                  conditions such as glaucoma and diabetic retinopathy can
-                  provide early clues to Alzheimer’s disease. By understanding
-                  the connection between the eyes and brain, we aim to drive
-                  advancements in early detection and prevention of
+                  conditions such as macular degeneration and diabetic
+                  retinopathy can provide early clues to Alzheimer’s disease. By
+                  understanding the connection between the eyes and brain, we
+                  aim to drive advancements in early detection and prevention of
                   neurodegenerative diseases.
                 </motion.p>
 

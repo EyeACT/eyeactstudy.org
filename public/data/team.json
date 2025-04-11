@@ -60,20 +60,18 @@
     "id": "Cecilia-Lee",
     "name": "Cecilia Lee",
     "pronoun": "",
-    "roles": [
-      "Klorfine Family Endowed Chair Director of Clinical Research",
-      "Professor"
-    ],
+    "roles": ["Klorfine Family Endowed Chair", "Professor"],
     "education": [],
     "expertise": [],
     "department": "Department of Ophthalmology",
     "organization": "University of Washington",
     "location": "Seattle, WA",
-    "about": "Ipsum enim veniam ut laboris aliquip id velit nulla officia incididunt eu. Officia consectetur deserunt amet tempor minim irure do consequat deserunt. Tempor id tempor non occaecat Lorem consequat exercitation dolor et.",
+    "about": "I am a clinician-scientist and Principal Investigator of EyeACT, leading a collaborative effort to bridge eye and brain. Our team is excited to leverage retinal imaging, clinical data, and artificial intelligence to transform our understanding of cognitive aging and Alzheimer's disease.",
     "image": "https://ucarecdn.com/4d9dcdd5-42b7-4cd6-8f9a-f16e66b917a8/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
     "moduleImageParams": "-/crop/face/200px150p/",
     "social": {
-      "website": ["https://comp.ophthalmology.uw.edu/"]
+      "website": ["https://comp.ophthalmology.uw.edu/"],
+      "linkedin": "http://www.linkedin.com/in/cecilia-s-lee-md-ms-3129102a0"
     }
   },
   {

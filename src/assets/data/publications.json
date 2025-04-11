@@ -1,36 +1,6 @@
 {
   "publications": [
     {
-      "id": 1,
-      "category": "Aging Eye/Aging Brain Research",
-      "type": "journal-article",
-      "year": 2023,
-      "content": "Lee C.S., Krakauer C., Su Y.R., Walker R.L., Blazes M., McCurry S.M., Bowen J.D., McCormick W.C., Lee A.Y., Boyko E.J., O'Hare A.M., Larson E.B., Crane P.K. (2023). Diabetic Retinopathy and Dementia Association, Beyond Diabetes Severity. *Am J Ophthalmol.* 249:90-98. <https://doi.org/10.1016/j.ajo.2022.12.003>. PMID: 36513155; PMCID: PMC10106379.",
-      "authors": [
-        "Lee C.S.",
-        "Krakauer C.",
-        "Su Y.R.",
-        "Walker R.L.",
-        "Blazes M.",
-        "McCurry S.M.",
-        "Bowen J.D.",
-        "McCormick W.C.",
-        "Lee A.Y.",
-        "Boyko E.J.",
-        "O'Hare A.M.",
-        "Larson E.B.",
-        "Crane P.K."
-      ],
-      "journal": "Am J Ophthalm",
-      "volume": 249,
-      "pages": "90-98",
-      "doi": "10.1016/j.ajo.2022.12.003",
-      "pmid": 36513155,
-      "pmcid": "PMC10106379",
-      "status": "published",
-      "tags": []
-    },
-    {
       "id": 2,
       "category": "Aging Eye/Aging Brain Research",
       "type": "journal-article",

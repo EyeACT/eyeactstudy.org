@@ -108,33 +108,6 @@
       "tags": []
     },
     {
-      "id": 6,
-      "category": "Aging Eye/Aging Brain Research",
-      "type": "journal-article",
-      "year": 2019,
-      "content": "Lee C.S., Larson E.B., Gibbons L.E., Latimer C.S., Rose S.E., Hellstern L.L., Keene C.D., Crane P.K.; Adult Changes in Thought (ACT) Study. (2019). Ophthalmology-Based Neuropathology Risk Factors: Diabetic Retinopathy is Associated with Deep Microinfarcts in a Community-Based Autopsy Study. *J Alzheimers Dis.* 68(2):647-655. <https://doi.org/10.3233/JAD-181087>. PMID: 30883356; PMCID: PMC6450649.",
-      "authors": [
-        "Lee C.S.",
-        "Larson E.B.",
-        "Gibbons L.E.",
-        "Latimer C.S.",
-        "Rose S.E.",
-        "Hellstern L.L.",
-        "Keene C.D.",
-        "Crane P.K.",
-        "Adult Changes in Thought (ACT) Study"
-      ],
-      "journal": "J Alzheimers Dis.",
-      "volume": 68,
-      "issue": 2,
-      "pages": "647-655",
-      "doi": "https://doi.org/10.3233/JAD-181087",
-      "pmid": 30883356,
-      "pmcid": "PMC6450649",
-      "status": "published",
-      "tags": []
-    },
-    {
       "id": 12,
       "category": "Abstracts",
       "type": "abstract",

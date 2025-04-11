@@ -25,11 +25,26 @@ import Seo from '@/components/Seo';
 
 import publicationsData from '@/assets/data/publications.json';
 
-const publicationCategories = [
-  'Journal Articles',
-  'Abstracts',
-  'Lectures/Presentations',
-];
+// Sort publicationsData alphabetically by category and most recent year to oldest
+publicationsData.publications.sort((a, b) => {
+  if (a.category < b.category) {
+    return -1;
+  }
+  if (a.category > b.category) {
+    return 1;
+  }
+  if (a.year < b.year) {
+    return 1;
+  }
+  if (a.year > b.year) {
+    return -1;
+  }
+  return 0;
+});
+
+const publicationCategories = Array.from(
+  new Set(publicationsData.publications.map((pub) => pub.category)),
+).sort();
 
 /**
  * Helper component that converts markdown into HTML using your custom renderer.

@@ -112,6 +112,12 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
       caption: 'California Medical Innovations Institute',
     },
     {
+      image: '/images/member-orgs/kaiser.png',
+      imageHeight: 'h-13',
+      href: 'https://www.kaiserpermanente.org/',
+      caption: 'Kaiser Permanente Washington',
+    },
+    {
       image: '/images/member-orgs/uw.png',
       imageHeight: 'h-14',
       href: 'https://www.washington.edu/',

@@ -114,7 +114,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
     {
       image: '/images/member-orgs/kaiser.png',
       imageHeight: 'h-13',
-      href: 'https://www.kaiserpermanente.org/',
+      href: 'https://www.kpwashingtonresearch.org/',
       caption: 'Kaiser Permanente Washington',
     },
     {

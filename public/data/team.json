@@ -149,7 +149,12 @@
     "name": "Chloe Krakauer",
     "pronoun": "she/her",
     "roles": ["Collaborative Biostatistician"],
-    "education": [{ "degree": "PhD in Biostatistics (UW, 2021)" }],
+    "education": [
+      {
+        "degree": "PhD in Biostatistics",
+        "institution": "University of Washington, 2021"
+      }
+    ],
     "expertise": ["survival analysis", "missing data", "dementia"],
     "department": "Biostatistics Unit",
     "organization": "Kaiser Permanente Washington Health Research Institute",
@@ -168,7 +173,12 @@
     "name": "David Cronkite",
     "pronoun": "",
     "roles": ["Computational Linguist"],
-    "education": [{ "degree": "MS, Computational Linguistics (UW, 2012)" }],
+    "education": [
+      {
+        "degree": "MS, Computational Linguistics",
+        "institution": "University of Washington, 2012"
+      }
+    ],
     "expertise": ["Natural Language Processing"],
     "department": "Research Data and Applications",
     "organization": "Kaiser Permanente Washington Health Research Institute",
@@ -186,9 +196,9 @@
     "pronoun": "she/her",
     "roles": ["Principal Collaborative Scientist"],
     "education": [
-      { "degree": "BA in Biological Psychology (UC Berkeley)" },
-      { "degree": "MPH in Epidemiology (UCLA)" },
-      { "degree": "PhD in Epidemiology (UCLA)" }
+      { "degree": "BA in Biological Psychology", "institution": "UC Berkeley" },
+      { "degree": "MPH in Epidemiology", "institution": "UCLA" },
+      { "degree": "PhD in Epidemiology", "institution": "UCLA" }
     ],
     "expertise": [
       "Epidemiology",
@@ -211,8 +221,14 @@
     "pronoun": "She/her",
     "roles": ["Associate Biostatistics Investigator"],
     "education": [
-      { "degree": "PhD in Biostatistics (UC Davis, 2011)" },
-      { "degree": "MS in Statistics (UC Davis, 2006)" }
+      {
+        "degree": "PhD in Biostatistics",
+        "institution": "UC Davis, 2011"
+      },
+      {
+        "degree": "MS in Statistics",
+        "institution": "UC Davis, 2006"
+      }
     ],
     "expertise": ["Biostatistics"],
     "department": "Biostatistics Division",

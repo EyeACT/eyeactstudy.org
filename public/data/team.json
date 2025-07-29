@@ -135,7 +135,7 @@
     "pronoun": "",
     "roles": ["Manager and Senior Investigator"],
     "education": [{ "degree": "MD, MPH" }],
-    "expertise": ["obesity", "diabetes", "shared decision making"],
+    "expertise": ["Obesity", "Diabetes", "Shared decision making"],
     "department": "Health Research Institute, Investigative Sciences",
     "organization": "Kaiser Permanente Washington",
     "location": "Seattle, WA",
@@ -197,12 +197,12 @@
     ],
     "department": "",
     "organization": "Kaiser Permanente Washington Health Research Institute",
-    "location": "",
+    "location": "Seattle, WA",
     "about": "Nicole Gatto is an epidemiologist at Kaiser Permanente involved in research on chronic and neurodegenerative diseases as part of EyeACT.",
     "image": "https://ucarecdn.com/c4bf2666-3f5e-4c3e-93ee-a4fde43aad74/",
     "moduleImageParams": "-/crop/2000x2000/center/-/quality/smart/-/format/auto/",
     "social": {
-      "website": ["linkedin/in/nicolemgatto"]
+      "linkedin": "https://www.linkedin.com/in/nicolemgatto/"
     }
   },
   {

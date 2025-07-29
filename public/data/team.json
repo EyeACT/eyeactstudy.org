@@ -243,6 +243,10 @@
     "id": "Xuebin-Dong",
     "name": "Xuebin Dong",
     "pronoun": "he/him",
+    "department": "FAIR Data Innovations Hub",
+    "organization": "California Medical Innovations Institute",
+    "location": "San Diego, CA",
+    "roles": ["Software Engineer"],
     "image": "https://ucarecdn.com/4a8d9a5d-cae8-413e-802c-dd36ecbd0c49/",
     "moduleImageParams": "-/crop/3000x3000/center/-/quality/smart/-/format/auto/",
     "education": [
@@ -268,6 +272,8 @@
     "pronoun": "she/her",
     "image": "https://ucarecdn.com/34489f44-a000-4865-b0c2-03d4dca3691b/",
     "moduleImageParams": "-/crop/4000x5000/center/-/quality/smart/-/format/auto/",
+    "department": "FAIR Data Innovations Hub",
+    "organization": "California Medical Innovations Institute",
     "education": [
       {
         "degree": "Ph.D. in Informatics",
@@ -292,6 +298,8 @@
       "Deep learning",
       "Healthcare"
     ],
+    "location": "San Diego, CA",
+    "roles": ["AI Research Scientist"],
     "about": "Nahid Zeinali is an AI Research Scientist from Isfahan, Iran. She specializes in AI, NLP, and deep learning in healthcare and focuses on developing AI-driven healthcare solutions. She enjoys yoga, hiking, tennis, road trips, and Persian poetry in her free time.",
     "social": {
       "github": "https://github.com/Nahidzeinali-web",

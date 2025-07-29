@@ -48,7 +48,7 @@ interface Member {
   organization: string;
   blurDataURL: string;
   moduleImageParams: string;
-  education: { degree: string; institution: string }[];
+  education: { degree: string; institution?: string }[];
   expertise?: string[];
   about: string;
   pronoun?: string;

@@ -140,8 +140,8 @@
     "organization": "Kaiser Permanente Washington",
     "location": "Seattle, WA",
     "about": "Dr. Arterburn is the site-principal investigator at KPWHRI for the EyeACT project.",
-    "image": "/images/team/david-arterburn.jpg",
-    "moduleImageParams": "-/crop/face/250px200p/",
+    "image": "https://ucarecdn.com/c5a27533-9376-40a4-99ef-3673b96d8021/",
+    "moduleImageParams": "-/crop/1500x1200/center/-/quality/smart/-/format/auto/",
     "social": {}
   },
   {
@@ -155,8 +155,8 @@
     "organization": "Kaiser Permanente Washington Health Research Institute",
     "location": "Seattle, WA",
     "about": "I am a collaborative biostatistician with both methodological and applied interests, contributing to EyeACT by analyzing longitudinal data.",
-    "image": "/images/team/chloe-krakauer.jpg",
-    "moduleImageParams": "-/crop/face/250px200p/",
+    "image": "https://ucarecdn.com/196cab0a-7862-429a-b5c4-54c92fec61c2/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
+    "moduleImageParams": "-/crop/face/200px200p/",
     "social": {
       "website": [
         "https://kpwashingtonresearch.org/index.php/our-research/our-investigators/235-chloe-krakauer"
@@ -169,12 +169,12 @@
     "pronoun": "",
     "roles": ["Computational Linguist"],
     "education": [{ "degree": "MS, Computational Linguistics (UW, 2012)" }],
-    "expertise": ["NLP"],
+    "expertise": ["Natural Language Processing"],
     "department": "Research Data and Applications",
     "organization": "Kaiser Permanente Washington Health Research Institute",
     "location": "Seattle, WA",
     "about": "I am a computational linguist using natural language processing to support clinical and research initiatives in EyeACT.",
-    "image": "/images/team/david-cronkite.png",
+    "image": "https://ucarecdn.com/db84c00e-4d69-4799-b552-143cd6487717/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
     "moduleImageParams": "-/crop/face/250px200p/",
     "social": {
       "github": "github.com/dcronkite"
@@ -191,16 +191,16 @@
       { "degree": "PhD in Epidemiology (UCLA)" }
     ],
     "expertise": [
-      "epidemiology",
-      "neurodegenerative disease",
-      "chronic disease prevention"
+      "Epidemiology",
+      "Neurodegenerative disease",
+      "Chronic disease prevention"
     ],
     "department": "",
     "organization": "Kaiser Permanente Washington Health Research Institute",
     "location": "",
     "about": "Nicole Gatto is an epidemiologist at Kaiser Permanente involved in research on chronic and neurodegenerative diseases as part of EyeACT.",
-    "image": "/images/team/nicole-gatto.jpg",
-    "moduleImageParams": "-/crop/face/250px200p/",
+    "image": "https://ucarecdn.com/c4bf2666-3f5e-4c3e-93ee-a4fde43aad74/",
+    "moduleImageParams": "-/crop/2000x2000/center/-/quality/smart/-/format/auto/",
     "social": {
       "website": ["linkedin/in/nicolemgatto"]
     }
@@ -219,8 +219,8 @@
     "organization": "Kaiser Permanente Washington Health Research Institute",
     "location": "Seattle, WA",
     "about": "I am a Biostatistician and a co-investigator on the EyeACT project contributing to statistical methodology and analysis.",
-    "image": "/images/team/yu-ru-su.jpg",
-    "moduleImageParams": "-/crop/face/250px200p/",
+    "image": "https://ucarecdn.com/560456e1-6199-4291-805a-52959d096c0c/-/quality/smart_retina/-/format/auto/-/progressive/yes/",
+    "moduleImageParams": "-/crop/face/240px200p/",
     "social": {}
   }
 ]

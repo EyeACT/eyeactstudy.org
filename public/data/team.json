@@ -128,5 +128,99 @@
       "instagram": "https://instagram.com/fairdataihub",
       "github": "https://github.com/slugb0t"
     }
+  },
+  {
+    "id": "David-Arterburn",
+    "name": "David Arterburn",
+    "pronoun": "",
+    "roles": ["Manager and Senior Investigator"],
+    "education": [{ "degree": "MD, MPH" }],
+    "expertise": ["obesity", "diabetes", "shared decision making"],
+    "department": "Health Research Institute, Investigative Sciences",
+    "organization": "Kaiser Permanente Washington",
+    "location": "Seattle, WA",
+    "about": "Dr. Arterburn is the site-principal investigator at KPWHRI for the EyeACT project.",
+    "image": "/images/team/david-arterburn.jpg",
+    "moduleImageParams": "-/crop/face/250px200p/",
+    "social": {}
+  },
+  {
+    "id": "Chloe-Krakauer",
+    "name": "Chloe Krakauer",
+    "pronoun": "she/her",
+    "roles": ["Collaborative Biostatistician"],
+    "education": [{ "degree": "PhD in Biostatistics (UW, 2021)" }],
+    "expertise": ["survival analysis", "missing data", "dementia"],
+    "department": "Biostatistics Unit",
+    "organization": "Kaiser Permanente Washington Health Research Institute",
+    "location": "Seattle, WA",
+    "about": "I am a collaborative biostatistician with both methodological and applied interests, contributing to EyeACT by analyzing longitudinal data.",
+    "image": "/images/team/chloe-krakauer.jpg",
+    "moduleImageParams": "-/crop/face/250px200p/",
+    "social": {
+      "website": [
+        "https://kpwashingtonresearch.org/index.php/our-research/our-investigators/235-chloe-krakauer"
+      ]
+    }
+  },
+  {
+    "id": "David-Cronkite",
+    "name": "David Cronkite",
+    "pronoun": "",
+    "roles": ["Computational Linguist"],
+    "education": [{ "degree": "MS, Computational Linguistics (UW, 2012)" }],
+    "expertise": ["NLP"],
+    "department": "Research Data and Applications",
+    "organization": "Kaiser Permanente Washington Health Research Institute",
+    "location": "Seattle, WA",
+    "about": "I am a computational linguist using natural language processing to support clinical and research initiatives in EyeACT.",
+    "image": "/images/team/david-cronkite.png",
+    "moduleImageParams": "-/crop/face/250px200p/",
+    "social": {
+      "github": "github.com/dcronkite"
+    }
+  },
+  {
+    "id": "Nicole-Gatto",
+    "name": "Nicole Gatto",
+    "pronoun": "she/her",
+    "roles": ["Principal Collaborative Scientist"],
+    "education": [
+      { "degree": "BA in Biological Psychology (UC Berkeley)" },
+      { "degree": "MPH in Epidemiology (UCLA)" },
+      { "degree": "PhD in Epidemiology (UCLA)" }
+    ],
+    "expertise": [
+      "epidemiology",
+      "neurodegenerative disease",
+      "chronic disease prevention"
+    ],
+    "department": "",
+    "organization": "Kaiser Permanente Washington Health Research Institute",
+    "location": "",
+    "about": "Nicole Gatto is an epidemiologist at Kaiser Permanente involved in research on chronic and neurodegenerative diseases as part of EyeACT.",
+    "image": "/images/team/nicole-gatto.jpg",
+    "moduleImageParams": "-/crop/face/250px200p/",
+    "social": {
+      "website": ["linkedin/in/nicolemgatto"]
+    }
+  },
+  {
+    "id": "Yu-Ru-Su",
+    "name": "Yu-Ru Su",
+    "pronoun": "She/her",
+    "roles": ["Associate Biostatistics Investigator"],
+    "education": [
+      { "degree": "PhD in Biostatistics (UC Davis, 2011)" },
+      { "degree": "MS in Statistics (UC Davis, 2006)" }
+    ],
+    "expertise": ["Biostatistics"],
+    "department": "Biostatistics Division",
+    "organization": "Kaiser Permanente Washington Health Research Institute",
+    "location": "Seattle, WA",
+    "about": "I am a Biostatistician and a co-investigator on the EyeACT project contributing to statistical methodology and analysis.",
+    "image": "/images/team/yu-ru-su.jpg",
+    "moduleImageParams": "-/crop/face/250px200p/",
+    "social": {}
   }
 ]

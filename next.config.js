@@ -15,6 +15,7 @@ const nextConfig = {
       'fairdataihub.org',
       'ucarecdn.com',
       'i.imgur.com',
+      'eyeact.b-cdn.net',
     ],
   },
 

@@ -47,7 +47,7 @@ interface Member {
   image: string;
   organization: string;
   blurDataURL: string;
-  moduleImageParams: string;
+  moduleImage: string;
   education: { degree: string; institution?: string }[];
   expertise?: string[];
   about: string;
@@ -86,14 +86,12 @@ const MembersGrid: React.FC<{
         >
           <div className='relative mx-auto min-h-[350px] w-full sm:min-h-[400px]'>
             <Image
-              src={`${member.image}${
-                member.moduleImageParams !== '' ? member.moduleImageParams : ''
-              }`}
+              src={member.image}
               alt={member.name + ' image'}
               fill
               placeholder='blur'
               blurDataURL={member.blurDataURL}
-              className='h-full w-full rounded-lg object-cover object-center'
+              className='h-full w-full rounded-lg object-cover object-top'
               sizes='(max-width: 768px) 100vw, 50vw'
             />
             {/* Text overlay */}

@@ -94,7 +94,7 @@
         "institution": "Cal State University, San Bernardino, 2020"
       }
     ],
-    "expertise": [],
+    "expertise": ["DevOps", "Backend Development", "Frontend Development"],
     "social": {
       "website": [
         "https://dorianportillo.dev",

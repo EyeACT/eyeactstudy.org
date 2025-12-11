@@ -30,7 +30,7 @@ const EventsLayout: React.FC<EventsLayoutProps> = ({ eventList }) => {
             </div>
             <div className='flex flex-1 flex-col p-5'>
               <Link href={`/events/${event.slug}`} passHref>
-                <h3 className='text-2xl font-bold text-gray-800 transition-all duration-300 group-hover:text-blue-500'>
+              <h3 className='text-2xl font-bold text-gray-800 transition-all duration-300 group-hover:text-blue-500'>t
                   {event.frontMatter.title}
                 </h3>
               </Link>

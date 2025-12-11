@@ -16,9 +16,7 @@
     "image": "https://eyeact.b-cdn.net/people/Aaron-Lee.jpg",
     "moduleImage": "https://eyeact.b-cdn.net/headshot/Aaron-Lee.jpg",
     "social": {
-      "website": [
-        "https://comp.ophthalmology.uw.edu/"
-      ],
+      "website": ["https://comp.ophthalmology.uw.edu/"],
       "twitter": "https://twitter.com/aaronylee",
       "linkedin": "https://linkedin.com/in/aaron-y-lee-md-msci-a102b87/"
     }
@@ -27,14 +25,11 @@
     "id": "Bhavesh-Patel",
     "name": "Bhavesh Patel",
     "pronoun": "he/him",
-    "roles": [
-      "Associate Research Professor",
-      "Director"
-    ],
+    "roles": ["Research Professor"],
     "department": "FAIR Data Innovations Hub",
     "organization": "California Medical Innovations Institute",
     "location": "San Diego, CA",
-    "about": "Qui molestiae aspernatur a ducimus architecto et impedit molestias aut voluptatem molestiae in omnis placeat aut veniam exercitationem. Sit autem nobis ex sequi quia ut quia provident eos quas molestiae ab eveniet eaque ut eius dignissimos?",
+    "about": "I am leading the FAIR Data Innovations Hub division, where my team and I develop tools, standards, and guidelines for making data and other research outcomes FAIR (Findable, Accessible, Interoperable, Reusable) and AI-ready. As part of Eye ACT, I am leading the development of the Envision Portal, the first open-source platform dedicated to easily sharing, finding, and reusing eye imaging datasets.",
     "image": "https://eyeact.b-cdn.net/people/Bhavesh-Patel.jpg",
     "moduleImage": "https://eyeact.b-cdn.net/headshot/Bhavesh-Patel.jpg",
     "education": [
@@ -57,9 +52,7 @@
     ],
     "expertise": [],
     "social": {
-      "website": [
-        "https://fairdataihub.org"
-      ],
+      "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "twitter": "https://twitter.com/fairdataihub",
       "instagram": "https://instagram.com/fairdataihub",
@@ -70,10 +63,7 @@
     "id": "Cecilia-Lee",
     "name": "Cecilia Lee",
     "pronoun": "",
-    "roles": [
-      "Klorfine Family Endowed Chair",
-      "Professor"
-    ],
+    "roles": ["Klorfine Family Endowed Chair", "Professor"],
     "education": [],
     "expertise": [],
     "department": "Department of Ophthalmology",
@@ -83,9 +73,7 @@
     "image": "https://eyeact.b-cdn.net/people/Cecilia-Lee.jpg",
     "moduleImage": "https://eyeact.b-cdn.net/headshot/Cecilia-Lee.jpg",
     "social": {
-      "website": [
-        "https://comp.ophthalmology.uw.edu/"
-      ],
+      "website": ["https://comp.ophthalmology.uw.edu/"],
       "linkedin": "http://www.linkedin.com/in/cecilia-s-lee-md-ms-3129102a0"
     }
   },
@@ -93,9 +81,7 @@
     "id": "Dorian-Portillo",
     "name": "Dorian Portillo",
     "pronoun": "they/them",
-    "roles": [
-      "Web Developer"
-    ],
+    "roles": ["Full Stack Developer"],
     "department": "FAIR Data Innovations Hub",
     "organization": "California Medical Innovations Institute",
     "location": "San Bernardino, CA",
@@ -111,7 +97,8 @@
     "expertise": [],
     "social": {
       "website": [
-        "https://fairdataihub.org"
+        "https://dorianportillo.dev",
+        "https://fairdataihub.org/team"
       ],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "instagram": "https://instagram.com/fairdataihub",
@@ -122,9 +109,7 @@
     "id": "Sanjay-Soundarajan",
     "name": "Sanjay Soundarajan",
     "pronoun": "he/him",
-    "roles": [
-      "Front End Developer"
-    ],
+    "roles": ["Front End Developer"],
     "department": "FAIR Data Innovations Hub",
     "organization": "California Medical Innovations Institute",
     "location": "San Diego, CA",
@@ -143,9 +128,7 @@
     ],
     "expertise": [],
     "social": {
-      "website": [
-        "https://fairdataihub.org"
-      ],
+      "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "twitter": "https://twitter.com/fairdataihub",
       "instagram": "https://instagram.com/fairdataihub",
@@ -156,19 +139,13 @@
     "id": "David-Arterburn",
     "name": "David Arterburn",
     "pronoun": "",
-    "roles": [
-      "Manager and Senior Investigator"
-    ],
+    "roles": ["Manager and Senior Investigator"],
     "education": [
       {
         "degree": "MD, MPH"
       }
     ],
-    "expertise": [
-      "Obesity",
-      "Diabetes",
-      "Shared decision making"
-    ],
+    "expertise": ["Obesity", "Diabetes", "Shared decision making"],
     "department": "Health Research Institute, Investigative Sciences",
     "organization": "Kaiser Permanente Washington",
     "location": "Seattle, WA",
@@ -181,20 +158,14 @@
     "id": "Chloe-Krakauer",
     "name": "Chloe Krakauer",
     "pronoun": "she/her",
-    "roles": [
-      "Collaborative Biostatistician"
-    ],
+    "roles": ["Collaborative Biostatistician"],
     "education": [
       {
         "degree": "PhD in Biostatistics",
         "institution": "University of Washington, 2021"
       }
     ],
-    "expertise": [
-      "survival analysis",
-      "missing data",
-      "dementia"
-    ],
+    "expertise": ["survival analysis", "missing data", "dementia"],
     "department": "Biostatistics Unit",
     "organization": "Kaiser Permanente Washington Health Research Institute",
     "location": "Seattle, WA",
@@ -211,18 +182,14 @@
     "id": "David-Cronkite",
     "name": "David Cronkite",
     "pronoun": "",
-    "roles": [
-      "Computational Linguist"
-    ],
+    "roles": ["Computational Linguist"],
     "education": [
       {
         "degree": "MS, Computational Linguistics",
         "institution": "University of Washington, 2012"
       }
     ],
-    "expertise": [
-      "Natural Language Processing"
-    ],
+    "expertise": ["Natural Language Processing"],
     "department": "Research Data and Applications",
     "organization": "Kaiser Permanente Washington Health Research Institute",
     "location": "Seattle, WA",
@@ -237,9 +204,7 @@
     "id": "Nicole-Gatto",
     "name": "Nicole Gatto",
     "pronoun": "she/her",
-    "roles": [
-      "Principal Collaborative Scientist"
-    ],
+    "roles": ["Principal Collaborative Scientist"],
     "education": [
       {
         "degree": "BA in Biological Psychology",
@@ -273,9 +238,7 @@
     "id": "Yu-Ru-Su",
     "name": "Yu-Ru Su",
     "pronoun": "She/her",
-    "roles": [
-      "Associate Biostatistics Investigator"
-    ],
+    "roles": ["Associate Biostatistics Investigator"],
     "education": [
       {
         "degree": "PhD in Biostatistics",
@@ -286,9 +249,7 @@
         "institution": "UC Davis, 2006"
       }
     ],
-    "expertise": [
-      "Biostatistics"
-    ],
+    "expertise": ["Biostatistics"],
     "department": "Biostatistics Division",
     "organization": "Kaiser Permanente Washington Health Research Institute",
     "location": "Seattle, WA",
@@ -304,9 +265,7 @@
     "department": "FAIR Data Innovations Hub",
     "organization": "California Medical Innovations Institute",
     "location": "San Diego, CA",
-    "roles": [
-      "Software Engineer"
-    ],
+    "roles": ["Software Engineer"],
     "image": "https://eyeact.b-cdn.net/people/Xuebin-Dong.jpg",
     "moduleImage": "https://eyeact.b-cdn.net/headshot/Xuebin-Dong.jpg",
     "education": [
@@ -319,11 +278,7 @@
         "institution": "Yunnan University"
       }
     ],
-    "expertise": [
-      "Full-stack development",
-      "Data pipelines",
-      "DevOps"
-    ],
+    "expertise": ["Full-stack development", "Data pipelines", "DevOps"],
     "about": "Xuebin Dong is a passionate software developer with a strong background in full-stack development, data pipelines, and DevOps. He holds a Master's degree in Computer Science and enjoys solving complex technical problems. In his free time, he loves working out, playing video games, and exploring new technologies.",
     "social": {
       "github": "https://github.com/dxb2306",
@@ -363,9 +318,7 @@
       "Healthcare"
     ],
     "location": "San Diego, CA",
-    "roles": [
-      "AI Research Scientist"
-    ],
+    "roles": ["AI Research Scientist"],
     "about": "Nahid Zeinali is an AI Research Scientist from Isfahan, Iran. She specializes in AI, NLP, and deep learning in healthcare and focuses on developing AI-driven healthcare solutions.",
     "social": {
       "github": "https://github.com/Nahidzeinali-web",

@@ -96,10 +96,7 @@
     ],
     "expertise": ["DevOps", "Backend Development", "Frontend Development"],
     "social": {
-      "website": [
-        "https://dorianportillo.dev",
-        "https://fairdataihub.org/team"
-      ],
+      "website": ["https://dorianportillo.dev"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "instagram": "https://instagram.com/fairdataihub",
       "github": "https://github.com/slugb0t"

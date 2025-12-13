@@ -325,5 +325,20 @@
       "linkedin": "https://www.linkedin.com/in/nahid-zeinali-ph-d-15440910b/6",
       "twitter": "https://x.com/ZeinaliNahid"
     }
+  },
+  {
+    "id": "James-ONeill",
+    "name": "James ONeill",
+    "pronoun": "He/They",
+    "roles": ["AI Research Scientist"],
+    "education": [],
+    "expertise": [],
+    "department": "California Medical Innovations Institute",
+    "organization": "FAIR Data Innovations Hub",
+    "location": "San Diego, CA",
+    "about": "Streamlining development of a centralized database of aggregate eye imaging data as an AI Research Scientist in line with FAIR principles. Development of the database involving smart web search and asynchronous API calls for expediency and extensive data cleaning augmented by creating an ML classification system to find & confirm eye data to load into the database.",
+    "image": "https://eyeact.b-cdn.net/people/James-Oneill.jpeg",
+    "moduleImage": "https://eyeact.b-cdn.net/headshot/James-Oneill.jpeg",
+    "social": { "linkedin": "https://www.linkedin.com/in/jimnoneill/" }
   }
 ]

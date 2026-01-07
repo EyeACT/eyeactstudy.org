@@ -54,7 +54,7 @@ interface Member {
   pronoun?: string;
   roles?: string[];
   location?: string;
-  imagePosition?: 'top' | 'center' | 'bottom';
+  imagePosition?: string;
   social: {
     linkedin?: string;
     resume?: string;

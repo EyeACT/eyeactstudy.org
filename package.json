@@ -18,7 +18,8 @@
     "format:check": "prettier -c .",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "commit": "cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "reset": "rm -rf node_modules && rm -rf .next && yarn install"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",

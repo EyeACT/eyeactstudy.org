@@ -54,6 +54,7 @@ interface Member {
   pronoun?: string;
   roles?: string[];
   location?: string;
+  imagePosition?: 'top' | 'center' | 'bottom';
   social: {
     linkedin?: string;
     resume?: string;
@@ -91,7 +92,7 @@ const MembersGrid: React.FC<{
               fill
               placeholder='blur'
               blurDataURL={member.blurDataURL}
-              className='h-full w-full rounded-lg object-cover object-top'
+              className={`h-full w-full rounded-lg object-cover ${member.imagePosition === 'center' ? 'object-center' : member.imagePosition === 'bottom' ? 'object-bottom' : 'object-top'}`}
               sizes='(max-width: 768px) 100vw, 50vw'
             />
             {/* Text overlay */}

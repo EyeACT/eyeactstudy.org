@@ -55,8 +55,7 @@
       "website": ["https://fairdataihub.org"],
       "linkedin": "https://linkedin.com/in/bvhpatel",
       "twitter": "https://twitter.com/fairdataihub",
-      "instagram": "https://instagram.com/fairdataihub",
-      "github": "https://github.com/slugb0t"
+      "github": "https://github.com/bvhpatel"
     }
   },
   {
@@ -85,7 +84,7 @@
     "department": "FAIR Data Innovations Hub",
     "organization": "California Medical Innovations Institute",
     "location": "San Bernardino, CA",
-    "about": "Laboris consectetur occaecat irure officia in pariatur voluptate ad. Esse enim pariatur elit do eu duis. Ut mollit pariatur culpa consequat sit reprehenderit qui consequat.",
+    "about": "Dorian is a Guatemalan and Salvadoran frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
     "image": "https://eyeact.b-cdn.net/people/Dorian-Portillo.jpg",
     "moduleImage": "https://eyeact.b-cdn.net/headshot/Dorian-Portillo.jpg",
     "education": [
@@ -97,8 +96,7 @@
     "expertise": ["DevOps", "Backend Development", "Frontend Development"],
     "social": {
       "website": ["https://dorianportillo.dev"],
-      "linkedin": "https://linkedin.com/in/bvhpatel",
-      "instagram": "https://instagram.com/fairdataihub",
+      "linkedin": "https://linkedin.com/in/dorianportillo",
       "github": "https://github.com/slugb0t"
     }
   },
@@ -125,11 +123,10 @@
     ],
     "expertise": [],
     "social": {
-      "website": ["https://fairdataihub.org"],
-      "linkedin": "https://linkedin.com/in/bvhpatel",
+      "website": [],
+      "linkedin": "https://linkedin.com/in/sanjay-soundarajan",
       "twitter": "https://twitter.com/fairdataihub",
-      "instagram": "https://instagram.com/fairdataihub",
-      "github": "https://github.com/slugb0t"
+      "github": "https://github.com/megasanjay"
     }
   },
   {
@@ -328,14 +325,60 @@
     "name": "James ONeill",
     "pronoun": "He/They",
     "roles": ["AI Research Scientist"],
-    "education": [],
-    "expertise": [],
+    "education": [
+      {
+        "degree": "PhD in Biomedical Engineering with a focus in AI"
+      },
+      {
+        "degree": "MSc, Biomedical Informatics"
+      },
+      {
+        "degree": "BS Biochemistry & Molecular Biology"
+      },
+      {
+        "degree": "Minor Nutrition"
+      },
+      {
+        "degree": "AA English"
+      }
+    ],
+    "expertise": [
+      "Deep Learning",
+      "Graph Science",
+      "Biomedical Research Analytics"
+    ],
     "department": "California Medical Innovations Institute",
     "organization": "FAIR Data Innovations Hub",
-    "location": "San Diego, CA",
+    "location": "CA",
     "about": "Streamlining development of a centralized database of aggregate eye imaging data as an AI Research Scientist in line with FAIR principles. Development of the database involving smart web search and asynchronous API calls for expediency and extensive data cleaning augmented by creating an ML classification system to find & confirm eye data to load into the database.",
     "image": "https://eyeact.b-cdn.net/people/James-Oneill.jpeg",
+    "imagePosition": "center",
     "moduleImage": "https://eyeact.b-cdn.net/headshot/James-Oneill.jpeg",
     "social": { "linkedin": "https://www.linkedin.com/in/jimnoneill/" }
+  },
+  {
+    "id": "Jamie-Shaffer",
+    "name": "Jamie Shaffer",
+    "pronoun": "",
+    "roles": ["Research Scientist"],
+    "education": [
+      {
+        "degree": "M.S. Electrical Engineering",
+        "institution": "University of Washington, 1996"
+      },
+      {
+        "degree": "B.S. Electrical Engineering",
+        "institution": "Michigan State University, 1987"
+      }
+    ],
+    "expertise": ["Metrology", "Data science"],
+    "department": "Computational Ophthalmology Lab",
+    "organization": "University of Washington",
+    "location": "Seattle, Washington",
+    "about": "I am a research scientist working with deep learning tools to detect early stage dementia from eye imaging, text, and other structured data.",
+    "image": "https://eyeact.b-cdn.net/people/Jamie-Shaffer.png",
+    "imagePosition": "bottom",
+    "moduleImage": "https://eyeact.b-cdn.net/headshot/Jamie-Shaffer.png",
+    "social": {}
   }
 ]

@@ -1931,6 +1931,27 @@
       "pmcid": "PMC7346875",
       "status": "published",
       "tags": []
+    },
+    {
+      "id": 102,
+      "category": "Preprints",
+      "type": "preprint",
+      "year": 2026,
+      "content": "Soundarajan, S., Portillo, D., O'Neill, J., Zeinali, N., Wue, Y., Lee, C., & Patel, B. (2026). White Paper - Envision Portal (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18177260",
+      "authors": [
+        "Soundarajan S",
+        "Portillo D",
+        "O'Neill J",
+        "Zeinali N",
+        "Wue Y",
+        "Lee C",
+        "Patel B"
+      ],
+      "journal": "Zenodo",
+      "doi": "10.5281/zenodo.18177260",
+      "url": "https://doi.org/10.5281/zenodo.18177260",
+      "status": "archived",
+      "tags": []
     }
   ]
 }

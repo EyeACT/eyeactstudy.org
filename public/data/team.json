@@ -1,27 +1,5 @@
 [
   {
-    "id": "Aaron-Lee",
-    "name": "Aaron Lee",
-    "pronoun": "",
-    "roles": [
-      "C. Dan and Irene Hunter Endowed Professorship",
-      "Professor in Ophthalmology"
-    ],
-    "education": [],
-    "expertise": [],
-    "department": "Department of Ophthalmology",
-    "organization": "University of Washington",
-    "location": "Seattle, WA",
-    "about": "Lorem ex et ipsum ut exercitation ut velit nostrud ad. Commodo ea ipsum aute eu velit. Veniam duis exercitation tempor ex aute velit ullamco excepteur aliquip ea consequat proident. Pariatur velit nulla fugiat pariatur velit nulla commodo laboris sunt veniam enim incididunt non aliqua.",
-    "image": "https://eyeact.b-cdn.net/people/Aaron-Lee.jpg",
-    "moduleImage": "https://eyeact.b-cdn.net/headshot/Aaron-Lee.jpg",
-    "social": {
-      "website": ["https://comp.ophthalmology.uw.edu/"],
-      "twitter": "https://twitter.com/aaronylee",
-      "linkedin": "https://linkedin.com/in/aaron-y-lee-md-msci-a102b87/"
-    }
-  },
-  {
     "id": "Bhavesh-Patel",
     "name": "Bhavesh Patel",
     "pronoun": "he/him",

@@ -186,7 +186,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             </div>
           </section>
 
-          <section className='bg-gradient-to-t from-sky-100 to-white pb-8 pt-16'>
+          <section className='bg-gradient-to-t from-white to-sky-100 pb-8 pt-16'>
             <div className='mx-auto max-w-screen-xl text-center'>
               <motion.h2
                 variants={fadeInVariants}
@@ -247,7 +247,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             <div className='mx-auto max-w-screen-xl border-b-2 border-gray-300 pt-32 lg:pt-2'></div>
           </section>
 
-          <section className='bg-gradient-to-t from-white to-sky-100 px-8 py-12'>
+          {/* <section className='bg-gradient-to-t from-white to-sky-100 px-8 py-12'>
             <div className='mx-auto max-w-7xl text-center text-black'>
               <motion.h2
                 variants={fadeInVariants}
@@ -315,7 +315,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
                 ))}
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className='bg-gradient-to-t from-sky-100 to-white py-12'>
             <motion.div

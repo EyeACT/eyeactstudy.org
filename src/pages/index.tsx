@@ -328,7 +328,7 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             >
               <div className='px-5 lg:max-w-2xl'>
                 <h1 className='mb-4 text-3xl font-bold tracking-tight sm:text-4xl'>
-                  Shaping the Future of Alzheimer’s Detection and Care
+                  Shaping the Future of Alzheimer's Detection and Care
                 </h1>
                 <p className='mb-6 text-lg text-gray-700 sm:mb-4'>
                   Our study analyzes data from over 3,877 participants aged 65
@@ -364,13 +364,13 @@ const HomePage: React.FC<EventItem> = ({ slug, frontMatter }) => {
             >
               <div className='px-5 lg:max-w-2xl'>
                 <h1 className='mb-4 text-3xl font-bold tracking-tight sm:text-4xl'>
-                  Revolutionizing Alzheimer’s Research Through Ophthalmology
+                  Revolutionizing Alzheimer's Research Through Ophthalmology
                 </h1>
                 <p className='mb-6 text-lg text-gray-700 sm:mb-4'>
                   Our research shows how changes in the retina mirror
                   neurodegenerative processes provide an accessible window into
-                  brain health. By identifying retinal biomarkers, we’re
-                  creating tools for non-invasive Alzheimer’s risk assessment.
+                  brain health. By identifying retinal biomarkers, we're
+                  creating tools for non-invasive Alzheimer's risk assessment.
                 </p>
 
                 <div>

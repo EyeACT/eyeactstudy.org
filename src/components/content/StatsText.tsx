@@ -4,14 +4,12 @@ import { useEffect, useRef, useState } from 'react';
 
 const StatsList = [
   {
-    heading: 1000,
-    text: 'Participants in the study',
-    suffix: '+',
+    heading: 1074,
+    text: 'Baseline visits',
   },
   {
-    heading: 4000,
-    text: 'Patient visits',
-    suffix: '+',
+    heading: 1581,
+    text: 'Cumulative visits',
   },
   {
     heading: 300,

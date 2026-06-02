@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -9,18 +9,17 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "baseUrl": ".",
+    "jsx": "react-jsx",
     "paths": {
       "@/*": ["./src/*"],
       "~/*": ["./public/*"]
     },
     "incremental": true,
-    "types": ["node", "jest", "mocha", "@testing-library/jest-dom"],
-    "typeRoots": ["./src/types"],
+    "baseUrl": ".",
+    "types": ["node", "jest", "mocha"],
     "plugins": [
       {
         "name": "next"
@@ -34,6 +33,5 @@
     ".next/types/**/*.ts",
     "src/pages/api/contact.ts"
   ],
-  "exclude": ["node_modules"],
-  "moduleResolution": ["node_modules", ".next", "node"]
+  "exclude": ["node_modules"]
 }

@@ -1,21 +1,37 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    dirs: ['src'],
-  },
-
   reactStrictMode: true,
-  swcMinify: true,
 
   images: {
-    domains: [
-      'storage.googleapis.com',
-      'storage.tally.so',
-      'images.unsplash.com',
-      'fairdataihub.org',
-      'ucarecdn.com',
-      'i.imgur.com',
-      'eyeact.b-cdn.net',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'storage.tally.so',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'fairdataihub.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ucarecdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'eyeact.b-cdn.net',
+      },
     ],
   },
 
